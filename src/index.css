@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Serif-ExtraLight";
+  src: url("./assets/fonts/Serif-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Serif-Light";
+  src: url("./assets/fonts/Serif-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Serif-Regular";
+  src: url("./assets/fonts/Serif-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Serif-SemiBold";
+  src: url("./assets/fonts/Serif-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Serif-Bold";
+  src: url("./assets/fonts/Serif-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Serif-Black";
+  src: url("./assets/fonts/Serif-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
