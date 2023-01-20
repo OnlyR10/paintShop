@@ -5,6 +5,7 @@ import { Layout } from "../layout/Layout";
 import { About } from "../pages/About/container/About";
 import { Main } from "../pages/Main/container/Main";
 import { Palette } from "../pages/Palette/container/Palette";
+import { Product } from "../pages/Product/container/Product";
 import { Products } from "../pages/Products/container/Products";
 
 export const Router = () => {
@@ -15,7 +16,7 @@ export const Router = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<Main />} />
         <Route path="/products" element={<Products />} />
-        {/* <Route path="/products/:id" element={<Products />} /> */}
+        <Route path="/products/:category/:name" element={<Product />} />
         <Route path="/palette" element={<Palette />} />
         <Route path="/about" element={<About />} />
       </Route>

@@ -1,17 +1,16 @@
 import styled from "styled-components";
+import { MAIN_PALETTE } from "../../../../config/palette";
 import { Wrapper } from "../../../../layout/styles";
 
 export const PaintContainer = styled.div`
   width: 100%;
-  background-color: ${({ backgroundcolor }) => backgroundcolor};
+  background-color: ${({ index }) =>
+    index % 2 ? MAIN_PALETTE.productFirstElementBackground : MAIN_PALETTE.productSecondElementBackground};
 `;
 
 export const PaletteWrapper = styled(Wrapper)`
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
-  align-items: center;
-  column-gap: 30px;
-  flex-wrap: wrap;
-  padding: 20px 100px 20px;
+  column-gap: 3rem;
+  padding: 2rem 10rem;
 `;

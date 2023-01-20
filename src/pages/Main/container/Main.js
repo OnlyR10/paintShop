@@ -11,7 +11,7 @@ export const Main = () => {
 
       {paintsForMainPage.map((paint, index) => {
         return (
-          <PaintContainer backgroundcolor={paint.backgroundcolor} key={paint.name}>
+          <PaintContainer key={paint.name} index={index}>
             <PaintWrapper>
               <PaintTypeContainer paint={paint} index={index} />
             </PaintWrapper>

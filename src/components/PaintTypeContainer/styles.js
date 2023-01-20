@@ -1,14 +1,16 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  column-gap: 30px;
-  /* max-width: 20%; */
+  flex-direction: ${({ product }) => product && "column"};
+  column-gap: 3rem;
 `;
 
 export const PictureContainer = styled.div`
-  max-width: 200px;
+  max-width: 20rem;
+  min-width: 10rem;
 `;
 
 export const PaintPicture = styled.img`
@@ -19,15 +21,14 @@ export const DescriptionContainer = styled.div`
   text-align: ${({ textalign }) => textalign || "left"};
 `;
 
-export const Header = styled.div`
+export const Header = styled(Link)`
   font-family: "Serif-Bold";
-  font-size: 3.6rem;
-  padding-bottom: 10px;
+  font-size: ${({ product }) => (product ? "2.5rem" : "3.6rem")};
 `;
 
-export const Description = styled.div`
-  max-width: 700px;
+export const Description = styled.p`
+  max-width: ${({ product }) => (product ? "40rem" : "70rem")};
   font-family: "Serif-Regular";
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: justify;
 `;

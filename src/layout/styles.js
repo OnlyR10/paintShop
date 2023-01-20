@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   position: relative;
-  /* width: 1920px; */
-  max-width: 1600px;
+  /* width: 192rem; */
+  max-width: 160rem;
   margin: 0 auto;
 `;

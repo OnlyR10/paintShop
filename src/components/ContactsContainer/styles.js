@@ -2,12 +2,13 @@ import styled from "styled-components";
 import phone from "../../assets/icons/phone.svg";
 import instagram from "../../assets/icons/instagram.svg";
 import onliner from "../../assets/icons/onliner.svg";
+import { TEXT_PALETTE } from "../../config/palette";
 
 export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0 40px;
+  gap: 0 4rem;
 `;
 
 export const ContactsColumn = styled.div`
@@ -15,23 +16,23 @@ export const ContactsColumn = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px 0;
+  gap: 2rem 0;
 `;
 
 export const Contact = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 1rem;
   font-family: "Serif-SemiBold";
   font-size: 1.6rem;
-  color: black;
+  color: ${TEXT_PALETTE.main};
   text-decoration: none;
 `;
 
 export const Icon = styled.div`
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

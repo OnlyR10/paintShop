@@ -4,7 +4,6 @@ import { Wrapper } from "../../../layout/styles";
 export const Container = styled.div`
   width: 100%;
   padding-top: 10vh;
-  background-color: #d2cab1;
   flex: 1 0 auto;
 `;
 

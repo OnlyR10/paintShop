@@ -1,8 +1,8 @@
 import React from "react";
-import videoM from "../../../../assets/video/Inscryption.mp4";
-import videoW from "../../../../assets/video/Inscryption.webm";
-import poster from "../../../../assets/images/hands.jpg";
-import { Container, MainWrapper, VideoScreensaver, VideoSource } from "./style";
+import poster from "../../../../assets/images/wall.jpg";
+import videoM from "../../../../assets/video/Ecoline.mp4";
+import videoW from "../../../../assets/video/Ecoline.webm";
+import { Container, MainWrapper, VideoScreensaver, VideoSource } from "./styles";
 
 export const VideoContainer = () => {
   return (
