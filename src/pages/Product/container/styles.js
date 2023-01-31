@@ -65,11 +65,15 @@ export const ControlPanel = styled.div`
 export const LinkButton = styled.button`
   min-width: 10rem;
   padding: 1rem 2rem;
-  border: none;
+  border: 1px solid ${MAIN_PALETTE.edgingBackground};
   border-radius: 2rem;
-  background-color: green;
+  background-color: ${MAIN_PALETTE.productFirstElementBackground};
   font-family: "Serif-Regular";
   font-size: 1.6rem;
+  transition: all 0.3s;
+  &&:hover {
+    background-color: ${MAIN_PALETTE.edgingBackground};
+  }
 `;
 
 export const Description = styled(LinkButton)``;
@@ -104,8 +108,4 @@ export const Text = styled.p`
   font-family: "Serif-Regular";
   font-size: 1.6rem;
   color: ${TEXT_PALETTE.linkText};
-`;
-
-export const Information = styled.div`
-  padding-top: 3rem;
 `;

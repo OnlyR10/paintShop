@@ -8,7 +8,8 @@ export const Container = styled.header`
   position: fixed;
   width: 100%;
   height: 10vh;
-  background-color: ${MAIN_PALETTE.edgingBackground};
+  /* background-color: ${MAIN_PALETTE.edgingBackground}; */
+  background-color: black;
   z-index: 2;
 `;
 
@@ -39,6 +40,7 @@ export const NavigationContainer = styled.div`
 export const NavigationLink = styled(Link)`
   font-family: "Serif-SemiBold";
   font-size: 1.6rem;
-  color: ${TEXT_PALETTE.main};
+  /* color: ${TEXT_PALETTE.main}; */
+  color: white;
   text-decoration: none;
 `;

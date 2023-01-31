@@ -12,7 +12,6 @@ import {
   Description,
   FileDownloadButton,
   InfoContainer,
-  Information,
   PaintDescription,
   PaintPicture,
   PaintTitle,
@@ -59,15 +58,13 @@ export const Product = () => {
 
               <ColorPalette onClick={() => setActiveContent("PaletteContainer")}>Цветовая палитра</ColorPalette>
 
-              <FileDownloadButton href={"/files/FESTEK_SUPERWHITE.pdf"} target="_blank">
+              <FileDownloadButton href={`/files/${name.slice(7)}.pdf`} target="_blank">
                 <UploadIcon />
                 <Text>Тех. документ PDF</Text>
               </FileDownloadButton>
             </ControlPanel>
 
-            <Information>
-              <Content />
-            </Information>
+            <Content paint={currentPaint} />
           </InfoContainer>
         </ProductWrapper>
       </ContentContainer>

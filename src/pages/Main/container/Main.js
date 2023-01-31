@@ -1,8 +1,8 @@
 import React from "react";
-import { Container, PaintContainer, PaintWrapper } from "./styles";
 import { PaintTypeContainer } from "../../../components/PaintTypeContainer/PaintTypeContainer";
 import { paintsForMainPage } from "../../../constants/PaintsConfig";
 import { VideoContainer } from "../components/VideoContainer/VideoContainer";
+import { Container, PaintContainer, PaintWrapper } from "./styles";
 
 export const Main = () => {
   return (

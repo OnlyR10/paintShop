@@ -6,7 +6,7 @@ export const Palette = () => {
   return (
     <Container>
       <PaletteWrapper>
-        <PaletteContainer></PaletteContainer>
+        <PaletteContainer />
       </PaletteWrapper>
     </Container>
   );

@@ -1,4 +1,4 @@
-import { categoriesOfPaints } from "./categoryOfPaints";
+import { categoriesOfPaints } from "./CategoryOfPaints";
 import { facadeEco } from "./Paints/festekFacadeEco";
 import { facadePremium } from "./Paints/festekFacadePremium";
 import { facadeSilicate } from "./Paints/festekFacadeSilicate";

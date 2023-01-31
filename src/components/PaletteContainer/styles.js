@@ -62,7 +62,7 @@ export const ColorBox = styled.div.attrs(({ backgroundcolor }) => ({
   box-sizing: border-box;
   border: 0.1rem solid transparent;
   :hover {
-    scale: 1.15;
+    scale: 2;
     border: 0.1rem solid ${MAIN_PALETTE.productFirstElementBackground};
     position: relative;
     z-index: 1;
