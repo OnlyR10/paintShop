@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import phone from "../../assets/icons/phone.svg";
 import instagram from "../../assets/icons/instagram.svg";
 import onliner from "../../assets/icons/onliner.svg";
+import phone from "../../assets/icons/phone.svg";
 import { TEXT_PALETTE } from "../../config/palette";
 
 export const Container = styled.div`
@@ -25,7 +25,7 @@ export const Contact = styled.a`
   align-items: center;
   column-gap: 1rem;
   font-family: "Serif-SemiBold";
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: ${TEXT_PALETTE.main};
   text-decoration: none;
 `;

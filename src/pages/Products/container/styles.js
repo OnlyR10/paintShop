@@ -46,5 +46,5 @@ export const CategoriesList = styled.button`
 export const PaintsCards = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2rem 5rem;
 `;

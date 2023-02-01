@@ -11,6 +11,7 @@ export const Container = styled.header`
   background-color: ${MAIN_PALETTE.edgingBackground};
   /* background-color: black; */
   z-index: 2;
+  overflow-y: hidden;
 `;
 
 export const HeaderWrapper = styled(Wrapper)`
@@ -39,7 +40,7 @@ export const NavigationContainer = styled.div`
 
 export const NavigationLink = styled(Link)`
   font-family: "Serif-SemiBold";
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: ${TEXT_PALETTE.main};
   /* color: white; */
   text-decoration: none;

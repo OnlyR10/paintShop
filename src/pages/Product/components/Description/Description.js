@@ -2,7 +2,7 @@ import React from "react";
 import { Container, InfoContainer, Text, Title } from "./styles";
 
 export const Description = ({ paint }) => {
-  const { technicalData, ...description } = paint.documentation.description;
+  const { technicalData, purpose, ...description } = paint.documentation.description;
 
   return (
     <Container>

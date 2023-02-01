@@ -17,5 +17,5 @@ export const FooterWrapper = styled(Wrapper)`
 
 export const Requisites = styled.div`
   font-family: "Serif-SemiBold";
-  font-size: 1.6rem;
+  font-size: 2rem;
 `;

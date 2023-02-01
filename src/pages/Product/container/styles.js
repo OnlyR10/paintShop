@@ -37,6 +37,7 @@ export const ContentContainer = styled.div`
 
 export const ShortDescription = styled.div`
   padding: 0 2rem;
+  text-align: center;
 `;
 
 export const PaintTitle = styled.h2`
@@ -49,6 +50,8 @@ export const PaintTitle = styled.h2`
 export const PaintDescription = styled.p`
   margin: 0;
   padding: 1rem 0;
+  font-family: "Serif-Regular";
+  font-size: 2rem;
 `;
 
 export const InfoContainer = styled.div`
@@ -72,7 +75,7 @@ export const LinkButton = styled.button`
   border-radius: 2rem;
   background-color: ${MAIN_PALETTE.productFirstElementBackground};
   font-family: "Serif-Regular";
-  font-size: 1.6rem;
+  font-size: 2rem;
   transition: all 0.3s;
   &&:hover {
     background-color: ${MAIN_PALETTE.edgingBackground};

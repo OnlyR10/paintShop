@@ -1,16 +1,22 @@
 import styled from "styled-components";
-import { Wrapper } from "../../../../layout/styles";
 
 export const Container = styled.div`
-  width: 100%;
-`;
-
-export const MainWrapper = styled(Wrapper)`
-  height: 100%;
+  height: 720px;
+  overflow: hidden;
+  position: relative;
 `;
 
 export const VideoScreensaver = styled.video`
-  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 `;
 
 export const VideoSource = styled.source``;
