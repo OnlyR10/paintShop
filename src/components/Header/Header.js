@@ -1,6 +1,6 @@
 import React from "react";
 import { ContactsContainer } from "../ContactsContainer/ContactsContainer";
-import { Container, LogoContainer, NavigationContainer, NavigationLink, HeaderWrapper } from "./styles";
+import { Container, HeaderWrapper, LogoContainer, NavigationContainer, NavigationLink } from "./styles";
 
 export const Header = () => {
   return (

@@ -3,7 +3,7 @@ import { Container, Description, DescriptionContainer, Header, PaintPicture, Pic
 
 export const PaintCard = ({ paint }) => {
   const { header, documentation, Image } = paint;
-  const purpose = documentation.description.Назначение;
+  const purpose = documentation.description.purpose.value;
 
   return (
     <Container to={`/products/${paint.category.at(0)}/${paint.path}`}>

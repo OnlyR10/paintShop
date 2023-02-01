@@ -6,10 +6,10 @@ export const Application = ({ paint }) => {
 
   return (
     <Container>
-      {Object.entries(applicationTechnology).map(([key, value]) => {
+      {Object.values(applicationTechnology).map(({ value, label }) => {
         return (
-          <InfoContainer key={key}>
-            <Title>{key}</Title>
+          <InfoContainer key={label}>
+            <Title>{label}</Title>
             <Text>{value}</Text>
           </InfoContainer>
         );

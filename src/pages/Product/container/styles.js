@@ -15,6 +15,10 @@ export const SliderContainer = styled.div`
 `;
 
 export const ProductWrapper = styled(Wrapper)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
   padding: 2rem 10rem;
 `;
 
@@ -48,7 +52,6 @@ export const PaintDescription = styled.p`
 `;
 
 export const InfoContainer = styled.div`
-  width: 100%;
   padding: 2rem;
   border: 0.1rem solid ${MAIN_PALETTE.productSecondElementBackground};
   border-radius: 2rem;

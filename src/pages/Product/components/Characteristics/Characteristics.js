@@ -10,7 +10,7 @@ export const Characteristics = ({ paint }) => {
         <TableHead>
           <TableRow>
             <TableHeader>Показатели качества</TableHeader>
-            <TableHeader>Значение по ТУ</TableHeader>
+            <TableHeader>{`Значение по\u00A0ТУ`}</TableHeader>
           </TableRow>
         </TableHead>
         <TableBody>

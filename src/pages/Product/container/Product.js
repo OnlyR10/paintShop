@@ -29,7 +29,8 @@ export const Product = () => {
 
   const Content = ContentConfig[activeContent];
   const currentPaint = paints[category].find((paint) => paint.path === name);
-  const { Image, header, description } = currentPaint;
+  const { Image, header } = currentPaint;
+  const purpose = currentPaint.documentation.description.purpose.value;
 
   return (
     <Container>
@@ -45,7 +46,7 @@ export const Product = () => {
         <ProductWrapper>
           <ShortDescription>
             <PaintTitle>{header}</PaintTitle>
-            <PaintDescription>{description}</PaintDescription>
+            <PaintDescription>{purpose}</PaintDescription>
           </ShortDescription>
 
           <InfoContainer>

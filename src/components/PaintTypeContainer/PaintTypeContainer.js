@@ -7,8 +7,8 @@ export const PaintTypeContainer = ({ paint, index = 2, product }) => {
 
   const honest = index % 2;
 
-  const purpose = documentation.description.purpose;
-  console.log("purpose", purpose);
+  const purpose = documentation.description.purpose.value;
+
   return (
     <>
       {honest ? (

@@ -6,10 +6,10 @@ export const Description = ({ paint }) => {
 
   return (
     <Container>
-      {Object.entries(description).map(([key, value]) => {
+      {Object.values(description).map(({ value, label }) => {
         return (
-          <InfoContainer key={key}>
-            <Title>{key}</Title>
+          <InfoContainer key={label}>
+            <Title>{label}</Title>
             <Text>{value}</Text>
           </InfoContainer>
         );
