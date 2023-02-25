@@ -9,7 +9,7 @@ export const Container = styled.div`
 export const Header = styled.div``;
 
 export const Title = styled.h2`
-  margin-top: 1rem;
+  margin-top: 0;
   font-family: "Serif-Bold";
   font-size: 3.6rem;
   text-align: center;
@@ -56,12 +56,12 @@ export const ColorBox = styled.div.attrs(({ backgroundcolor }) => ({
   justify-content: space-around;
   flex: 1;
   min-width: 10rem;
-  max-width: 20rem;
+  /* max-width: 20rem; */
   min-height: 10rem;
-  transition: scale 0.3s ease-in;
   box-sizing: border-box;
   border: 0.1rem solid transparent;
   :hover {
+    transition: scale 0.3s ease-in;
     scale: 2;
     border: 0.1rem solid ${MAIN_PALETTE.productFirstElementBackground};
     position: relative;

@@ -1,5 +1,12 @@
 import React from "react";
-import { Container, Description, DescriptionContainer, Header, PaintPicture, PictureContainer } from "./styles";
+import {
+  Container,
+  Description,
+  DescriptionContainer,
+  Header,
+  PaintPicture,
+  PictureContainer,
+} from "./styles";
 
 export const PaintCard = ({ paint }) => {
   const { header, documentation, Image } = paint;

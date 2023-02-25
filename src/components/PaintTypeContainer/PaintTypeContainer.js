@@ -1,8 +1,15 @@
 import React from "react";
 import { ROOT } from "../../constants/Roots";
-import { Container, Description, DescriptionContainer, Header, PaintPicture, PictureContainer } from "./styles";
+import {
+  Container,
+  Description,
+  DescriptionContainer,
+  Header,
+  PaintPicture,
+  PictureContainer,
+} from "./styles";
 
-export const PaintTypeContainer = ({ paint, index = 2, product }) => {
+export const PaintTypeContainer = ({ paint, index = 2 }) => {
   const { category, path, header, documentation, Image } = paint;
 
   const honest = index % 2;
@@ -13,7 +20,7 @@ export const PaintTypeContainer = ({ paint, index = 2, product }) => {
     <>
       {honest ? (
         <Container>
-          <DescriptionContainer textalign={"right"}>
+          <DescriptionContainer alignitems={"flex-end"}>
             <Header to={`${ROOT}/${category.at(0)}/${path}`}>{header}</Header>
             <Description>{purpose}</Description>
           </DescriptionContainer>
@@ -22,15 +29,13 @@ export const PaintTypeContainer = ({ paint, index = 2, product }) => {
           </PictureContainer>
         </Container>
       ) : (
-        <Container product={product}>
+        <Container>
           <PictureContainer>
             <PaintPicture src={Image} />
           </PictureContainer>
-          <DescriptionContainer textalign={product && "center"}>
-            <Header to={`${ROOT}/${category.at(0)}/${path}`} product={product}>
-              {header}
-            </Header>
-            <Description product={product}>{purpose}</Description>
+          <DescriptionContainer alignitems={"flex-start"}>
+            <Header to={`${ROOT}/${category.at(0)}/${path}`}>{header}</Header>
+            <Description>{purpose}</Description>
           </DescriptionContainer>
         </Container>
       )}

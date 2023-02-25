@@ -4,7 +4,6 @@ import { MAIN_PALETTE } from "../../../../config/palette";
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  padding-top: 3rem;
 `;
 
 export const Table = styled.table`

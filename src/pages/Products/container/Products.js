@@ -1,5 +1,8 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { categoriesOfPaints, categoriesOfProducts } from "../../../constants/CategoryOfPaints";
+import {
+  categoriesOfPaints,
+  categoriesOfProducts,
+} from "../../../constants/CategoryOfPaints";
 import { paints } from "../../../constants/PaintsConfig";
 import { PaintCard } from "../components/PaintCard/PaintCard";
 import {
@@ -10,6 +13,7 @@ import {
   PaintsCards,
   ProductsWrapper,
   Title,
+  TitleContainer,
 } from "./styles";
 
 export const Products = () => {
@@ -23,7 +27,10 @@ export const Products = () => {
     return Array.from(set);
   }, []);
 
-  const fullyCategoriesOfPaints = useMemo(() => [ALL_PRODUCTS, ...Object.values(categoriesOfPaints)], []);
+  const fullyCategoriesOfPaints = useMemo(
+    () => [ALL_PRODUCTS, ...Object.values(categoriesOfPaints)],
+    []
+  );
 
   useEffect(() => {
     setDisputedPaints(allPaints);
@@ -34,7 +41,9 @@ export const Products = () => {
     if (currentTitle === ALL_PRODUCTS) {
       setDisputedPaints(allPaints);
     } else {
-      const filteredPaints = allPaints.filter((paint) => paint.category.includes(currentTitle));
+      const filteredPaints = allPaints.filter((paint) =>
+        paint.category.includes(currentTitle)
+      );
       setDisputedPaints(filteredPaints);
     }
   }, [currentTitle]);
@@ -42,14 +51,22 @@ export const Products = () => {
   return (
     <Container>
       <ProductsWrapper>
-        <Title>{categoriesOfProducts[currentTitle]}</Title>
         <FilterContainer>
           <CategoriesLists>
-            {fullyCategoriesOfPaints.map((category) => (
-              <CategoriesList key={category} onClick={() => setCurrentTitle(category)}>
-                {categoriesOfProducts[category]}
-              </CategoriesList>
-            ))}
+            <TitleContainer>
+              <Title>{categoriesOfProducts[currentTitle]}</Title>
+            </TitleContainer>
+            {fullyCategoriesOfPaints.map((category) => {
+              return (
+                <CategoriesList
+                  key={category}
+                  onClick={() => setCurrentTitle(category)}
+                  className={category === currentTitle ? "active" : null}
+                >
+                  {categoriesOfProducts[category]}
+                </CategoriesList>
+              );
+            })}
           </CategoriesLists>
           <PaintsCards>
             {disputedPaints.map((paint) => (

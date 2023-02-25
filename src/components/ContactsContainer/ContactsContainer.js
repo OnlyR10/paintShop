@@ -1,28 +1,36 @@
 import React from "react";
-import { Contact, ContactsColumn, Container, IconInstagram, IconOnliner, IconPhone } from "./styles";
+import {
+  Contact,
+  ContactBox,
+  ContactsColumn,
+  Container,
+  IconInstagram,
+  IconOnliner,
+  IconPhone,
+} from "./styles";
 
 export const ContactsContainer = () => {
   return (
     <Container>
       <ContactsColumn>
-        <Contact href="tel:+375291234567">
+        <ContactBox href="tel:+375291234567">
           <IconPhone />
-          +375 29 123 45 67
-        </Contact>
-        <Contact href="tel:+375299876543">
+          <Contact>+375 29 123 45 67</Contact>
+        </ContactBox>
+        <ContactBox href="tel:+375299876543">
           <IconPhone />
-          +375 29 987 65 43
-        </Contact>
+          <Contact>+375 29 987 65 43</Contact>
+        </ContactBox>
       </ContactsColumn>
       <ContactsColumn>
-        <Contact href="https://www.instagram.com/" target={"_blank"}>
+        <ContactBox href="https://www.instagram.com/" target={"_blank"}>
           <IconInstagram />
-          instagram
-        </Contact>
-        <Contact href="https://www.onliner.by" target={"_blank"}>
+          <Contact>Instagram</Contact>
+        </ContactBox>
+        <ContactBox href="https://www.onliner.by" target={"_blank"}>
           <IconOnliner />
-          Onliner
-        </Contact>
+          <Contact>Onliner</Contact>
+        </ContactBox>
       </ContactsColumn>
     </Container>
   );

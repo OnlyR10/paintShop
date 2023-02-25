@@ -3,15 +3,12 @@ import { useParams } from "react-router-dom";
 import { paints } from "../../../constants/PaintsConfig";
 import { ContentConfig } from "../constants/ContentConfig";
 import {
-  Application,
-  Characteristics,
-  ColorPalette,
   Container,
   ContentContainer,
   ControlPanel,
-  Description,
   FileDownloadButton,
   InfoContainer,
+  LinkButton,
   PaintDescription,
   PaintPicture,
   PaintTitle,
@@ -19,8 +16,6 @@ import {
   ProductWrapper,
   ShortDescription,
   SliderContainer,
-  Text,
-  UploadIcon,
 } from "./styles";
 
 export const Product = () => {
@@ -51,17 +46,32 @@ export const Product = () => {
 
           <InfoContainer>
             <ControlPanel>
-              <Description onClick={() => setActiveContent("Description")}>Описание</Description>
+              <LinkButton onClick={() => setActiveContent("Description")}>
+                Описание
+              </LinkButton>
 
-              <Application onClick={() => setActiveContent("Application")}>Нанесение</Application>
+              <LinkButton onClick={() => setActiveContent("Application")}>
+                Нанесение
+              </LinkButton>
 
-              <Characteristics onClick={() => setActiveContent("Characteristics")}>Характеристики</Characteristics>
+              <LinkButton onClick={() => setActiveContent("Characteristics")}>
+                Характеристики
+              </LinkButton>
 
-              <ColorPalette onClick={() => setActiveContent("PaletteContainer")}>Цветовая палитра</ColorPalette>
+              <LinkButton onClick={() => setActiveContent("PaletteContainer")}>
+                Цветовая палитра
+              </LinkButton>
 
-              <FileDownloadButton href={`/files/${name.slice(7)}.pdf`} target="_blank">
+              {/* <FileDownloadButton href={`/files/${name.slice(7)}.pdf`} target="_blank">
                 <UploadIcon />
                 <Text>Тех. документ PDF</Text>
+              </FileDownloadButton> */}
+
+              <FileDownloadButton
+                href={`/files/${name.slice(7)}.pdf`}
+                target="_blank"
+              >
+                Тех. документ PDF
               </FileDownloadButton>
             </ControlPanel>
 

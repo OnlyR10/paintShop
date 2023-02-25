@@ -1,6 +1,13 @@
 import React from "react";
+import { BreadCrumbs } from "../BreadCrumbs/BreadCrumbs";
 import { ContactsContainer } from "../ContactsContainer/ContactsContainer";
-import { Container, HeaderWrapper, LogoContainer, NavigationContainer, NavigationLink } from "./styles";
+import {
+  Container,
+  HeaderWrapper,
+  LogoContainer,
+  NavigationContainer,
+  NavigationLink,
+} from "./styles";
 
 export const Header = () => {
   return (
@@ -17,6 +24,8 @@ export const Header = () => {
 
         <ContactsContainer />
       </HeaderWrapper>
+
+      <BreadCrumbs />
     </Container>
   );
 };

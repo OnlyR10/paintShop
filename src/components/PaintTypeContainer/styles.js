@@ -1,10 +1,9 @@
-import styled from "styled-components";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+import { TEXT_PALETTE } from "../../config/palette";
 
 export const Container = styled.div`
   display: flex;
-  align-items: center;
-  flex-direction: ${({ product }) => product && "column"};
   column-gap: 3rem;
 `;
 
@@ -18,16 +17,29 @@ export const PaintPicture = styled.img`
 `;
 
 export const DescriptionContainer = styled.div`
-  text-align: ${({ textalign }) => textalign || "left"};
+  display: flex;
+  flex-direction: column;
+  align-items: ${({ alignitems }) => (alignitems ? alignitems : "center")};
 `;
 
 export const Header = styled(Link)`
+  border-bottom: 0.2rem solid transparent;
   font-family: "Serif-Bold";
-  font-size: ${({ product }) => (product ? "2.5rem" : "3.6rem")};
+  font-size: 3.6rem;
+  color: ${TEXT_PALETTE.main};
+  text-decoration: none;
+  :hover {
+    color: goldenrod;
+    transition: color 0.3s;
+  }
+  :active {
+    color: goldenrod;
+    border-bottom: 0.2rem solid goldenrod;
+  }
 `;
 
 export const Description = styled.p`
-  max-width: ${({ product }) => (product ? "40rem" : "70rem")};
+  max-width: 70rem;
   font-family: "Serif-Regular";
   font-size: 1.6rem;
   text-align: justify;

@@ -4,7 +4,7 @@ import { Wrapper } from "../../../layout/styles";
 
 export const Container = styled.main`
   width: 100%;
-  padding-top: 10vh;
+  padding-top: calc(10vh + 6rem);
   flex: 1 0 auto;
 `;
 
@@ -12,9 +12,15 @@ export const ProductsWrapper = styled(Wrapper)`
   padding: 0 10rem 2rem;
 `;
 
+export const TitleContainer = styled.div`
+  height: 6rem;
+  display: flex;
+  align-items: center;
+`;
+
 export const Title = styled.h2`
   margin: 0;
-  padding: 1rem 0 3rem;
+  /* padding: 0 0 1rem; */
   font-family: "Serif-Bold";
   font-size: 2.6rem;
 `;
@@ -30,17 +36,38 @@ export const CategoriesLists = styled.div`
   flex-wrap: wrap;
   row-gap: 2rem;
   flex-shrink: 0;
+  //////////
+  width: 25rem;
 `;
 
 export const CategoriesList = styled.button`
   font-family: "Serif-SemiBold";
   font-size: 1.6rem;
+  line-height: 2.2rem;
   text-align: start;
   color: ${TEXT_PALETTE.main};
   border: 0;
+  border-bottom: 0.2rem solid transparent;
   background-color: transparent;
   padding: 0;
   cursor: pointer;
+  width: fit-content;
+  :hover {
+    color: goldenrod;
+    transition: color 0.3s;
+  }
+  :active {
+    color: goldenrod;
+    border-bottom: 0.2rem solid goldenrod;
+  }
+
+  &&.active {
+    border-bottom: 0.2rem solid ${TEXT_PALETTE.main};
+    transition: all 0.3s;
+    &&:hover {
+      border-bottom: 0.2rem solid goldenrod;
+    }
+  }
 `;
 
 export const PaintsCards = styled.div`

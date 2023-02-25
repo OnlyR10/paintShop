@@ -11,7 +11,9 @@ export const Container = styled.main`
 export const PaintContainer = styled.div`
   width: 100%;
   background-color: ${({ index }) =>
-    index % 2 ? MAIN_PALETTE.productFirstElementBackground : MAIN_PALETTE.productSecondElementBackground};
+    index % 2
+      ? MAIN_PALETTE.productFirstElementBackground
+      : MAIN_PALETTE.productSecondElementBackground};
 `;
 
 export const PaintWrapper = styled(Wrapper)`

@@ -6,9 +6,9 @@ export const Application = ({ paint }) => {
 
   return (
     <Container>
-      {Object.values(applicationTechnology).map(({ value, label }) => {
+      {Object.values(applicationTechnology).map(({ value, label }, index) => {
         return (
-          <InfoContainer key={label}>
+          <InfoContainer key={label} firstelem={index === 0}>
             <Title>{label}</Title>
             <Text>{value}</Text>
           </InfoContainer>

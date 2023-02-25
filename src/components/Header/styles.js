@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../../assets/icons/logo.svg";
 import { MAIN_PALETTE, TEXT_PALETTE } from "../../config/palette";
@@ -11,7 +11,7 @@ export const Container = styled.header`
   background-color: ${MAIN_PALETTE.edgingBackground};
   /* background-color: black; */
   z-index: 2;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 `;
 
 export const HeaderWrapper = styled(Wrapper)`
@@ -38,10 +38,26 @@ export const NavigationContainer = styled.div`
   gap: 0 4rem;
 `;
 
-export const NavigationLink = styled(Link)`
+export const NavigationLink = styled(NavLink)`
   font-family: "Serif-SemiBold";
   font-size: 2rem;
   color: ${TEXT_PALETTE.main};
   /* color: white; */
   text-decoration: none;
+  border-bottom: 0.2rem solid transparent;
+  :hover {
+    color: goldenrod;
+    transition: color 0.3s;
+  }
+  :active {
+    color: goldenrod;
+    border-bottom: 0.2rem solid goldenrod;
+  }
+  &&.active {
+    border-bottom: 0.2rem solid ${TEXT_PALETTE.main};
+    transition: all 0.3s;
+    &&:hover {
+      border-bottom: 0.2rem solid goldenrod;
+    }
+  }
 `;

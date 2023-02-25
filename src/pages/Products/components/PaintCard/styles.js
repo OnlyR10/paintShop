@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { TEXT_PALETTE } from "../../../../config/palette";
 
 export const Container = styled(Link)`
   display: flex;
@@ -8,14 +9,31 @@ export const Container = styled(Link)`
   row-gap: 1.5rem;
   max-width: 20rem;
   flex: 1;
-
+  text-decoration: none;
+  color: ${TEXT_PALETTE.main};
   :hover {
     && > div:first-child {
       transition: all 0.5s;
       scale: 1.2;
     }
     && > div h2 {
-      transition: all 0.3s;
+      transition: color 0.3s;
+      color: goldenrod;
+    }
+    && > div p {
+      transition: color 0.3s;
+      color: goldenrod;
+    }
+  }
+  :active {
+    && > div:first-child {
+      scale: 1.2;
+    }
+    && > div h2 {
+      color: goldenrod;
+      border-bottom: 0.2rem solid goldenrod;
+    }
+    && > div p {
       color: goldenrod;
     }
   }
@@ -35,10 +53,11 @@ export const DescriptionContainer = styled.div`
 `;
 
 export const Header = styled.h2`
-  margin: 0;
+  margin: 0 0 1rem 0;
   padding-bottom: 0.5rem;
   font-family: "Serif-Bold";
   font-size: 1.8rem;
+  border-bottom: 0.2rem solid transparent;
 `;
 
 export const Description = styled.p`

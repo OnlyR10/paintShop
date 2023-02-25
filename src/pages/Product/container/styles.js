@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import upload from "../../../assets/icons/upload.svg";
 import { MAIN_PALETTE, TEXT_PALETTE } from "../../../config/palette";
 import { Wrapper } from "../../../layout/styles";
 
 export const Container = styled.main`
   width: 100%;
-  padding-top: 10vh;
+  padding-top: calc(10vh + 6rem);
   flex: 1 0 auto;
 `;
 
@@ -66,9 +66,10 @@ export const ControlPanel = styled.div`
   justify-content: center;
   align-items: center;
   column-gap: 5rem;
+  margin-bottom: 2rem;
 `;
 
-export const LinkButton = styled.button`
+const buttonStyle = css`
   min-width: 10rem;
   padding: 1rem 2rem;
   border: 1px solid ${MAIN_PALETTE.edgingBackground};
@@ -76,28 +77,25 @@ export const LinkButton = styled.button`
   background-color: ${MAIN_PALETTE.productFirstElementBackground};
   font-family: "Serif-Regular";
   font-size: 2rem;
-  transition: all 0.3s;
-  &&:hover {
+  :hover {
     background-color: ${MAIN_PALETTE.edgingBackground};
+    transition: background-color 0.3s;
+  }
+  :active {
+    background-color: ${MAIN_PALETTE.edgingBackground};
+    color: goldenrod;
   }
 `;
 
-export const Description = styled(LinkButton)``;
-
-export const Application = styled(LinkButton)``;
-
-export const Characteristics = styled(LinkButton)``;
-
-export const ColorPalette = styled(LinkButton)``;
+export const LinkButton = styled.button`
+  cursor: pointer;
+  ${buttonStyle}
+`;
 
 export const FileDownloadButton = styled.a`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 5rem;
-  text-align: center;
+  ${buttonStyle}
   text-decoration: none;
+  color: ${TEXT_PALETTE.main};
 `;
 
 export const UploadIcon = styled.div`

@@ -19,7 +19,7 @@ export const ContactsColumn = styled.div`
   gap: 2rem 0;
 `;
 
-export const Contact = styled.a`
+export const ContactBox = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +36,18 @@ export const Icon = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+`;
+
+export const Contact = styled.span`
+  border-bottom: 0.2rem solid transparent;
+  :hover {
+    color: goldenrod;
+    transition: color 0.3s;
+  }
+  :active {
+    color: goldenrod;
+    border-bottom: 0.2rem solid goldenrod;
+  }
 `;
 
 export const IconPhone = styled(Icon)`
