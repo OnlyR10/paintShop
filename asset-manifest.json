@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/paintShop/static/css/main.7b6536b3.css",
+    "main.js": "/paintShop/static/js/main.510a360e.js",
+    "static/media/Ecoline.webm": "/paintShop/static/media/Ecoline.fa64d5595fdb57e1049c.webm",
+    "static/media/Ecoline.mp4": "/paintShop/static/media/Ecoline.83beab18913f6bd4c31b.mp4",
+    "static/media/primer.jpg": "/paintShop/static/media/primer.8234b20b93b577172406.jpg",
+    "static/media/wall.jpg": "/paintShop/static/media/wall.8d0896a75b5066888e4e.jpg",
+    "static/media/Serif-Bold.ttf": "/paintShop/static/media/Serif-Bold.4e034fc18058dc3f4d21.ttf",
+    "static/media/Serif-SemiBold.ttf": "/paintShop/static/media/Serif-SemiBold.9db16c82a70437a68b3b.ttf",
+    "static/media/Serif-Black.ttf": "/paintShop/static/media/Serif-Black.54cb3526b59ed4f35e9c.ttf",
+    "static/media/Serif-Light.ttf": "/paintShop/static/media/Serif-Light.5861b477f37f3a710922.ttf",
+    "static/media/Serif-Regular.ttf": "/paintShop/static/media/Serif-Regular.a43f8192fdd94b8968c6.ttf",
+    "static/media/Serif-ExtraLight.ttf": "/paintShop/static/media/Serif-ExtraLight.6046dc8640e7c09e2fad.ttf",
+    "static/media/interior.jpg": "/paintShop/static/media/interior.8511598cc3fa325c277e.jpg",
+    "static/media/facade.jpg": "/paintShop/static/media/facade.1bfe878ec9c173b543ab.jpg",
+    "static/media/roofing.jpg": "/paintShop/static/media/roofing.a2731a6833142b67e534.jpg",
+    "static/media/textured.jpg": "/paintShop/static/media/textured.95a39c405fa668ab9ef2.jpg",
+    "static/media/logo.svg": "/paintShop/static/media/logo.d607a64be9f5726f7dd815b08b57411c.svg",
+    "static/media/phone.svg": "/paintShop/static/media/phone.ca4ac8722d7ca58e079ed322ba031385.svg",
+    "static/media/instagram.svg": "/paintShop/static/media/instagram.8ff7ce92ad753b591ed4c1d03e84c026.svg",
+    "static/media/upload.svg": "/paintShop/static/media/upload.df8f4f2536bb73212ed234b5d0366278.svg",
+    "static/media/arrowRight.svg": "/paintShop/static/media/arrowRight.6c9905ae8509f016bd55ace8d6b86ed2.svg",
+    "static/media/onliner.svg": "/paintShop/static/media/onliner.4f6138880aa56b3f2416fc4d8c793006.svg",
+    "index.html": "/paintShop/index.html",
+    "main.7b6536b3.css.map": "/paintShop/static/css/main.7b6536b3.css.map",
+    "main.510a360e.js.map": "/paintShop/static/js/main.510a360e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b6536b3.css",
+    "static/js/main.510a360e.js"
+  ]
+}
