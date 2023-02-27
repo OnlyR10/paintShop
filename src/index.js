@@ -8,7 +8,7 @@ import { Router } from "./Routes/Router";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/paintShop">
+    <BrowserRouter>
       <GlobalStyles />
       <Router />
     </BrowserRouter>
