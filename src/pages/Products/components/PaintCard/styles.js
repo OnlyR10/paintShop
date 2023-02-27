@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { transfusionGradient } from "../../../../common/styles/transfusionGradient";
 import { TEXT_PALETTE } from "../../../../config/palette";
 
 export const Container = styled(Link)`
@@ -11,10 +12,14 @@ export const Container = styled(Link)`
   flex: 1;
   text-decoration: none;
   color: ${TEXT_PALETTE.main};
+
   :hover {
     && > div:first-child {
       transition: all 0.5s;
       scale: 1.2;
+    }
+    && > div:first-child::before {
+      ${transfusionGradient}
     }
     && > div h2 {
       transition: color 0.3s;
@@ -25,6 +30,7 @@ export const Container = styled(Link)`
       color: goldenrod;
     }
   }
+
   :active {
     && > div:first-child {
       scale: 1.2;
@@ -42,6 +48,7 @@ export const Container = styled(Link)`
 export const PictureContainer = styled.div`
   max-width: 20rem;
   min-width: 10rem;
+  position: relative;
 `;
 
 export const PaintPicture = styled.img`
