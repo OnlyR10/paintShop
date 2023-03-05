@@ -2,7 +2,7 @@ import Facade from "../../assets/images/facade.jpg";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const facadeEco = {
-  category: [categoriesOfPaints.facade, categoriesOfPaints.interior],
+  category: [categoriesOfPaints.facade],
   path: "festek_facade_eco",
   name: "FESTEK-FAСADE ECO",
   header: "Краска фасадная акриловая «FESTEK-FAСADE ECO»",
@@ -34,14 +34,25 @@ export const facadeEco = {
       },
 
       technicalData: [
-        { qualityIndicators: "Массовая доля нелетучих веществ, %", value: "60 - 68" },
-        { qualityIndicators: "Показатель концентрации ионов водорода, рН", value: "6,5 - 9,5" },
         {
-          qualityIndicators: "Укрывистость высушенного покрытия, г/м2, не более",
+          qualityIndicators: "Массовая доля нелетучих веществ, %",
+          value: "60 - 68",
+        },
+        {
+          qualityIndicators: "Показатель концентрации ионов водорода, рН",
+          value: "6,5 - 9,5",
+        },
+        {
+          qualityIndicators:
+            "Укрывистость высушенного покрытия, г/м2, не более",
           value: "190",
         },
         { qualityIndicators: "Степень перетира, мкм, не более", value: "70" },
-        { qualityIndicators: "Время высыхания до степени 3 при температуре (20 ± 2) °С, ч, не более", value: "1" },
+        {
+          qualityIndicators:
+            "Время высыхания до степени 3 при температуре (20 ± 2) °С, ч, не более",
+          value: "1",
+        },
         {
           qualityIndicators:
             "Условная светостойкость покрытия за 24 ч (изменение коэффициента диффузного отражения), %, не более",
@@ -56,25 +67,39 @@ export const facadeEco = {
             "Стойкость покрытия к статическому воздействию воды при температуре (20 ± 2) °С, ч, не менее",
           value: "24",
         },
-        { qualityIndicators: "Коэффициент паропроницаемости, мг/(м ч Па), не менее", value: "0,0115" },
+        {
+          qualityIndicators:
+            "Коэффициент паропроницаемости, мг/(м ч Па), не менее",
+          value: "0,0115",
+        },
         {
           qualityIndicators: "Морозостойкость покрытия, циклы, не менее",
           value: "50",
         },
         {
-          qualityIndicators: "Устойчивость к воздействию переменных температур, циклы, не менее",
+          qualityIndicators:
+            "Устойчивость к воздействию переменных температур, циклы, не менее",
           value: "12",
         },
-        { qualityIndicators: "Водопоглащение при капиллярном подсосе, кг/м2, не более", value: "0,6" },
         {
-          qualityIndicators: "Стойкость покрытия к воздействию климатических факторов, циклы, не менее",
+          qualityIndicators:
+            "Водопоглащение при капиллярном подсосе, кг/м2, не более",
+          value: "0,6",
+        },
+        {
+          qualityIndicators:
+            "Стойкость покрытия к воздействию климатических факторов, циклы, не менее",
           value: "150",
         },
         {
-          qualityIndicators: "Срок службы покрытия в условиях эксплуатации У1, ХЛ1, УХЛ1, лет, не менее",
+          qualityIndicators:
+            "Срок службы покрытия в условиях эксплуатации У1, ХЛ1, УХЛ1, лет, не менее",
           value: "8",
         },
-        { qualityIndicators: "Смываемость пленки, г/м2, не более", value: "3,0" },
+        {
+          qualityIndicators: "Смываемость пленки, г/м2, не более",
+          value: "3,0",
+        },
       ],
 
       note: {

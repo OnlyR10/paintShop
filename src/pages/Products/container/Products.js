@@ -1,52 +1,25 @@
-import React, { useEffect, useMemo, useState } from "react";
-import {
-  categoriesOfPaints,
-  categoriesOfProducts,
-} from "../../../constants/CategoryOfPaints";
-import { paints } from "../../../constants/PaintsConfig";
-import { PaintCard } from "../components/PaintCard/PaintCard";
+import React, { useMemo } from "react";
+import { Outlet, useParams } from "react-router-dom";
+import { categoriesOfProducts } from "../../../constants/CategoryOfPaints";
 import {
   CategoriesList,
   CategoriesLists,
   Container,
   FilterContainer,
-  PaintsCards,
   ProductsWrapper,
   Title,
   TitleContainer,
 } from "./styles";
 
 export const Products = () => {
-  const [disputedPaints, setDisputedPaints] = useState([]);
-  const [currentTitle, setCurrentTitle] = useState("");
+  const { category } = useParams();
 
-  const ALL_PRODUCTS = "allProducts";
-
-  const allPaints = useMemo(() => {
-    const set = new Set(Object.values(paints).flat());
-    return Array.from(set);
+  const fullyCategoriesOfPaints = useMemo(() => {
+    const entries = Object.entries(categoriesOfProducts);
+    return entries.map(([key, value]) => {
+      return { path: key, value };
+    });
   }, []);
-
-  const fullyCategoriesOfPaints = useMemo(
-    () => [ALL_PRODUCTS, ...Object.values(categoriesOfPaints)],
-    []
-  );
-
-  useEffect(() => {
-    setDisputedPaints(allPaints);
-    setCurrentTitle(fullyCategoriesOfPaints.at(0));
-  }, []);
-
-  useEffect(() => {
-    if (currentTitle === ALL_PRODUCTS) {
-      setDisputedPaints(allPaints);
-    } else {
-      const filteredPaints = allPaints.filter((paint) =>
-        paint.category.includes(currentTitle)
-      );
-      setDisputedPaints(filteredPaints);
-    }
-  }, [currentTitle]);
 
   return (
     <Container>
@@ -54,25 +27,18 @@ export const Products = () => {
         <FilterContainer>
           <CategoriesLists>
             <TitleContainer>
-              <Title>{categoriesOfProducts[currentTitle]}</Title>
+              <Title>{categoriesOfProducts[category]}</Title>
             </TitleContainer>
-            {fullyCategoriesOfPaints.map((category) => {
+            {fullyCategoriesOfPaints.map(({ path, value }, index) => {
               return (
-                <CategoriesList
-                  key={category}
-                  onClick={() => setCurrentTitle(category)}
-                  className={category === currentTitle ? "active" : null}
-                >
-                  {categoriesOfProducts[category]}
+                <CategoriesList key={`path-${index}`} to={path}>
+                  {value}
                 </CategoriesList>
               );
             })}
           </CategoriesLists>
-          <PaintsCards>
-            {disputedPaints.map((paint) => (
-              <PaintCard key={paint.name} paint={paint}></PaintCard>
-            ))}
-          </PaintsCards>
+
+          <Outlet />
         </FilterContainer>
       </ProductsWrapper>
     </Container>

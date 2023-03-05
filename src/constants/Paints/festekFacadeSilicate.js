@@ -2,7 +2,7 @@ import Facade from "../../assets/images/facade.jpg";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const facadeSilicate = {
-  category: [categoriesOfPaints.facade, categoriesOfPaints.interior],
+  category: [categoriesOfPaints.facade],
   path: "festek_facade_silicate",
   name: "FESTEK-FACADE SILICATE",
   header: "Краска силикатная фасадная акриловая «FESTEK-FACADE SILICATE»",
@@ -34,14 +34,25 @@ export const facadeSilicate = {
       },
 
       technicalData: [
-        { qualityIndicators: "Массовая доля нелетучих веществ, %", value: "53 - 61" },
-        { qualityIndicators: "Показатель концентрации ионов водорода, рН", value: "10,0 - 13,0" },
         {
-          qualityIndicators: "Укрывистость высушенного покрытия, г/м2, не более",
+          qualityIndicators: "Массовая доля нелетучих веществ, %",
+          value: "53 - 61",
+        },
+        {
+          qualityIndicators: "Показатель концентрации ионов водорода, рН",
+          value: "10,0 - 13,0",
+        },
+        {
+          qualityIndicators:
+            "Укрывистость высушенного покрытия, г/м2, не более",
           value: "180",
         },
         { qualityIndicators: "Степень перетира, мкм, не более", value: "70" },
-        { qualityIndicators: "Время высыхания до степени 3 при температуре (20 ± 2) °С, ч, не более", value: "1" },
+        {
+          qualityIndicators:
+            "Время высыхания до степени 3 при температуре (20 ± 2) °С, ч, не более",
+          value: "1",
+        },
         {
           qualityIndicators:
             "Условная светостойкость покрытия за 24 ч (изменение коэффициента диффузного отражения), за 24 ч, не более",
@@ -56,21 +67,28 @@ export const facadeSilicate = {
             "Стойкость покрытия к статическому воздействию воды при температуре (20 ± 2) °С, ч, не менее",
           value: "48",
         },
-        { qualityIndicators: "Коэффициент паропроницаемости, мг/(м ч Па), не менее", value: "0,03" },
+        {
+          qualityIndicators:
+            "Коэффициент паропроницаемости, мг/(м ч Па), не менее",
+          value: "0,03",
+        },
         {
           qualityIndicators: "Морозостойкость покрытия, циклы, не менее",
           value: "100",
         },
         {
-          qualityIndicators: "Устойчивость покрытия к воздействию переменных температур, циклы, не менее",
+          qualityIndicators:
+            "Устойчивость покрытия к воздействию переменных температур, циклы, не менее",
           value: "10",
         },
         {
-          qualityIndicators: "Стойкость покрытия к воздействию климатических факторов, циклы, не менее",
+          qualityIndicators:
+            "Стойкость покрытия к воздействию климатических факторов, циклы, не менее",
           value: "100",
         },
         {
-          qualityIndicators: "Срок службы покрытия, лет, не менее в условиях эксплуатации ХЛ1, УХЛ1:",
+          qualityIndicators:
+            "Срок службы покрытия, лет, не менее в условиях эксплуатации ХЛ1, УХЛ1:",
           value: "",
         },
         {

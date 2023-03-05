@@ -1,5 +1,5 @@
 export const categoriesOfProducts = {
-  allProducts: "Вся продукция",
+  all: "Вся продукция",
   interior: "Краска интерьерная",
   facade: "Краска фасадная",
   roofing: "Краска для кровли и цоколей",

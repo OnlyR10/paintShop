@@ -12,9 +12,14 @@ import { roofPro } from "./Paints/festekRoofPro";
 import { superWhite } from "./Paints/festekSuperwhite";
 
 export const paints = {
-  [categoriesOfPaints.facade]: [facadeEco, facadePremium, facadeSilicate, facadeSilicone],
+  [categoriesOfPaints.facade]: [
+    facadeEco,
+    facadePremium,
+    facadeSilicate,
+    facadeSilicone,
+  ],
 
-  [categoriesOfPaints.interior]: [facadeEco, facadeSilicate, facadeSilicone, insideEco, insideLatex, superWhite],
+  [categoriesOfPaints.interior]: [insideEco, insideLatex, superWhite],
 
   [categoriesOfPaints.textured]: [relief],
 
@@ -22,9 +27,3 @@ export const paints = {
 
   [categoriesOfPaints.primer]: [grunt, maxiGrunt],
 };
-
-export const paintsForMainPage = Object.values(paints).reduce((accumulator, currentValue) => {
-  const result = currentValue.find((item) => !accumulator.includes(item));
-  accumulator.push(result);
-  return accumulator;
-}, []);

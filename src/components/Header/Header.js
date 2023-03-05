@@ -17,7 +17,7 @@ export const Header = () => {
 
         <NavigationContainer>
           <NavigationLink to="/">Главная</NavigationLink>
-          <NavigationLink to="/products">Продукты</NavigationLink>
+          <NavigationLink to="/products/all">Продукты</NavigationLink>
           <NavigationLink to="/palette">Палитра цветов</NavigationLink>
           <NavigationLink to="/about">О нас</NavigationLink>
         </NavigationContainer>

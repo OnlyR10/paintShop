@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import { useLocation } from "react-router-dom";
 import useBreadcrumbs from "use-react-router-breadcrumbs";
 import { ReactComponent as ArrowRight } from "../../assets/icons/arrowRight.svg";
-// import { internalApplicationText } from "../../constants/InternalApplicationText";
 import { ROUTE_NAMES } from "../../Routes/routerNames";
 import { BREADCRUMB } from "./config/BreadCrumbsConfig";
 import { BreadCrumb, BreadCrumbsWrapper, Container, Link } from "./styles";

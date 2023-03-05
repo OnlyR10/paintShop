@@ -1,6 +1,31 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { MAIN_PALETTE } from "../../../config/palette";
 import { Wrapper } from "../../../layout/styles";
+
+const sachshellAnimation = keyframes`
+0% {
+  transform: translate(0);
+  /* opacity: 0; */
+}
+50% {
+  /* opacity: 1; */
+}
+100% {
+  transform: translate(100%);
+   /* opacity: 0; */
+}
+`;
+
+const appearanceMainPage = keyframes`
+0% {
+  opacity: 0.2;
+  transform: translateY(-2vh);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+`;
 
 export const Container = styled.main`
   width: 100%;
@@ -8,19 +33,77 @@ export const Container = styled.main`
   flex: 1 0 auto;
 `;
 
-export const PaintContainer = styled.div`
+export const Sachshell = styled.div`
   width: 100%;
-  background-color: ${({ index }) =>
-    index % 2
-      ? MAIN_PALETTE.productFirstElementBackground
-      : MAIN_PALETTE.productSecondElementBackground};
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Text = styled.div`
+  margin: 0;
+  padding: 0;
+  font-family: "Serif-Black";
+  font-size: 10rem;
+  position: relative;
+
+  &&::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ffff;
+    opacity: 0.5;
+    animation: ${sachshellAnimation} 2s linear;
+  }
+`;
+
+// export const Sachshell = styled.div`
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// `;
+
+// export const TextContainer = styled.div`
+//   position: relative;
+// `;
+
+// export const Veil = styled.div`
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   background-color: red;
+//   animation: ${sachshellAnimation} 5s linear;
+// `;
+
+// export const Text = styled.p`
+//   margin: 0;
+//   padding: 0;
+//   font-family: "Serif-Black";
+//   font-size: 10rem;
+// `;
+
+export const ContentContainer = styled.div`
+  background-color: ${MAIN_PALETTE.productSecondElementBackground};
+  animation: ${appearanceMainPage} 1s linear;
 `;
 
 export const PaintWrapper = styled(Wrapper)`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  column-gap: 3rem;
-  min-height: 20vh;
+  gap: 2rem 3rem;
+  /* min-height: 20vh; */
   padding: 2rem 10rem;
 `;

@@ -2,7 +2,7 @@ import Facade from "../../assets/images/facade.jpg";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const facadeSilicone = {
-  category: [categoriesOfPaints.facade, categoriesOfPaints.interior],
+  category: [categoriesOfPaints.facade],
   path: "festek_facade_silicone",
   name: "FESTEK-FACADE SILICONE",
   header: "Краска фасадная акриловая c силиконом «FESTEK-FACADE SILICONE»",
@@ -34,21 +34,33 @@ export const facadeSilicone = {
       },
 
       technicalData: [
-        { qualityIndicators: "Массовая доля нелетучих веществ, %", value: "56 - 64" },
-        { qualityIndicators: "Показатель концентрации ионов водорода, рН", value: "7,5 - 9,5" },
         {
-          qualityIndicators: "Укрывистость высушенного покрытия, г/м2, не более",
+          qualityIndicators: "Массовая доля нелетучих веществ, %",
+          value: "56 - 64",
+        },
+        {
+          qualityIndicators: "Показатель концентрации ионов водорода, рН",
+          value: "7,5 - 9,5",
+        },
+        {
+          qualityIndicators:
+            "Укрывистость высушенного покрытия, г/м2, не более",
           value: "170",
         },
         { qualityIndicators: "Степень перетира, мкм, не более", value: "70" },
-        { qualityIndicators: "Время высыхания до степени 3 при температуре (20 ± 2) °С, ч, не более", value: "1" },
+        {
+          qualityIndicators:
+            "Время высыхания до степени 3 при температуре (20 ± 2) °С, ч, не более",
+          value: "1",
+        },
         {
           qualityIndicators:
             "Условная светостойкость покрытия за 24 ч (изменение коэффициента диффузного отражения), %, не более",
           value: "5",
         },
         {
-          qualityIndicators: "Блеск покрытия под углом 85°, единиц блеска (матовая G3)",
+          qualityIndicators:
+            "Блеск покрытия под углом 85°, единиц блеска (матовая G3)",
           value: "≤10",
         },
         {
@@ -87,18 +99,34 @@ export const facadeSilicone = {
             "Стойкость покрытия к статическому воздействию 0,5 % раствора моющего средства при температуре (35 ± 2) °С, мин, не менее",
           value: "15",
         },
-        { qualityIndicators: "Коэффициент паропроницаемости, мг/(м ч Па), не менее", value: "0,025" },
-        { qualityIndicators: "Морозостойкость покрытия, циклы, не менее", value: "100" },
-        { qualityIndicators: "Устойчивость к воздействию переменных температур, циклы, не менее", value: "12" },
         {
-          qualityIndicators: "Стойкость покрытия к воздействию климатических факторов, циклы, не менее",
+          qualityIndicators:
+            "Коэффициент паропроницаемости, мг/(м ч Па), не менее",
+          value: "0,025",
+        },
+        {
+          qualityIndicators: "Морозостойкость покрытия, циклы, не менее",
+          value: "100",
+        },
+        {
+          qualityIndicators:
+            "Устойчивость к воздействию переменных температур, циклы, не менее",
+          value: "12",
+        },
+        {
+          qualityIndicators:
+            "Стойкость покрытия к воздействию климатических факторов, циклы, не менее",
           value: "250",
         },
         {
-          qualityIndicators: "Срок службы покрытия в условиях эксплуатации У1, ХЛ1, УХЛ1, лет, не менее",
+          qualityIndicators:
+            "Срок службы покрытия в условиях эксплуатации У1, ХЛ1, УХЛ1, лет, не менее",
           value: "15",
         },
-        { qualityIndicators: "Смываемость пленки, г/м2, не более", value: "2,0" },
+        {
+          qualityIndicators: "Смываемость пленки, г/м2, не более",
+          value: "2,0",
+        },
       ],
 
       note: {

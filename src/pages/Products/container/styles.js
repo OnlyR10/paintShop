@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { TEXT_PALETTE } from "../../../config/palette";
 import { Wrapper } from "../../../layout/styles";
@@ -40,7 +41,7 @@ export const CategoriesLists = styled.div`
   width: 25rem;
 `;
 
-export const CategoriesList = styled.button`
+export const CategoriesList = styled(NavLink)`
   font-family: "Serif-SemiBold";
   font-size: 1.6rem;
   line-height: 2.2rem;
@@ -50,6 +51,7 @@ export const CategoriesList = styled.button`
   border-bottom: 0.2rem solid transparent;
   background-color: transparent;
   padding: 0;
+  text-decoration: none;
   cursor: pointer;
   width: fit-content;
   :hover {
@@ -68,11 +70,4 @@ export const CategoriesList = styled.button`
       border-bottom: 0.2rem solid goldenrod;
     }
   }
-`;
-
-export const PaintsCards = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem 5rem;
-  padding-top: 1rem;
 `;
