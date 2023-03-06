@@ -95,11 +95,6 @@ export const maxiGrunt = {
         },
       ],
 
-      note: {
-        value: "",
-        label: "Примечание",
-      },
-
       package: { value: "Пластиковые ведра 11 л, 20л", label: "Упаковка" },
     },
 

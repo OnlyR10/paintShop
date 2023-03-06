@@ -71,11 +71,6 @@ export const superWhite = {
         },
       ],
 
-      note: {
-        value: "",
-        label: "Примечание",
-      },
-
       package: { value: "Ведро 11л, 20л.", label: "Упаковка" },
     },
 

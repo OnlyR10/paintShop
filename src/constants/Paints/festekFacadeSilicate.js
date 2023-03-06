@@ -102,11 +102,6 @@ export const facadeSilicate = {
         { qualityIndicators: "- тип атмосферы II", value: "5" },
       ],
 
-      note: {
-        value: "",
-        label: "Примечание",
-      },
-
       package: { value: "11 л; 20 л.", label: "Упаковка" },
     },
 
