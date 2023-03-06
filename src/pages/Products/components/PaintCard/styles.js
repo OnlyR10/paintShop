@@ -9,6 +9,7 @@ export const Container = styled(Link)`
   align-items: center;
   row-gap: 1.5rem;
   flex: 1;
+  max-width: 40rem;
   text-decoration: none;
   color: ${TEXT_PALETTE.main};
 
