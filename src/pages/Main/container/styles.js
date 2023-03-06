@@ -33,34 +33,34 @@ export const Container = styled.main`
   flex: 1 0 auto;
 `;
 
-export const Sachshell = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+// export const Sachshell = styled.div`
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// `;
 
-export const Text = styled.div`
-  margin: 0;
-  padding: 0;
-  font-family: "Serif-Black";
-  font-size: 10rem;
-  position: relative;
+// export const Text = styled.div`
+//   margin: 0;
+//   padding: 0;
+//   font-family: "Serif-Black";
+//   font-size: 10rem;
+//   position: relative;
 
-  &&::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: #ffff;
-    opacity: 0.5;
-    animation: ${sachshellAnimation} 2s linear;
-  }
-`;
+//   &&::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     background-color: #ffff;
+//     opacity: 0.5;
+//     animation: ${sachshellAnimation} 2s linear;
+//   }
+// `;
 
 // export const Sachshell = styled.div`
 //   width: 100%;
@@ -96,6 +96,30 @@ export const Text = styled.div`
 export const ContentContainer = styled.div`
   background-color: ${MAIN_PALETTE.productSecondElementBackground};
   animation: ${appearanceMainPage} 1s linear;
+`;
+
+export const IntroductionWrapper = styled(Wrapper)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 6rem 30rem 4rem;
+`;
+
+export const PictureContainer = styled.div`
+  max-width: 35rem;
+  min-width: 20rem;
+`;
+
+export const Logotype = styled.img`
+  width: 100%;
+`;
+
+export const Introduction = styled.h4`
+  margin: 0;
+  font-family: "Serif-ExtraLight";
+  font-size: 2rem;
+  text-align: center;
 `;
 
 export const PaintWrapper = styled(Wrapper)`

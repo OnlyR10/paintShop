@@ -62,6 +62,7 @@ export const DescriptionContainer = styled.div`
 
 export const Header = styled.h2`
   width: fit-content;
+  margin: 1rem 0 0.5rem;
   border-bottom: 0.2rem solid transparent;
   font-family: "Serif-Bold";
   font-size: 2.2rem;
