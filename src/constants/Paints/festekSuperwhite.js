@@ -6,6 +6,10 @@ export const superWhite = {
   path: "festek_super_white",
   name: "FESTEK-SUPERWHITE",
   header: "Краска для потолков акриловая «FESTEK-SUPERWHITE»",
+  productsPage: {
+    title: "Интерьерная «FESTEK-SUPERWHITE»",
+    text: "Глубокоматовая потолочная краска с высокой степенью белизны",
+  },
   Image: Facade,
   documentation: {
     description: {
@@ -22,7 +26,8 @@ export const superWhite = {
       },
 
       composition: {
-        value: "Водная дисперсия акриловых сополимеров, пигменты, наполнители, функциональные добавки, вода.",
+        value:
+          "Водная дисперсия акриловых сополимеров, пигменты, наполнители, функциональные добавки, вода.",
         label: "Состав",
       },
 
@@ -33,20 +38,35 @@ export const superWhite = {
       },
 
       technicalData: [
-        { qualityIndicators: "Массовая доля нелетучих веществ, %", value: "60 - 68" },
-        { qualityIndicators: "Показатель концентрации ионов водорода, pH", value: "7,0 - 9,5" },
+        {
+          qualityIndicators: "Массовая доля нелетучих веществ, %",
+          value: "60 - 68",
+        },
+        {
+          qualityIndicators: "Показатель концентрации ионов водорода, pH",
+          value: "7,0 - 9,5",
+        },
         {
           qualityIndicators: "Степень перетира, мкм, не более",
           value: "70",
         },
-        { qualityIndicators: "Укрывистость высушенного покрытия, г/м2, не более", value: "250" },
-        { qualityIndicators: "Время высыхания до степени 3 при температуре (20±2) °С, ч, не более", value: "1" },
+        {
+          qualityIndicators:
+            "Укрывистость высушенного покрытия, г/м2, не более",
+          value: "250",
+        },
+        {
+          qualityIndicators:
+            "Время высыхания до степени 3 при температуре (20±2) °С, ч, не более",
+          value: "1",
+        },
         {
           qualityIndicators: "Блеск покрытия, %",
           value: "4 - 19",
         },
         {
-          qualityIndicators: "Стойкость покрытия к воздействию климатических факторов, циклы, не менее",
+          qualityIndicators:
+            "Стойкость покрытия к воздействию климатических факторов, циклы, не менее",
           value: "30",
         },
       ],
@@ -61,7 +81,8 @@ export const superWhite = {
 
     applicationTechnology: {
       suitableSubstrates: {
-        value: "Бетонные, оштукатуренные, зашпатлеванные, гипсокартонные, кирпичные и другие минеральные поверхности.",
+        value:
+          "Бетонные, оштукатуренные, зашпатлеванные, гипсокартонные, кирпичные и другие минеральные поверхности.",
         label: "Пригодные подложки",
       },
 

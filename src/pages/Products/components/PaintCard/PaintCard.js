@@ -9,17 +9,21 @@ import {
 } from "./styles";
 
 export const PaintCard = ({ paint }) => {
-  const { header, documentation, Image } = paint;
-  const purpose = documentation.description.purpose.value;
+  const {
+    category,
+    path,
+    Image,
+    productsPage: { title, text },
+  } = paint;
 
   return (
-    <Container to={`/products/${paint.category.at(0)}/${paint.path}`}>
+    <Container to={`/products/${category.at(0)}/${path}`}>
       <PictureContainer>
         <PaintPicture src={Image} />
       </PictureContainer>
       <DescriptionContainer>
-        <Header>{header}</Header>
-        <Description>{purpose}</Description>
+        <Header>{title}</Header>
+        <Description>{text}</Description>
       </DescriptionContainer>
     </Container>
   );

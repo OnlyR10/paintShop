@@ -6,6 +6,10 @@ export const insideEco = {
   path: "festek_inside_eco",
   name: "FESTEK-INSIDE ECO",
   header: "Краска интерьерная акриловая «FESTEK-INSIDE ECO»",
+  productsPage: {
+    title: "Интерьерная «FESTEK-INSIDE ECO»",
+    text: "Матовая краска для окраски стен и потолков с умеренной эксплуатационной нагрузкой",
+  },
   Image: Interior,
   documentation: {
     description: {
@@ -22,7 +26,8 @@ export const insideEco = {
       },
 
       composition: {
-        value: "Водная дисперсия акриловых сополимеров, пигменты, наполнители, функциональные добавки, вода.",
+        value:
+          "Водная дисперсия акриловых сополимеров, пигменты, наполнители, функциональные добавки, вода.",
         label: "Состав",
       },
 
@@ -33,14 +38,28 @@ export const insideEco = {
       },
 
       technicalData: [
-        { qualityIndicators: "Массовая доля нелетучих веществ, %", value: "56 - 68" },
-        { qualityIndicators: "Показатель концентрации ионов водорода, pH", value: "7,0 - 9,5" },
+        {
+          qualityIndicators: "Массовая доля нелетучих веществ, %",
+          value: "56 - 68",
+        },
+        {
+          qualityIndicators: "Показатель концентрации ионов водорода, pH",
+          value: "7,0 - 9,5",
+        },
         {
           qualityIndicators: "Степень перетира, мкм, не более",
           value: "70",
         },
-        { qualityIndicators: "Укрывистость высушенного покрытия, г/м2, не более", value: "250" },
-        { qualityIndicators: "Время высыхания до степени 3 при температуре (20±2) °С, ч, не более", value: "1" },
+        {
+          qualityIndicators:
+            "Укрывистость высушенного покрытия, г/м2, не более",
+          value: "250",
+        },
+        {
+          qualityIndicators:
+            "Время высыхания до степени 3 при температуре (20±2) °С, ч, не более",
+          value: "1",
+        },
         {
           qualityIndicators: "Блеск покрытия, %",
           value: "4 - 19",
@@ -114,7 +133,8 @@ export const insideEco = {
       },
 
       recycling: {
-        value: "Остатки материала после высыхания и пустую упаковку утилизировать как бытовой мусор.",
+        value:
+          "Остатки материала после высыхания и пустую упаковку утилизировать как бытовой мусор.",
         label: "Утилизация отходов",
       },
 

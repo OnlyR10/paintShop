@@ -6,6 +6,10 @@ export const insideLatex = {
   path: "festek_inside_latex",
   name: "FESTEK-INSIDE LATEX",
   header: "Краска интерьерная акриловая «FESTEK-INSIDE LATEX»",
+  productsPage: {
+    title: "Интерьерная «FESTEK-INSIDE LATEX»",
+    text: "Глубокоматовая износостойкая для стен и потолков с высокими требованьями к истираемости",
+  },
   Image: Interior,
   documentation: {
     description: {
@@ -34,15 +38,23 @@ export const insideLatex = {
       },
 
       technicalData: [
-        { qualityIndicators: "Массовая доля нелетучих веществ, %", value: "60 - 68" },
-        { qualityIndicators: "Показатель концентрации ионов водорода, рН", value: "7,5 - 9,5" },
         {
-          qualityIndicators: "Укрывистость высушенного покрытия, г/м2, не более",
+          qualityIndicators: "Массовая доля нелетучих веществ, %",
+          value: "60 - 68",
+        },
+        {
+          qualityIndicators: "Показатель концентрации ионов водорода, рН",
+          value: "7,5 - 9,5",
+        },
+        {
+          qualityIndicators:
+            "Укрывистость высушенного покрытия, г/м2, не более",
           value: "180",
         },
         { qualityIndicators: "Степень перетира, мкм, не более", value: "70" },
         {
-          qualityIndicators: "Время высыхания до степени 3 при температуре (20 ± 2) °С, ч, не более",
+          qualityIndicators:
+            "Время высыхания до степени 3 при температуре (20 ± 2) °С, ч, не более",
           value: "1",
         },
         {
@@ -82,9 +94,13 @@ export const insideLatex = {
           value: "60",
         },
         { qualityIndicators: "- «КДИ»", value: "120" },
-        { qualityIndicators: "Смываемость пленки, г/м2, не более", value: "3,5" },
         {
-          qualityIndicators: "Стойкость покрытия к воздействию климатических факторов, циклы, не менее",
+          qualityIndicators: "Смываемость пленки, г/м2, не более",
+          value: "3,5",
+        },
+        {
+          qualityIndicators:
+            "Стойкость покрытия к воздействию климатических факторов, циклы, не менее",
           value: "30",
         },
         {

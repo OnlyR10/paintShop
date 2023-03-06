@@ -8,7 +8,6 @@ export const Container = styled(Link)`
   flex-direction: column;
   align-items: center;
   row-gap: 1.5rem;
-  max-width: 20rem;
   flex: 1;
   text-decoration: none;
   color: ${TEXT_PALETTE.main};
@@ -16,7 +15,7 @@ export const Container = styled(Link)`
   :hover {
     && > div:first-child {
       transition: all 0.5s;
-      scale: 1.2;
+      scale: 1.1;
     }
     && > div:first-child::before {
       ${transfusionGradient}
@@ -33,7 +32,7 @@ export const Container = styled(Link)`
 
   :active {
     && > div:first-child {
-      scale: 1.2;
+      scale: 1.1;
     }
     && > div h2 {
       color: goldenrod;
@@ -46,8 +45,7 @@ export const Container = styled(Link)`
 `;
 
 export const PictureContainer = styled.div`
-  max-width: 20rem;
-  min-width: 10rem;
+  width: 25rem;
   position: relative;
 `;
 
@@ -60,8 +58,7 @@ export const DescriptionContainer = styled.div`
 `;
 
 export const Header = styled.h2`
-  margin: 0 0 1rem 0;
-  padding-bottom: 0.5rem;
+  margin: 0.5rem 0;
   font-family: "Serif-Bold";
   font-size: 1.8rem;
   border-bottom: 0.2rem solid transparent;
@@ -71,5 +68,4 @@ export const Description = styled.p`
   margin: 0;
   font-family: "Serif-Regular";
   font-size: 1.6rem;
-  text-align: justify;
 `;

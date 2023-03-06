@@ -6,6 +6,10 @@ export const facadeEco = {
   path: "festek_facade_eco",
   name: "FESTEK-FAСADE ECO",
   header: "Краска фасадная акриловая «FESTEK-FAСADE ECO»",
+  productsPage: {
+    title: "Фасадная «FESTEK-FAСADE ECO»",
+    text: "Укрывистая, атмосферостойкая краска с сопротивлением влиянию УФ лучей",
+  },
   Image: Facade,
   documentation: {
     description: {
