@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../../assets/icons/logo.svg";
+import logo from "../../assets/images/logo.png";
 import { MAIN_PALETTE, TEXT_PALETTE } from "../../config/palette";
 import { Wrapper } from "../../layout/styles";
 
@@ -23,8 +23,8 @@ export const HeaderWrapper = styled(Wrapper)`
 `;
 
 export const LogoContainer = styled(Link)`
-  width: 25.6rem;
-  height: 14.4rem;
+  width: 16rem;
+  height: 8rem;
   background-image: url(${logo});
   background-position: center;
   background-repeat: no-repeat;
