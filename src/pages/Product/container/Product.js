@@ -46,23 +46,42 @@ export const Product = () => {
 
           <InfoContainer>
             <ControlPanel>
-              <LinkButton onClick={() => setActiveContent("Description")}>
+              <LinkButton
+                className={activeContent === "Description" ? "active" : null}
+                onClick={() => setActiveContent("Description")}
+              >
                 Описание
               </LinkButton>
 
-              <LinkButton onClick={() => setActiveContent("Application")}>
+              <LinkButton
+                className={activeContent === "Application" ? "active" : null}
+                onClick={() => setActiveContent("Application")}
+              >
                 Нанесение
               </LinkButton>
 
-              <LinkButton onClick={() => setActiveContent("Characteristics")}>
+              <LinkButton
+                className={
+                  activeContent === "Characteristics" ? "active" : null
+                }
+                onClick={() => setActiveContent("Characteristics")}
+              >
                 Характеристики
               </LinkButton>
 
-              <LinkButton onClick={() => setActiveContent("Delivery")}>
+              <LinkButton
+                className={activeContent === "Delivery" ? "active" : null}
+                onClick={() => setActiveContent("Delivery")}
+              >
                 Условия доставки
               </LinkButton>
 
-              <LinkButton onClick={() => setActiveContent("PaletteContainer")}>
+              <LinkButton
+                className={
+                  activeContent === "PaletteContainer" ? "active" : null
+                }
+                onClick={() => setActiveContent("PaletteContainer")}
+              >
                 Цветовая палитра
               </LinkButton>
 

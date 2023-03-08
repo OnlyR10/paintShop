@@ -90,6 +90,9 @@ const buttonStyle = css`
 export const LinkButton = styled.button`
   cursor: pointer;
   ${buttonStyle}
+  &.active {
+    background-color: ${MAIN_PALETTE.edgingBackground};
+  }
 `;
 
 export const FileDownloadButton = styled.a`
