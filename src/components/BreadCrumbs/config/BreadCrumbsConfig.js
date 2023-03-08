@@ -7,7 +7,7 @@ export const BREADCRUMB = [
     breadcrumb: "Главная страница",
   },
   {
-    path: ROUTE_NAMES.PRODUCTS,
+    path: ROUTE_NAMES.PRODUCTS_CATEGORIES,
     breadcrumb: "Продукты",
   },
   {

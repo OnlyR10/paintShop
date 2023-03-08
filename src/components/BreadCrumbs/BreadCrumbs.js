@@ -21,7 +21,15 @@ export const BreadCrumbs = () => {
                 <BreadCrumb key={match.pathname}>{breadcrumb}</BreadCrumb>
               ) : (
                 <Fragment key={match.pathname}>
-                  <Link to={match.pathname}>{breadcrumb}</Link>
+                  <Link
+                    to={
+                      match.route.path === ROUTE_NAMES.PRODUCTS_CATEGORIES
+                        ? ROUTE_NAMES.ALL_PRODUCTS
+                        : match.pathname
+                    }
+                  >
+                    {breadcrumb}
+                  </Link>
                   <ArrowRight />
                 </Fragment>
               );
