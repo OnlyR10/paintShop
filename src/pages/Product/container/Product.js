@@ -58,6 +58,10 @@ export const Product = () => {
                 Характеристики
               </LinkButton>
 
+              <LinkButton onClick={() => setActiveContent("Delivery")}>
+                Условия доставки
+              </LinkButton>
+
               <LinkButton onClick={() => setActiveContent("PaletteContainer")}>
                 Цветовая палитра
               </LinkButton>
