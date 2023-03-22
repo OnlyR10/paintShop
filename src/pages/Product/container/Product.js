@@ -21,14 +21,20 @@ import {
 export const Product = () => {
   const { category, name } = useParams();
   const [activeContent, setActiveContent] = useState("Description");
+  const [render, setRender] = useState(false);
 
   const Content = ContentConfig[activeContent];
   const currentPaint = paints[category].find((paint) => paint.path === name);
   const { Image, header } = currentPaint;
   const purpose = currentPaint.documentation.description.purpose.value;
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setRender(true);
+  }, []);
+
   return (
-    <Container>
+    <Container render={render}>
       <SliderContainer>
         <ProductWrapper>
           <PictureContainer>
