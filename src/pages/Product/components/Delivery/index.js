@@ -1,6 +1,7 @@
 import {
   Container,
   InfoContainer,
+  Link,
   Table,
   TableBody,
   TableContainer,
@@ -15,6 +16,12 @@ import {
 export const Delivery = () => {
   return (
     <Container>
+      <InfoContainer>
+        <Link href="https://yandex.by/maps/-/CCUSaQhBOC" target="_blank">
+          Пункт самовывоза по адресу: пос. Ратомка ул. Октябрьская 4
+        </Link>
+      </InfoContainer>
+
       <InfoContainer>
         <Title>Доставка по Беларуси:</Title>
         <Text>

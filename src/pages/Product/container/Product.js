@@ -84,7 +84,7 @@ export const Product = () => {
                 className={activeContent === "Delivery" ? "active" : null}
                 onClick={() => setActiveContent("Delivery")}
               >
-                Условия доставки
+                Условия доставки и самовывоза
               </LinkButton>
 
               <LinkButton

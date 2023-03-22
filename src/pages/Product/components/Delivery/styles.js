@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MAIN_PALETTE } from "../../../../config/palette";
+import { MAIN_PALETTE, TEXT_PALETTE } from "../../../../config/palette";
 
 export const Container = styled.div`
   padding-top: 0;
@@ -7,6 +7,24 @@ export const Container = styled.div`
 
 export const InfoContainer = styled.div`
   padding: ${({ firstelem }) => (firstelem ? 0 : "1.5rem 0")};
+`;
+
+export const Link = styled.a`
+  margin: 0;
+  border-bottom: 0.2rem solid transparent;
+  font-family: "Inter-Bold";
+  font-size: 3rem;
+  line-height: 3rem;
+  color: ${TEXT_PALETTE.linkText};
+  text-decoration: none;
+  :hover {
+    color: goldenrod;
+    transition: color 0.3s;
+  }
+  :active {
+    color: goldenrod;
+    border-bottom: 0.2rem solid goldenrod;
+  }
 `;
 
 export const Title = styled.h2`
