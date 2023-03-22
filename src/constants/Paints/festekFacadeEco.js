@@ -1,4 +1,6 @@
-import Facade from "../../assets/images/facade.jpg";
+import Center from "../../assets/images/product/facadeEco/center.jpg";
+import Left from "../../assets/images/product/facadeEco/left.jpg";
+import FacadeEco from "../../assets/images/products/facadeEco.jpg";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const facadeEco = {
@@ -10,7 +12,10 @@ export const facadeEco = {
     title: "Фасадная «FESTEK-FAСADE ECO»",
     text: "Укрывистая, атмосферостойкая краска с сопротивлением влиянию УФ лучей",
   },
-  Image: Facade,
+  images: {
+    products: FacadeEco,
+    product: [Center, Left],
+  },
   documentation: {
     description: {
       purpose: {

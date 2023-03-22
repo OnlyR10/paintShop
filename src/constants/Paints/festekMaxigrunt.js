@@ -1,4 +1,6 @@
-import Primer from "../../assets/images/primer.jpg";
+import Center from "../../assets/images/product/maxiGrunt/center.jpg";
+import Left from "../../assets/images/product/maxiGrunt/left.jpg";
+import MaxiGrunt from "../../assets/images/products/maxiGrunt.jpg";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const maxiGrunt = {
@@ -10,7 +12,10 @@ export const maxiGrunt = {
     title: "Адгезионная грунтовка «FESTEK-MAXIGRUNT»",
     text: "Бетонконтакт с кварцевым наполнителем для увеличения сцепления поверхности",
   },
-  Image: Primer,
+  images: {
+    products: MaxiGrunt,
+    product: [Center, Left],
+  },
   documentation: {
     description: {
       purpose: {

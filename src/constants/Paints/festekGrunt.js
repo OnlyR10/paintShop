@@ -1,4 +1,6 @@
-import Primer from "../../assets/images/primer.jpg";
+import Center from "../../assets/images/product/grunt/center.jpg";
+import Left from "../../assets/images/product/grunt/left.jpg";
+import Grunt from "../../assets/images/products/grunt.jpg";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const grunt = {
@@ -7,10 +9,13 @@ export const grunt = {
   name: "FESTEK_GRUNT",
   header: "Грунтовка глубокого проникновения «FESTEK_GRUNT»",
   productsPage: {
-    title: "Грунтовка гидрофобизирующая «FESTEK-GRUNT»",
-    text: "Модификация ВС для защиты минеральных поверхностей от воздействия влаги. Препятствует намоканию поверхностей",
+    title: "Универсальная грунтовка «FESTEK-GRUNT»",
+    text: "Готовая к применению или концентрат укрепляет практически все виды поверхностей. Снижает расход краски. Для безупречного финишного покрытия",
   },
-  Image: Primer,
+  images: {
+    products: Grunt,
+    product: [Center, Left],
+  },
   documentation: {
     description: {
       purpose: {

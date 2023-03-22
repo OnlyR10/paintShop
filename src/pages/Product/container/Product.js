@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { paints } from "../../../constants/PaintsConfig";
 import { ContentConfig } from "../constants/ContentConfig";
@@ -25,7 +25,10 @@ export const Product = () => {
 
   const Content = ContentConfig[activeContent];
   const currentPaint = paints[category].find((paint) => paint.path === name);
-  const { Image, header } = currentPaint;
+  const {
+    images: { product },
+    header,
+  } = currentPaint;
   const purpose = currentPaint.documentation.description.purpose.value;
 
   useEffect(() => {
@@ -38,7 +41,9 @@ export const Product = () => {
       <SliderContainer>
         <ProductWrapper>
           <PictureContainer>
-            <PaintPicture src={Image} />
+            {product.map((image) => {
+              return <PaintPicture key={image} src={image} />;
+            })}
           </PictureContainer>
         </ProductWrapper>
       </SliderContainer>

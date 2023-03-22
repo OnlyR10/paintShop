@@ -1,4 +1,6 @@
-import Facade from "../../assets/images/facade.jpg";
+import Center from "../../assets/images/product/facadePremium/center.jpg";
+import Left from "../../assets/images/product/facadePremium/left.jpg";
+import FacadePremium from "../../assets/images/products/facadePremium.jpg";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const facadePremium = {
@@ -10,7 +12,10 @@ export const facadePremium = {
     title: "Фасадная «FESTEK-FACADE PREMIUM»",
     text: "Высокоадгезионная краска с отличными покрывающими способностями для долговечного фасада. Стойкая к морозам и оттепелям",
   },
-  Image: Facade,
+  images: {
+    products: FacadePremium,
+    product: [Center, Left],
+  },
   documentation: {
     description: {
       purpose: {

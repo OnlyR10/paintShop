@@ -1,4 +1,6 @@
-import Textured from "../../assets/images/textured.jpg";
+import Center from "../../assets/images/product/relief/center.jpg";
+import Left from "../../assets/images/product/relief/left.jpg";
+import Relief from "../../assets/images/products/relief.jpg";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const relief = {
@@ -8,9 +10,12 @@ export const relief = {
   header: "Краска фактурная акриловая «FESTEK-RELIEF»",
   productsPage: {
     title: "Декоративная акриловая штукатурка",
-    text: "Готовые к применению штукатурка, «камешковой» фактурой, средним и крупным зерном",
+    text: "Готовая к применению штукатурка, «камешковой» фактурой, средним и крупным зерном",
   },
-  Image: Textured,
+  images: {
+    products: Relief,
+    product: [Center, Left],
+  },
   documentation: {
     description: {
       purpose: {

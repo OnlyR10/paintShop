@@ -12,14 +12,14 @@ export const PaintCard = ({ paint }) => {
   const {
     category,
     path,
-    Image,
+    images: { products },
     productsPage: { title, text },
   } = paint;
 
   return (
     <Container to={`/products/${category.at(0)}/${path}`}>
       <PictureContainer>
-        <PaintPicture src={Image} />
+        <PaintPicture src={products} />
       </PictureContainer>
       <DescriptionContainer>
         <Header>{title}</Header>
