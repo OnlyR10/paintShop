@@ -13,8 +13,6 @@ export const About = () => {
   return (
     <Container>
       <AboutWrapper>
-        <Header>Контакты</Header>
-
         <Title>Юридический (почтовый) адрес:</Title>
         <Link
           href="https://www.google.com/maps/place/%D0%9E%D0%9E%D0%9E%22%D0%AD%D0%BA%D0%B7%D0%B0%D0%BB%D1%8C%D1%82%22/@53.6379728,27.0216029,16z/data=!4m10!1m2!2m1!1z0JHQsNC60LjQvdC-0LLQviA0OQ!3m6!1s0x46d969eb863d62e3:0x74ab63bec10df3d!8m2!3d53.6328206!4d27.0210089!15sChPQkdCw0LrQuNC90L7QstC-IDQ5kgEMbWFudWZhY3R1cmVy4AEA!16s%2Fg%2F11sf1gfnw7"

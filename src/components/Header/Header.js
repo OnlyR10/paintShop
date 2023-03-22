@@ -19,7 +19,7 @@ export const Header = () => {
           <NavigationLink to="/">Главная</NavigationLink>
           <NavigationLink to="/products/all">Продукты</NavigationLink>
           <NavigationLink to="/palette">Палитра цветов</NavigationLink>
-          <NavigationLink to="/about">О нас</NavigationLink>
+          <NavigationLink to="/about">Контакты</NavigationLink>
         </NavigationContainer>
 
         <ContactsContainer />
