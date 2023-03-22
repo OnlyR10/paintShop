@@ -43,14 +43,14 @@ export const ShortDescription = styled.div`
 export const PaintTitle = styled.h2`
   margin: 0;
   padding: 1rem 0;
-  font-family: "Serif-Bold";
+  font-family: "Inter-Bold";
   font-size: 3.6rem;
 `;
 
 export const PaintDescription = styled.p`
   margin: 0;
   padding: 1rem 0;
-  font-family: "Serif-Regular";
+  font-family: "Inter-Regular";
   font-size: 2rem;
 `;
 
@@ -75,7 +75,7 @@ const buttonStyle = css`
   border: 1px solid ${MAIN_PALETTE.edgingBackground};
   border-radius: 2rem;
   background-color: ${MAIN_PALETTE.productFirstElementBackground};
-  font-family: "Serif-Regular";
+  font-family: "Inter-Regular";
   font-size: 2rem;
   :hover {
     background-color: ${MAIN_PALETTE.edgingBackground};
@@ -112,7 +112,7 @@ export const UploadIcon = styled.div`
 
 export const Text = styled.p`
   margin: 1rem 0;
-  font-family: "Serif-Regular";
+  font-family: "Inter-Regular";
   font-size: 1.6rem;
   color: ${TEXT_PALETTE.linkText};
 `;

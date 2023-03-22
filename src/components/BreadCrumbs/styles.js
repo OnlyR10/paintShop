@@ -29,7 +29,7 @@ export const VerticalLine = styled.div`
 `;
 
 const breadCrumbStyle = css`
-  font-family: "Serif-Regular";
+  font-family: "Inter-Regular";
   font-size: 1.5rem;
   color: ${TEXT_PALETTE.main};
   text-decoration: none;

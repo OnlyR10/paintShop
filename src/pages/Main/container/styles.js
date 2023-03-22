@@ -44,7 +44,7 @@ export const Container = styled.main`
 // export const Text = styled.div`
 //   margin: 0;
 //   padding: 0;
-//   font-family: "Serif-Black";
+//   font-family: "Inter-Black";
 //   font-size: 10rem;
 //   position: relative;
 
@@ -89,7 +89,7 @@ export const Container = styled.main`
 // export const Text = styled.p`
 //   margin: 0;
 //   padding: 0;
-//   font-family: "Serif-Black";
+//   font-family: "Inter-Black";
 //   font-size: 10rem;
 // `;
 
@@ -117,9 +117,13 @@ export const Logotype = styled.img`
 
 export const Introduction = styled.h4`
   margin: 0;
-  font-family: "Serif-ExtraLight";
+  font-family: "Inter-ExtraLight";
   font-size: 2rem;
   text-align: center;
+`;
+
+export const TextDefinition = styled.span`
+  font-family: "Inter-Bold";
 `;
 
 export const PaintWrapper = styled(Wrapper)`

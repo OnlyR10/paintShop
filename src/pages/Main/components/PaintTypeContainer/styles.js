@@ -64,7 +64,7 @@ export const Header = styled.h2`
   width: fit-content;
   margin: 1rem 0 0.5rem;
   border-bottom: 0.2rem solid transparent;
-  font-family: "Serif-Bold";
+  font-family: "Inter-Bold";
   font-size: 2.2rem;
   color: ${TEXT_PALETTE.main};
   text-align: center;
@@ -73,7 +73,7 @@ export const Header = styled.h2`
 
 export const Description = styled.p`
   margin: 0;
-  font-family: "Serif-Regular";
+  font-family: "Inter-Regular";
   font-size: 1.6rem;
   text-align: center;
 `;

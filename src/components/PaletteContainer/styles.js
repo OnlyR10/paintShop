@@ -10,7 +10,7 @@ export const Header = styled.div``;
 
 export const Title = styled.h2`
   margin-top: 0;
-  font-family: "Serif-Bold";
+  font-family: "Inter-Bold";
   font-size: 3.6rem;
   text-align: center;
 `;
@@ -18,13 +18,13 @@ export const Title = styled.h2`
 export const InfoContainer = styled.div``;
 
 export const Notice = styled.p`
-  font-family: "Serif-Bold";
+  font-family: "Inter-Bold";
   font-size: 2.5rem;
   margin: 0;
 `;
 
 export const Info = styled.p`
-  font-family: "Serif-Regular";
+  font-family: "Inter-Regular";
   font-size: 1.6rem;
 `;
 
@@ -36,12 +36,12 @@ export const ColorPaletteList = styled.div`
 `;
 
 export const ColorName = styled.span`
-  font-family: "Serif-Regular";
+  font-family: "Inter-Regular";
   font-size: 1.4rem;
 `;
 
 export const ColorDescription = styled.span`
-  font-family: "Serif-Light";
+  font-family: "Inter-Light";
   font-size: 1rem;
 `;
 

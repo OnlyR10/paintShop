@@ -11,6 +11,9 @@ export const Container = styled.div`
   gap: 0 4rem;
 `;
 
+export const Label = styled.p`
+  font-family: "Inter-SemiBold";
+`;
 export const ContactsColumn = styled.div`
   display: flex;
   flex-direction: column;
@@ -24,7 +27,7 @@ export const ContactBox = styled.a`
   justify-content: center;
   align-items: center;
   column-gap: 1rem;
-  font-family: "Serif-SemiBold";
+  font-family: "Inter-SemiBold";
   font-size: 2rem;
   color: ${TEXT_PALETTE.main};
   text-decoration: none;

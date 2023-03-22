@@ -39,7 +39,7 @@ export const NavigationContainer = styled.div`
 `;
 
 export const NavigationLink = styled(NavLink)`
-  font-family: "Serif-SemiBold";
+  font-family: "Inter-SemiBold";
   font-size: 2rem;
   color: ${TEXT_PALETTE.main};
   /* color: white; */

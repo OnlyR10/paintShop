@@ -11,12 +11,12 @@ export const InfoContainer = styled.div`
 export const Title = styled.h2`
   margin: 0;
   padding-bottom: 1rem;
-  font-family: "Serif-Bold";
+  font-family: "Inter-Bold";
   font-size: 3rem;
 `;
 
 export const Text = styled.p`
-  font-family: "Serif-Regular";
+  font-family: "Inter-Regular";
   font-size: 2rem;
   text-align: justify;
   margin: 0;

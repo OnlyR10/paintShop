@@ -22,7 +22,7 @@ export const TitleContainer = styled.div`
 export const Title = styled.h2`
   margin: 0;
   /* padding: 0 0 1rem; */
-  font-family: "Serif-Bold";
+  font-family: "Inter-Bold";
   font-size: 2.6rem;
 `;
 
@@ -42,7 +42,7 @@ export const CategoriesLists = styled.div`
 `;
 
 export const CategoriesList = styled(NavLink)`
-  font-family: "Serif-SemiBold";
+  font-family: "Inter-SemiBold";
   font-size: 1.6rem;
   line-height: 2.2rem;
   text-align: start;
