@@ -6,22 +6,25 @@ import {
   Container,
   IconInstagram,
   IconOnliner,
-  IconPhone,
+  Label,
+  PhoneContainer,
 } from "./styles";
 
 export const ContactsContainer = () => {
   return (
     <Container>
-      <ContactsColumn>
-        <ContactBox href="tel:+375291234567">
-          <IconPhone />
-          <Contact>+375 29 123 45 67</Contact>
-        </ContactBox>
-        <ContactBox href="tel:+375299876543">
-          <IconPhone />
-          <Contact>+375 29 987 65 43</Contact>
-        </ContactBox>
-      </ContactsColumn>
+      <PhoneContainer>
+        <Label>Для заказа:</Label>
+        <ContactsColumn>
+          <ContactBox href="tel:+375291070568">
+            <Contact>+375 29 107 05 68</Contact>
+          </ContactBox>
+          <ContactBox href="tel:+375297587670">
+            <Contact>+375 29 758 76 70</Contact>
+          </ContactBox>
+        </ContactsColumn>
+      </PhoneContainer>
+
       <ContactsColumn>
         <ContactBox href="https://www.instagram.com/" target={"_blank"}>
           <IconInstagram />

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import instagram from "../../assets/icons/instagram.svg";
 import onliner from "../../assets/icons/onliner.svg";
-import phone from "../../assets/icons/phone.svg";
 import { TEXT_PALETTE } from "../../config/palette";
 
 export const Container = styled.div`
@@ -11,15 +10,24 @@ export const Container = styled.div`
   gap: 0 4rem;
 `;
 
+export const PhoneContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0 2rem;
+`;
+
 export const Label = styled.p`
   font-family: "Inter-SemiBold";
+  font-size: 2rem;
+  color: ${TEXT_PALETTE.navigationLink};
 `;
+
 export const ContactsColumn = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 2rem 0;
+  gap: 1rem 0;
 `;
 
 export const ContactBox = styled.a`
@@ -29,7 +37,7 @@ export const ContactBox = styled.a`
   column-gap: 1rem;
   font-family: "Inter-SemiBold";
   font-size: 2rem;
-  color: ${TEXT_PALETTE.main};
+  color: ${TEXT_PALETTE.navigationLink};
   text-decoration: none;
 `;
 
@@ -51,10 +59,6 @@ export const Contact = styled.span`
     color: goldenrod;
     border-bottom: 0.2rem solid goldenrod;
   }
-`;
-
-export const IconPhone = styled(Icon)`
-  background-image: url(${phone});
 `;
 
 export const IconInstagram = styled(Icon)`
