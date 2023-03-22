@@ -37,6 +37,7 @@ export const NavigationContainer = styled.div`
 `;
 
 export const NavigationLink = styled(NavLink)`
+  padding: 0.5rem 0;
   font-family: "Inter-SemiBold";
   font-size: 2rem;
   color: ${TEXT_PALETTE.navigationLink};
