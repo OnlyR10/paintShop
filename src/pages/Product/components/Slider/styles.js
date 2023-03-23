@@ -1,54 +1,78 @@
-import styled, { css } from "styled-components";
-import { MAIN_PALETTE } from "../../../../config/palette";
-// import { Wrapper } from "../../../../layout/styles";
+import styled, { keyframes } from "styled-components";
 import LeftArrow from "../../../../assets/icons/LeftArrow.svg";
 import RightArrow from "../../../../assets/icons/RightArrow.svg";
 
+const MoveLeft = keyframes`
+0%{
+  transform: translate(0);
+}
+100% {
+  transform: translate(100rem);
+  /* transform: translate(102.5rem); */
+}
+`;
+
+const MoveRight = keyframes`
+0%{
+  transform: translate(0);
+}
+100% {
+  transform: translate(-100rem);
+  /* transform: translate(-102.5rem); */
+}
+`;
+
 export const Container = styled.div`
-  width: 110rem;
-  display: flex;
-  align-items: center;
-  column-gap: 4rem;
-  margin: 0 auto;
-  background-color: ${MAIN_PALETTE.productSecondElementBackground};
-`;
-
-export const SliderContainer = styled.div`
-  max-width: 100rem;
-  overflow: hidden;
-`;
-
-export const SliderWrapper = styled.div`
+  width: 112rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 3rem;
+  column-gap: 2rem;
+  margin: 0 auto;
 `;
 
-export const PictureContainer = styled.div`
-  /* width: 60rem; */
+export const SliderContainer = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  left: -100rem;
+  /* left: -102.5rem; */
+  /* gap: 0 2.5rem; */
+  &.left-entered {
+    animation: ${MoveLeft} 0.8s forwards;
+  }
+  &.right-entered {
+    animation: ${MoveRight} 0.8s forwards;
+  }
 `;
 
-export const PaintPicture = styled.img`
-  /* width: 100%; */
+export const SliderWrapper = styled.div`
+  /* max-width: 100rem;
+  overflow: hidden; */
+
+  // Чтобы картинки были одинаковой высоты
+  max-width: 100rem;
+  max-height: 65.5rem;
+  overflow: hidden;
+  display: flex;
 `;
+
+export const PictureContainer = styled.div``;
+
+export const PaintPicture = styled.img``;
 
 export const ArrowBox = styled.div`
-  width: 25px;
-  height: 25px;
+  width: 3rem;
+  height: 3rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  ${({ lock }) =>
-    lock &&
-    css`
-      opacity: 0;
-      pointer-events: none;
-    `}
 `;
+
 export const ArrowLeft = styled(ArrowBox)`
   background-image: url(${LeftArrow});
 `;
+
 export const ArrowRight = styled(ArrowBox)`
   background-image: url(${RightArrow});
 `;
