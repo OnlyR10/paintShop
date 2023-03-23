@@ -17,12 +17,11 @@ export const Delivery = () => {
   return (
     <Container>
       <InfoContainer>
+        <Title>Пункт самовывоза по адресу:</Title>
         <Link href="https://yandex.by/maps/-/CCUSaQhBOC" target="_blank">
-          Пункт самовывоза по адресу: пос. Ратомка ул. Октябрьская 4
+          Пос. Ратомка ул. Октябрьская 4
         </Link>
-      </InfoContainer>
 
-      <InfoContainer>
         <Title>Доставка по Беларуси:</Title>
         <Text>
           Осуществляем доставку по Минской области и РБ транспортом различной
