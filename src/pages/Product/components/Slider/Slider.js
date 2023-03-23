@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Transition } from "react-transition-group";
 import {
   ArrowLeft,
@@ -12,33 +12,30 @@ import {
 
 export const Slider = ({ images }) => {
   const [indexSlider, setIndexSlider] = useState([]);
-
-  const numberSlidesDemonstrated = 1;
-  const numberScrollingSlides = 1;
-  const numberLateralSlides = 2 * numberScrollingSlides;
-  const numberAllBlocksSlider = numberSlidesDemonstrated + numberLateralSlides;
-  const centralSliderIndex = Math.floor(numberAllBlocksSlider);
-  const halfSideSlides = (numberAllBlocksSlider - 1) / 2;
-  const sumSideAndCenterSlide = Math.ceil(numberAllBlocksSlider / 2);
-
-  const numberImages = images.length;
-
-  const indexesImages = [];
-
-  for (let i = 0; i < numberAllBlocksSlider; i += 1) {
-    const indexImage = i - halfSideSlides;
-    indexesImages.push(indexImage % numberImages);
-  }
-
-  const imagesInSlider = indexesImages.map((indexImage) =>
-    images.at(indexImage)
-  );
-
+  const [imagesInSlider, setImagesInSlider] = useState([]);
   const [animation, setAnimation] = useState(false);
   const [turn, setTurn] = useState("");
-  const [pages, setPages] = useState([]);
-  const [leftArrowLock, setLeftArrowLock] = useState(false);
-  const [rightArrowLock, setRightArrowLock] = useState(false);
+
+  const numberScrollingSlides = 1;
+  const numberImages = images.length;
+
+  useEffect(() => {
+    const numberSlidesDemonstrated = 1;
+    const numberLateralSlides = 2 * numberScrollingSlides;
+    const numberAllBlocksSlider =
+      numberSlidesDemonstrated + numberLateralSlides;
+    const halfSideSlides = (numberAllBlocksSlider - 1) / 2;
+
+    const indexesImages = [];
+
+    for (let i = 0; i < numberAllBlocksSlider; i += 1) {
+      const indexImage = i - halfSideSlides;
+      indexesImages.push(indexImage % numberImages);
+    }
+
+    setIndexSlider(indexesImages);
+    setImagesInSlider(indexesImages.map((indexImage) => images.at(indexImage)));
+  }, []);
 
   const monthTransition = (side) => {
     if (animation) return;
@@ -46,30 +43,44 @@ export const Slider = ({ images }) => {
     setAnimation(true);
   };
 
+  const onAnimationStart = () => {
+    if (turn === "left") {
+      setIndexSlider((pages) => {
+        const result = pages.map((imageIndex) => {
+          return (imageIndex - numberScrollingSlides) % numberImages;
+        });
+        return result;
+      });
+    } else if (turn === "right") {
+      setIndexSlider((pages) => {
+        const result = pages.map((imageIndex) => {
+          return (imageIndex + numberScrollingSlides) % numberImages;
+        });
+        return result;
+      });
+    }
+  };
+
   const onAnimationEnd = () => {
     if (animation) {
-      if (turn === "left") {
-        setPages((pages) => {
-          return;
-        });
-      } else if (turn === "right") {
-        setPages((pages) => {
-          return;
-        });
-      }
+      setImagesInSlider(indexSlider.map((indexImage) => images.at(indexImage)));
       setAnimation(false);
     }
   };
 
   return (
     <Container>
-      <ArrowLeft onClick={() => monthTransition("left")} lock={leftArrowLock} />
+      <ArrowLeft onClick={() => monthTransition("left")} />
 
-      <Transition in={animation} timeout={0} exit={false}>
-        {(state) => {
-          return (
-            <SliderContainer>
-              <SliderWrapper>
+      <SliderWrapper>
+        <Transition in={animation} timeout={0} exit={false}>
+          {(state) => {
+            return (
+              <SliderContainer
+                className={`${turn}-${state}`}
+                onAnimationEnd={onAnimationEnd}
+                onAnimationStart={onAnimationStart}
+              >
                 {imagesInSlider.map((image, index) => {
                   return (
                     <PictureContainer key={`${image}-${index}}`}>
@@ -77,16 +88,13 @@ export const Slider = ({ images }) => {
                     </PictureContainer>
                   );
                 })}
-              </SliderWrapper>
-            </SliderContainer>
-          );
-        }}
-      </Transition>
+              </SliderContainer>
+            );
+          }}
+        </Transition>
+      </SliderWrapper>
 
-      <ArrowRight
-        onClick={() => monthTransition("right")}
-        lock={rightArrowLock}
-      />
+      <ArrowRight onClick={() => monthTransition("right")} />
     </Container>
   );
 };

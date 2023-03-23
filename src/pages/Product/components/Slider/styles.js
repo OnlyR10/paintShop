@@ -1,8 +1,26 @@
-import styled, { css } from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { MAIN_PALETTE } from "../../../../config/palette";
 // import { Wrapper } from "../../../../layout/styles";
 import LeftArrow from "../../../../assets/icons/LeftArrow.svg";
 import RightArrow from "../../../../assets/icons/RightArrow.svg";
+
+const MoveLeft = keyframes`
+0%{
+  transform: translate(0);
+}
+100% {
+  transform: translate(100rem);
+}
+`;
+
+const MoveRight = keyframes`
+0%{
+  transform: translate(0);
+}
+100% {
+  transform: translate(-100rem);
+}
+`;
 
 export const Container = styled.div`
   width: 110rem;
@@ -14,37 +32,35 @@ export const Container = styled.div`
 `;
 
 export const SliderContainer = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  left: -100rem;
+  gap: 0 2.5rem;
+  &.left-entered {
+    animation: ${MoveLeft} 1s forwards;
+  }
+  &.right-entered {
+    animation: ${MoveRight} 1s forwards;
+  }
+`;
+
+export const SliderWrapper = styled.div`
+  /* display: flex; */
   max-width: 100rem;
   overflow: hidden;
 `;
 
-export const SliderWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 3rem;
-`;
+export const PictureContainer = styled.div``;
 
-export const PictureContainer = styled.div`
-  /* width: 60rem; */
-`;
-
-export const PaintPicture = styled.img`
-  /* width: 100%; */
-`;
+export const PaintPicture = styled.img``;
 
 export const ArrowBox = styled.div`
-  width: 25px;
-  height: 25px;
+  width: 2.5rem;
+  height: 2.5rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  ${({ lock }) =>
-    lock &&
-    css`
-      opacity: 0;
-      pointer-events: none;
-    `}
 `;
 export const ArrowLeft = styled(ArrowBox)`
   background-image: url(${LeftArrow});
