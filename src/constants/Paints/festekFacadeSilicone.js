@@ -1,4 +1,6 @@
-import Facade from "../../assets/images/facade.jpg";
+import Center from "../../assets/images/product/facadeSilicone/center.jpg";
+import Left from "../../assets/images/product/facadeSilicone/left.jpg";
+import FacadeSilicone from "../../assets/images/products/facadeSilicone.jpg";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const facadeSilicone = {
@@ -10,7 +12,10 @@ export const facadeSilicone = {
     title: "Фасадная «FESTEK-FACADE SILICONE»",
     text: "Силиконовая краска с водоотталкивающими свойствами для самоочищения и высокой адгезией для чистого фасада",
   },
-  Image: Facade,
+  images: {
+    products: FacadeSilicone,
+    product: [Center, Left],
+  },
   documentation: {
     description: {
       purpose: {

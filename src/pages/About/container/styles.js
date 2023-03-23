@@ -12,25 +12,17 @@ export const AboutWrapper = styled(Wrapper)`
   padding: 0 10rem;
 `;
 
-export const Header = styled.h2`
-  margin: 0;
-  padding-bottom: 1rem;
-  font-family: "Serif-Bold";
-  font-size: 3.6rem;
-  text-align: center;
-`;
-
 export const Title = styled.h2`
   margin: 0;
   padding: 2rem 0 1rem;
-  font-family: "Serif-Bold";
+  font-family: "Inter-Bold";
   font-size: 2.6rem;
 `;
 
 export const Link = styled.a`
   margin: 0;
   border-bottom: 0.2rem solid transparent;
-  font-family: "Serif-Regular";
+  font-family: "Inter-Regular";
   font-size: 2rem;
   line-height: 3rem;
   color: ${TEXT_PALETTE.linkText};
@@ -48,13 +40,13 @@ export const Link = styled.a`
 export const Comma = styled.span`
   margin: 0;
   padding: 1rem 1rem 0 0;
-  font-family: "Serif-Regular";
+  font-family: "Inter-Regular";
   font-size: 2rem;
   color: ${TEXT_PALETTE.linkText};
 `;
 
 export const Text = styled.p`
   margin: 0;
-  font-family: "Serif-Regular";
+  font-family: "Inter-Regular";
   font-size: 2rem;
 `;

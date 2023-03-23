@@ -1,4 +1,6 @@
-import Facade from "../../assets/images/facade.jpg";
+import Center from "../../assets/images/product/superWhite/center.jpg";
+import Left from "../../assets/images/product/superWhite/left.jpg";
+import SuperWhite from "../../assets/images/products/superWhite.jpg";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const superWhite = {
@@ -10,7 +12,10 @@ export const superWhite = {
     title: "Интерьерная «FESTEK-SUPERWHITE»",
     text: "Глубокоматовая потолочная краска с высокой степенью белизны",
   },
-  Image: Facade,
+  images: {
+    products: SuperWhite,
+    product: [Center, Left],
+  },
   documentation: {
     description: {
       purpose: {

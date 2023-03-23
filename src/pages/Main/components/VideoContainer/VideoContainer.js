@@ -1,5 +1,5 @@
 import React from "react";
-import poster from "../../../../assets/images/wall.jpg";
+import poster from "../../../../assets/images/poster.jpg";
 import videoM from "../../../../assets/video/Ecoline.mp4";
 import videoW from "../../../../assets/video/Ecoline.webm";
 import { Container, VideoScreensaver, VideoSource } from "./styles";

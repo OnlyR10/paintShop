@@ -1,5 +1,5 @@
 import { paints } from "../../../constants/PaintsConfig";
-import { ROUTE_NAMES } from "../../../Routes/routerNames";
+import { ROUTE_NAMES } from "../../../Router/routerNames";
 
 export const BREADCRUMB = [
   {

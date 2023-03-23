@@ -1,4 +1,6 @@
-import Roofing from "../../assets/images/roofing.jpg";
+import Center from "../../assets/images/product/roofPro/center.jpg";
+import Left from "../../assets/images/product/roofPro/left.jpg";
+import RoofPro from "../../assets/images/products/roofPro.jpg";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const roofPro = {
@@ -10,7 +12,10 @@ export const roofPro = {
     title: "Кровельная «FESTEK-ROOF PRO»",
     text: "Глянцевая влагозащитная светостойкая краска для крыши и цоколя предотвращает образование плесени и грибка, улучшает сток воды",
   },
-  Image: Roofing,
+  images: {
+    products: RoofPro,
+    product: [Center, Left],
+  },
   documentation: {
     description: {
       purpose: {

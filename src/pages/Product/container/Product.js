@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { paints } from "../../../constants/PaintsConfig";
+import { Slider } from "../components/Slider/Slider";
 import { ContentConfig } from "../constants/ContentConfig";
 import {
   Container,
@@ -10,32 +11,32 @@ import {
   InfoContainer,
   LinkButton,
   PaintDescription,
-  PaintPicture,
   PaintTitle,
-  PictureContainer,
   ProductWrapper,
   ShortDescription,
-  SliderContainer,
 } from "./styles";
 
 export const Product = () => {
   const { category, name } = useParams();
   const [activeContent, setActiveContent] = useState("Description");
+  const [render, setRender] = useState(false);
 
   const Content = ContentConfig[activeContent];
   const currentPaint = paints[category].find((paint) => paint.path === name);
-  const { Image, header } = currentPaint;
+  const {
+    images: { product },
+    header,
+  } = currentPaint;
   const purpose = currentPaint.documentation.description.purpose.value;
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setRender(true);
+  }, []);
+
   return (
-    <Container>
-      <SliderContainer>
-        <ProductWrapper>
-          <PictureContainer>
-            <PaintPicture src={Image} />
-          </PictureContainer>
-        </ProductWrapper>
-      </SliderContainer>
+    <Container render={render}>
+      <Slider images={product} />
 
       <ContentContainer>
         <ProductWrapper>
@@ -70,19 +71,19 @@ export const Product = () => {
               </LinkButton>
 
               <LinkButton
-                className={activeContent === "Delivery" ? "active" : null}
-                onClick={() => setActiveContent("Delivery")}
-              >
-                Условия доставки
-              </LinkButton>
-
-              <LinkButton
                 className={
                   activeContent === "PaletteContainer" ? "active" : null
                 }
                 onClick={() => setActiveContent("PaletteContainer")}
               >
                 Цветовая палитра
+              </LinkButton>
+
+              <LinkButton
+                className={activeContent === "Delivery" ? "active" : null}
+                onClick={() => setActiveContent("Delivery")}
+              >
+                Условия доставки и самовывоза
               </LinkButton>
 
               {/* <FileDownloadButton href={`/files/${name.slice(7)}.pdf`} target="_blank">

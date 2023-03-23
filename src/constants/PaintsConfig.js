@@ -4,6 +4,7 @@ import { facadePremium } from "./Paints/festekFacadePremium";
 import { facadeSilicate } from "./Paints/festekFacadeSilicate";
 import { facadeSilicone } from "./Paints/festekFacadeSilicone";
 import { grunt } from "./Paints/festekGrunt";
+import { gruntModification } from "./Paints/festekGruntModification";
 import { insideEco } from "./Paints/festekInsideEco";
 import { insideLatex } from "./Paints/festekInsideLatex";
 import { maxiGrunt } from "./Paints/festekMaxigrunt";
@@ -25,5 +26,5 @@ export const paints = {
 
   [categoriesOfPaints.roofing]: [roofPro],
 
-  [categoriesOfPaints.primer]: [grunt, maxiGrunt],
+  [categoriesOfPaints.primer]: [grunt, gruntModification, maxiGrunt],
 };

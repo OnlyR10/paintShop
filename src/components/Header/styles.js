@@ -8,10 +8,8 @@ export const Container = styled.header`
   position: fixed;
   width: 100%;
   height: 10vh;
-  background-color: ${MAIN_PALETTE.edgingBackground};
-  /* background-color: black; */
+  background-color: ${MAIN_PALETTE.logoBackground};
   z-index: 2;
-  /* overflow-y: hidden; */
 `;
 
 export const HeaderWrapper = styled(Wrapper)`
@@ -39,10 +37,10 @@ export const NavigationContainer = styled.div`
 `;
 
 export const NavigationLink = styled(NavLink)`
-  font-family: "Serif-SemiBold";
+  padding: 0.5rem 0;
+  font-family: "Inter-SemiBold";
   font-size: 2rem;
-  color: ${TEXT_PALETTE.main};
-  /* color: white; */
+  color: ${TEXT_PALETTE.navigationLink};
   text-decoration: none;
   border-bottom: 0.2rem solid transparent;
   :hover {
@@ -54,7 +52,7 @@ export const NavigationLink = styled(NavLink)`
     border-bottom: 0.2rem solid goldenrod;
   }
   &&.active {
-    border-bottom: 0.2rem solid ${TEXT_PALETTE.main};
+    border-bottom: 0.2rem solid ${TEXT_PALETTE.navigationLink};
     transition: all 0.3s;
     &&:hover {
       border-bottom: 0.2rem solid goldenrod;

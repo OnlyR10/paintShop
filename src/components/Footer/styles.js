@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { MAIN_PALETTE } from "../../config/palette";
+import { MAIN_PALETTE, TEXT_PALETTE } from "../../config/palette";
 import { Wrapper } from "../../layout/styles";
 
 export const Container = styled.footer`
   width: 100%;
-  background-color: ${MAIN_PALETTE.edgingBackground};
+  background-color: ${MAIN_PALETTE.logoBackground};
   flex: 0 0 auto;
 `;
 
@@ -16,6 +16,7 @@ export const FooterWrapper = styled(Wrapper)`
 `;
 
 export const Requisites = styled.div`
-  font-family: "Serif-SemiBold";
+  font-family: "Inter-SemiBold";
   font-size: 2rem;
+  color: ${TEXT_PALETTE.navigationLink};
 `;

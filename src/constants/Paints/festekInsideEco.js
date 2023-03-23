@@ -1,4 +1,6 @@
-import Interior from "../../assets/images/interior.jpg";
+import Center from "../../assets/images/product/insideEco/center.jpg";
+import Left from "../../assets/images/product/insideEco/left.jpg";
+import InsideEco from "../../assets/images/products/insideEco.jpg";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const insideEco = {
@@ -10,7 +12,10 @@ export const insideEco = {
     title: "Интерьерная «FESTEK-INSIDE ECO»",
     text: "Матовая краска для окраски стен и потолков с умеренной эксплуатационной нагрузкой",
   },
-  Image: Interior,
+  images: {
+    products: InsideEco,
+    product: [Center, Left],
+  },
   documentation: {
     description: {
       purpose: {

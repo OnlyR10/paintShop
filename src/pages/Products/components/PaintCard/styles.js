@@ -60,13 +60,13 @@ export const DescriptionContainer = styled.div`
 
 export const Header = styled.h2`
   margin: 0.5rem 0;
-  font-family: "Serif-Bold";
+  font-family: "Inter-Bold";
   font-size: 1.8rem;
   border-bottom: 0.2rem solid transparent;
 `;
 
 export const Description = styled.p`
   margin: 0;
-  font-family: "Serif-Regular";
+  font-family: "Inter-Regular";
   font-size: 1.6rem;
 `;
