@@ -10,12 +10,8 @@ export const Container = styled.main`
   visibility: ${({ render }) => (render ? "visible" : "hidden")};
 `;
 
-export const SliderContainer = styled.div`
-  width: 100%;
-  background-color: ${MAIN_PALETTE.productSecondElementBackground};
-`;
-
 export const ProductWrapper = styled(Wrapper)`
+  width: 96rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,6 +62,8 @@ export const ControlPanel = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 1rem;
   column-gap: 5rem;
   margin-bottom: 2rem;
 `;

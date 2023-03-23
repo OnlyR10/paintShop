@@ -81,19 +81,19 @@ export const Product = () => {
               </LinkButton>
 
               <LinkButton
-                className={activeContent === "Delivery" ? "active" : null}
-                onClick={() => setActiveContent("Delivery")}
-              >
-                Условия доставки и самовывоза
-              </LinkButton>
-
-              <LinkButton
                 className={
                   activeContent === "PaletteContainer" ? "active" : null
                 }
                 onClick={() => setActiveContent("PaletteContainer")}
               >
                 Цветовая палитра
+              </LinkButton>
+
+              <LinkButton
+                className={activeContent === "Delivery" ? "active" : null}
+                onClick={() => setActiveContent("Delivery")}
+              >
+                Условия доставки и самовывоза
               </LinkButton>
 
               {/* <FileDownloadButton href={`/files/${name.slice(7)}.pdf`} target="_blank">
