@@ -19,15 +19,6 @@ export const ProductWrapper = styled(Wrapper)`
   padding: 2rem 10rem;
 `;
 
-export const PictureContainer = styled.div`
-  max-width: 20rem;
-  min-width: 10rem;
-`;
-
-export const PaintPicture = styled.img`
-  width: 100%;
-`;
-
 export const ContentContainer = styled.div`
   width: 100%;
 `;

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { paints } from "../../../constants/PaintsConfig";
+import { Slider } from "../components/Slider/Slider";
 import { ContentConfig } from "../constants/ContentConfig";
 import {
   Container,
@@ -10,12 +11,9 @@ import {
   InfoContainer,
   LinkButton,
   PaintDescription,
-  PaintPicture,
   PaintTitle,
-  PictureContainer,
   ProductWrapper,
   ShortDescription,
-  SliderContainer,
 } from "./styles";
 
 export const Product = () => {
@@ -38,15 +36,7 @@ export const Product = () => {
 
   return (
     <Container render={render}>
-      <SliderContainer>
-        <ProductWrapper>
-          <PictureContainer>
-            {product.map((image) => {
-              return <PaintPicture key={image} src={image} />;
-            })}
-          </PictureContainer>
-        </ProductWrapper>
-      </SliderContainer>
+      <Slider images={product} />
 
       <ContentContainer>
         <ProductWrapper>
