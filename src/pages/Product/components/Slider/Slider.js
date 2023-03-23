@@ -12,7 +12,6 @@ import {
 
 export const Slider = ({ images }) => {
   const [indexSlider, setIndexSlider] = useState([]);
-  const [imagesInSlider, setImagesInSlider] = useState([]);
   const [animation, setAnimation] = useState(false);
   const [turn, setTurn] = useState("");
 
@@ -34,7 +33,6 @@ export const Slider = ({ images }) => {
     }
 
     setIndexSlider(indexesImages);
-    setImagesInSlider(indexesImages.map((indexImage) => images.at(indexImage)));
   }, []);
 
   const monthTransition = (side) => {
@@ -43,27 +41,23 @@ export const Slider = ({ images }) => {
     setAnimation(true);
   };
 
-  const onAnimationStart = () => {
-    if (turn === "left") {
-      setIndexSlider((pages) => {
-        const result = pages.map((imageIndex) => {
-          return (imageIndex - numberScrollingSlides) % numberImages;
-        });
-        return result;
-      });
-    } else if (turn === "right") {
-      setIndexSlider((pages) => {
-        const result = pages.map((imageIndex) => {
-          return (imageIndex + numberScrollingSlides) % numberImages;
-        });
-        return result;
-      });
-    }
-  };
-
   const onAnimationEnd = () => {
     if (animation) {
-      setImagesInSlider(indexSlider.map((indexImage) => images.at(indexImage)));
+      if (turn === "left") {
+        setIndexSlider((pages) => {
+          const result = pages.map((imageIndex) => {
+            return (imageIndex - numberScrollingSlides) % numberImages;
+          });
+          return result;
+        });
+      } else if (turn === "right") {
+        setIndexSlider((pages) => {
+          const result = pages.map((imageIndex) => {
+            return (imageIndex + numberScrollingSlides) % numberImages;
+          });
+          return result;
+        });
+      }
       setAnimation(false);
     }
   };
@@ -79,15 +73,16 @@ export const Slider = ({ images }) => {
               <SliderContainer
                 className={`${turn}-${state}`}
                 onAnimationEnd={onAnimationEnd}
-                onAnimationStart={onAnimationStart}
               >
-                {imagesInSlider.map((image, index) => {
-                  return (
-                    <PictureContainer key={`${image}-${index}}`}>
-                      <PaintPicture src={image} />
-                    </PictureContainer>
-                  );
-                })}
+                {indexSlider
+                  .map((indexImage) => images.at(indexImage))
+                  .map((image, index) => {
+                    return (
+                      <PictureContainer key={`${image}-${index}}`}>
+                        <PaintPicture src={image} />
+                      </PictureContainer>
+                    );
+                  })}
               </SliderContainer>
             );
           }}
@@ -98,17 +93,3 @@ export const Slider = ({ images }) => {
     </Container>
   );
 };
-
-// if (sumSideAndCenterSlide > numberImages) {
-//   indexesImages.push(images.at(indexImage % numberImages));
-// } else {
-//   indexesImages.push(images.at(indexImage));
-// }
-
-// if (sumSideAndCenterSlide === numberImages) {
-//     indexesImages.push(images.at(i - halfSideSlides));
-// }
-
-// if (sumSideAndCenterSlide < numberImages) {
-//   indexesImages.push(images.at(i - halfSideSlides));
-// }

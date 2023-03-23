@@ -10,6 +10,11 @@ export const Container = styled.main`
   visibility: ${({ render }) => (render ? "visible" : "hidden")};
 `;
 
+export const SliderBlock = styled.div`
+  width: 100%;
+  background-color: ${MAIN_PALETTE.productSecondElementBackground};
+`;
+
 export const ProductWrapper = styled(Wrapper)`
   width: 96rem;
   display: flex;

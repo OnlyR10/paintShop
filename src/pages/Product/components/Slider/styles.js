@@ -1,6 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import { MAIN_PALETTE } from "../../../../config/palette";
-// import { Wrapper } from "../../../../layout/styles";
 import LeftArrow from "../../../../assets/icons/LeftArrow.svg";
 import RightArrow from "../../../../assets/icons/RightArrow.svg";
 
@@ -10,6 +8,7 @@ const MoveLeft = keyframes`
 }
 100% {
   transform: translate(100rem);
+  /* transform: translate(102.5rem); */
 }
 `;
 
@@ -19,16 +18,17 @@ const MoveRight = keyframes`
 }
 100% {
   transform: translate(-100rem);
+  /* transform: translate(-102.5rem); */
 }
 `;
 
 export const Container = styled.div`
-  width: 110rem;
+  width: 112rem;
   display: flex;
+  justify-content: center;
   align-items: center;
-  column-gap: 4rem;
+  column-gap: 2rem;
   margin: 0 auto;
-  background-color: ${MAIN_PALETTE.productSecondElementBackground};
 `;
 
 export const SliderContainer = styled.div`
@@ -36,7 +36,8 @@ export const SliderContainer = styled.div`
   display: flex;
   align-items: center;
   left: -100rem;
-  gap: 0 2.5rem;
+  /* left: -102.5rem; */
+  /* gap: 0 2.5rem; */
   &.left-entered {
     animation: ${MoveLeft} 1s forwards;
   }
@@ -46,9 +47,14 @@ export const SliderContainer = styled.div`
 `;
 
 export const SliderWrapper = styled.div`
-  /* display: flex; */
+  /* max-width: 100rem;
+  overflow: hidden; */
+
+  // Чтобы картинки были одинаковой высоты
   max-width: 100rem;
+  max-height: 65.5rem;
   overflow: hidden;
+  display: flex;
 `;
 
 export const PictureContainer = styled.div``;
@@ -56,15 +62,17 @@ export const PictureContainer = styled.div``;
 export const PaintPicture = styled.img``;
 
 export const ArrowBox = styled.div`
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 `;
+
 export const ArrowLeft = styled(ArrowBox)`
   background-image: url(${LeftArrow});
 `;
+
 export const ArrowRight = styled(ArrowBox)`
   background-image: url(${RightArrow});
 `;
