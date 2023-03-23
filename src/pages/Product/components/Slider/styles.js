@@ -39,10 +39,10 @@ export const SliderContainer = styled.div`
   /* left: -102.5rem; */
   /* gap: 0 2.5rem; */
   &.left-entered {
-    animation: ${MoveLeft} 1s forwards;
+    animation: ${MoveLeft} 0.8s forwards;
   }
   &.right-entered {
-    animation: ${MoveRight} 1s forwards;
+    animation: ${MoveRight} 0.8s forwards;
   }
 `;
 
