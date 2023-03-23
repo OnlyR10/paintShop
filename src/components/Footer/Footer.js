@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <Container>
       <FooterWrapper>
-        <Requisites>УНП 100008858</Requisites>
+        <Requisites>УНП 691644569</Requisites>
 
         <LogoContainer to="/" />
 
