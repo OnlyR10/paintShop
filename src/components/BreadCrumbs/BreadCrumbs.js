@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { useLocation } from "react-router-dom";
 import useBreadcrumbs from "use-react-router-breadcrumbs";
 import { ReactComponent as ArrowRight } from "../../assets/icons/arrowRight.svg";
+import { useResize } from "../../hooks/useResize";
 import { ROUTE_NAMES } from "../../Router/routerNames";
 import { BREADCRUMB } from "./config/BreadCrumbsConfig";
 import { BreadCrumb, BreadCrumbsWrapper, Container, Link } from "./styles";
@@ -9,11 +10,13 @@ import { BreadCrumb, BreadCrumbsWrapper, Container, Link } from "./styles";
 export const BreadCrumbs = () => {
   const breadcrumbs = useBreadcrumbs(BREADCRUMB, { disableDefaults: true });
   const { pathname } = useLocation();
+  const { mobile } = useResize();
+
   const mainPage = pathname === ROUTE_NAMES.HOME;
 
   return (
     <>
-      {mainPage ? null : (
+      {mainPage || mobile ? null : (
         <Container>
           <BreadCrumbsWrapper>
             {breadcrumbs.map(({ match, breadcrumb }, index, array) => {
