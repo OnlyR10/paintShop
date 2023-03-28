@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { paints } from "../../../constants/PaintsConfig";
+import { BASE_NAME } from "../../../constants/Roots";
 import { Slider } from "../components/Slider/Slider";
 import { ContentConfig } from "../constants/ContentConfig";
 import {
@@ -94,7 +95,7 @@ export const Product = () => {
               </FileDownloadButton> */}
 
               <FileDownloadButton
-                href={`/files/${name.slice(7)}.pdf`}
+                href={`${BASE_NAME}/files/${name.slice(7)}.pdf`}
                 target="_blank"
               >
                 Тех. документ PDF
