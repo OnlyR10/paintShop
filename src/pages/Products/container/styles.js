@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { BREAKPOINTS } from "../../../config/breakpoints";
 import { TEXT_PALETTE } from "../../../config/palette";
 import { Wrapper } from "../../../layout/styles";
 
@@ -29,6 +30,11 @@ export const Title = styled.h2`
 export const FilterContainer = styled.div`
   display: flex;
   column-gap: 6rem;
+
+  @media ${BREAKPOINTS.mobile} {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const CategoriesLists = styled.div`
@@ -39,6 +45,10 @@ export const CategoriesLists = styled.div`
   flex-shrink: 0;
   //////////
   width: 25rem;
+
+  @media ${BREAKPOINTS.mobile} {
+    align-items: center;
+  }
 `;
 
 export const CategoriesList = styled(NavLink)`
