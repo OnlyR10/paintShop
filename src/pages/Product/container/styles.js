@@ -16,7 +16,7 @@ export const SliderBlock = styled.div`
 `;
 
 export const ProductWrapper = styled(Wrapper)`
-  width: 96rem;
+  max-width: 96rem;
   display: flex;
   flex-direction: column;
   align-items: center;

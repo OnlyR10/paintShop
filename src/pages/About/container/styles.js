@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { TEXT_PALETTE } from "../../../config/palette";
 import { Wrapper } from "../../../layout/styles";
+import { TableContainer as Table } from "../../Product/components/Delivery/styles";
 
 export const Container = styled.div`
   width: 100%;
@@ -49,4 +50,8 @@ export const Text = styled.p`
   margin: 0;
   font-family: "Inter-Regular";
   font-size: 2rem;
+`;
+
+export const TableContainer = styled(Table)`
+  padding: 1.5rem 0 2rem;
 `;
