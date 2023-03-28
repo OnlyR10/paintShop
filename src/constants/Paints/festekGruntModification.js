@@ -7,7 +7,7 @@ export const gruntModification = {
   category: [categoriesOfPaints.primer],
   path: "festek_grunt_modification",
   name: "FESTEK_GRUNT_MODIFICATION",
-  header: "Грунтовка глубокого проникновения «FESTEK_GRUNT»",
+  header: "Грунтовка глубокого проникновения «FESTEK-GRUNT»",
   productsPage: {
     title: "Грунтовка гидрофобизирующая модификации ВС «FESTEK-GRUNT»",
     text: "Для защиты минеральных поверхностей от воздействия влаги. Препятствует намоканию поверхностей",

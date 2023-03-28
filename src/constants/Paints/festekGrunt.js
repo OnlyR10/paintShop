@@ -7,7 +7,7 @@ export const grunt = {
   category: [categoriesOfPaints.primer],
   path: "festek_grunt",
   name: "FESTEK_GRUNT",
-  header: "Грунтовка глубокого проникновения «FESTEK_GRUNT»",
+  header: "Грунтовка глубокого проникновения «FESTEK-GRUNT»",
   productsPage: {
     title: "Универсальная грунтовка «FESTEK-GRUNT»",
     text: "Готовая к применению или концентрат укрепляет практически все виды поверхностей. Снижает расход краски. Для безупречного финишного покрытия",
