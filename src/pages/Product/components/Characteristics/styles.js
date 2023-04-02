@@ -14,19 +14,4 @@ export const Table = styled.table`
 
 export const TableHead = styled.thead``;
 
-export const TableRow = styled.tr``;
-
-export const TableHeader = styled.th`
-  padding: 2rem;
-  font-size: 2.2rem;
-  text-align: left;
-  border: 1px solid ${MAIN_PALETTE.edgingBackground};
-`;
-
 export const TableBody = styled.tbody``;
-
-export const TableData = styled.td`
-  padding: 1rem 3rem 1rem 1.2rem;
-  font-size: 1.8rem;
-  border: 1px solid ${MAIN_PALETTE.edgingBackground};
-`;
