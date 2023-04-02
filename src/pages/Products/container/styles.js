@@ -8,10 +8,18 @@ export const Container = styled.main`
   width: 100%;
   padding-top: calc(10vh + 6rem);
   flex: 1 0 auto;
+
+  @media ${BREAKPOINTS.tablet} {
+    padding-top: calc(10vh);
+  }
 `;
 
 export const ProductsWrapper = styled(Wrapper)`
   padding: 0 10rem 2rem;
+
+  @media ${BREAKPOINTS.smartphone} {
+    padding: 0 2rem 2rem;
+  }
 `;
 
 export const TitleContainer = styled.div`
@@ -31,7 +39,7 @@ export const FilterContainer = styled.div`
   display: flex;
   column-gap: 6rem;
 
-  @media ${BREAKPOINTS.mobile} {
+  @media ${BREAKPOINTS.tablet} {
     flex-direction: column;
     align-items: center;
   }
@@ -46,7 +54,7 @@ export const CategoriesLists = styled.div`
   //////////
   width: 25rem;
 
-  @media ${BREAKPOINTS.mobile} {
+  @media ${BREAKPOINTS.tablet} {
     align-items: center;
   }
 `;

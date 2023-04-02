@@ -7,7 +7,7 @@ export const PaintsCards = styled.div`
   gap: 5rem;
   padding-top: 1rem;
 
-  @media ${BREAKPOINTS.mobile} {
+  @media ${BREAKPOINTS.laptop} {
     justify-content: center;
   }
 `;
