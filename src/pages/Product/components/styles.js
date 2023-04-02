@@ -15,7 +15,7 @@ export const Text = styled.p`
   text-align: justify;
   margin: 0;
 
-  @media ${BREAKPOINTS.mobile} {
+  @media ${BREAKPOINTS.smartphone} {
     text-align: center;
   }
 `;
@@ -28,7 +28,7 @@ export const TableHeader = styled.th`
   text-align: left;
   border: 1px solid ${MAIN_PALETTE.edgingBackground};
 
-  @media ${BREAKPOINTS.mobile} {
+  @media ${BREAKPOINTS.smartphone} {
     padding: 2rem 1rem;
   }
 `;

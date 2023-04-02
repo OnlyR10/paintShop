@@ -23,8 +23,12 @@ export const ProductWrapper = styled(Wrapper)`
   row-gap: 2rem;
   padding: 2rem 10rem;
 
-  @media ${BREAKPOINTS.mobile} {
+  @media ${BREAKPOINTS.desktop} {
     padding: 2rem 4rem;
+  }
+
+  @media ${BREAKPOINTS.smartphone} {
+    padding: 2rem;
     text-align: center;
   }
 `;
