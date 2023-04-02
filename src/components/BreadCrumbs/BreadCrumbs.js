@@ -10,13 +10,13 @@ import { BreadCrumb, BreadCrumbsWrapper, Container, Link } from "./styles";
 export const BreadCrumbs = () => {
   const breadcrumbs = useBreadcrumbs(BREADCRUMB, { disableDefaults: true });
   const { pathname } = useLocation();
-  const { mobile } = useContext(Context);
+  const { tablet } = useContext(Context);
 
   const mainPage = pathname === ROUTE_NAMES.HOME;
 
   return (
     <>
-      {mainPage || mobile ? null : (
+      {mainPage || tablet ? null : (
         <Container>
           <BreadCrumbsWrapper>
             {breadcrumbs.map(({ match, breadcrumb }, index, array) => {
