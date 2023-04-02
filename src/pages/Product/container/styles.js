@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import upload from "../../../assets/icons/upload.svg";
+import { BREAKPOINTS } from "../../../config/breakpoints";
 import { MAIN_PALETTE, TEXT_PALETTE } from "../../../config/palette";
 import { Wrapper } from "../../../layout/styles";
 
@@ -10,9 +11,8 @@ export const Container = styled.main`
   visibility: ${({ render }) => (render ? "visible" : "hidden")};
 `;
 
-export const SliderBlock = styled.div`
+export const ContentContainer = styled.div`
   width: 100%;
-  background-color: ${MAIN_PALETTE.productSecondElementBackground};
 `;
 
 export const ProductWrapper = styled(Wrapper)`
@@ -22,10 +22,11 @@ export const ProductWrapper = styled(Wrapper)`
   align-items: center;
   row-gap: 2rem;
   padding: 2rem 10rem;
-`;
 
-export const ContentContainer = styled.div`
-  width: 100%;
+  @media ${BREAKPOINTS.mobile} {
+    padding: 2rem 4rem;
+    text-align: center;
+  }
 `;
 
 export const ShortDescription = styled.div`
