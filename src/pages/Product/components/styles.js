@@ -24,6 +24,7 @@ export const TableRow = styled.tr``;
 
 export const TableHeader = styled.th`
   padding: 2rem;
+  font-family: "Inter-Bold";
   font-size: 2.2rem;
   text-align: left;
   border: 1px solid ${MAIN_PALETTE.edgingBackground};
@@ -35,7 +36,12 @@ export const TableHeader = styled.th`
 
 export const TableData = styled.td`
   padding: 1rem 3rem 1rem 1.2rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-family: "Inter-Regular";
   text-align: left;
   border: 1px solid ${MAIN_PALETTE.edgingBackground};
+
+  @media ${BREAKPOINTS.tablet} {
+    padding: 1rem;
+  }
 `;
