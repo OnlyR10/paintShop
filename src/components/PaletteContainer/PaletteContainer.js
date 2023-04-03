@@ -1,4 +1,5 @@
 import React from "react";
+import { colorPalette } from "../../constants/ColorPalette";
 import {
   ColorBox,
   ColorDescription,
@@ -8,10 +9,10 @@ import {
   Header,
   Info,
   InfoContainer,
+  Link,
   Notice,
   Title,
 } from "./styles";
-import { colorPalette } from "../../constants/ColorPalette";
 
 export const PaletteContainer = ({ product }) => {
   return (
@@ -21,18 +22,39 @@ export const PaletteContainer = ({ product }) => {
         <InfoContainer>
           <Notice>Обращаем ваше внимание!</Notice>
           <Info>
-            Окончательный выбор цвета, текстуры, фактуры необходимо производить в салоне, так как способность передавать
-            цвет без искажений у всех дисплеев разная. Цвета в палитре располагаются в порядке сочетания.
+            Цвет на мониторе Вашего устройства отличается от реального цвета
+            колерованного продукта, поэтому для подбора цвета мы рекомендуем
+            обращаться к менеджеру для выбора цвета по вееру.
+          </Info>
+
+          <Info>
+            После выбора цвета, Вы сможете заказать материала с доставкой на Ваш
+            объект.
+          </Info>
+
+          <Info>
+            Цена колерованного продукта отличается от цены базового продукта и
+            будет рассчитана нами при вашем обращении.
+          </Info>
+
+          <Info>
+            Так же для визуализации цвета можете воспользоваться{" "}
+            <Link>Spectrum Express</Link>
           </Info>
         </InfoContainer>
       </Header>
       <ColorPaletteList>
-        {colorPalette.map(({ background, colorName, colorDescription }, index) => (
-          <ColorBox key={`${background}-${index}`} backgroundcolor={background}>
-            <ColorName>{colorName}</ColorName>
-            <ColorDescription>{colorDescription}</ColorDescription>
-          </ColorBox>
-        ))}
+        {colorPalette.map(
+          ({ background, colorName, colorDescription }, index) => (
+            <ColorBox
+              key={`${background}-${index}`}
+              backgroundcolor={background}
+            >
+              <ColorName>{colorName}</ColorName>
+              <ColorDescription>{colorDescription}</ColorDescription>
+            </ColorBox>
+          )
+        )}
       </ColorPaletteList>
     </Container>
   );

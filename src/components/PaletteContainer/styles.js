@@ -1,12 +1,17 @@
 import styled from "styled-components";
-import { MAIN_PALETTE } from "../../config/palette";
+import { BREAKPOINTS } from "../../config/breakpoints";
+import { MAIN_PALETTE, TEXT_PALETTE } from "../../config/palette";
 
 export const Container = styled.div`
   width: 100%;
   padding-bottom: 2rem;
 `;
 
-export const Header = styled.div``;
+export const Header = styled.div`
+  @media ${BREAKPOINTS.tablet} {
+    padding-top: 2rem;
+  }
+`;
 
 export const Title = styled.h2`
   margin-top: 0;
@@ -26,6 +31,25 @@ export const Notice = styled.p`
 export const Info = styled.p`
   font-family: "Inter-Regular";
   font-size: 1.6rem;
+`;
+
+export const Link = styled.a`
+  margin: 0;
+  border-bottom: 0.2rem solid transparent;
+  /* font-family: "Inter-Regular";
+  font-size: 2rem;
+  line-height: 3rem; */
+  color: ${TEXT_PALETTE.linkText};
+  text-decoration: none;
+  cursor: pointer;
+  :hover {
+    color: goldenrod;
+    transition: color 0.3s;
+  }
+  :active {
+    color: goldenrod;
+    border-bottom: 0.2rem solid goldenrod;
+  }
 `;
 
 export const ColorPaletteList = styled.div`

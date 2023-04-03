@@ -1,12 +1,14 @@
 import styled from "styled-components";
+import { PageContainer } from "../../../components/PageContainer";
+import { BREAKPOINTS } from "../../../config/breakpoints";
 import { TEXT_PALETTE } from "../../../config/palette";
 import { Wrapper } from "../../../layout/styles";
 import { TableContainer as Table } from "../../Product/components/Delivery/styles";
 
-export const Container = styled.div`
-  width: 100%;
-  padding-top: calc(10vh + 6rem);
-  flex: 1 0 auto;
+export const Container = styled(PageContainer)`
+  @media ${BREAKPOINTS.tablet} {
+    padding-top: calc(10vh);
+  }
 `;
 
 export const AboutWrapper = styled(Wrapper)`

@@ -1,16 +1,22 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { PageContainer } from "../../../components/PageContainer";
+import { BREAKPOINTS } from "../../../config/breakpoints";
 import { TEXT_PALETTE } from "../../../config/palette";
 import { Wrapper } from "../../../layout/styles";
 
-export const Container = styled.main`
-  width: 100%;
-  padding-top: calc(10vh + 6rem);
-  flex: 1 0 auto;
+export const Container = styled(PageContainer)`
+  @media ${BREAKPOINTS.tablet} {
+    padding-top: calc(10vh);
+  }
 `;
 
 export const ProductsWrapper = styled(Wrapper)`
   padding: 0 10rem 2rem;
+
+  @media ${BREAKPOINTS.smartphone} {
+    padding: 0 2rem 2rem;
+  }
 `;
 
 export const TitleContainer = styled.div`
@@ -29,6 +35,11 @@ export const Title = styled.h2`
 export const FilterContainer = styled.div`
   display: flex;
   column-gap: 6rem;
+
+  @media ${BREAKPOINTS.tablet} {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const CategoriesLists = styled.div`
@@ -39,6 +50,10 @@ export const CategoriesLists = styled.div`
   flex-shrink: 0;
   //////////
   width: 25rem;
+
+  @media ${BREAKPOINTS.tablet} {
+    align-items: center;
+  }
 `;
 
 export const CategoriesList = styled(NavLink)`

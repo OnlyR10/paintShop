@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { PageContainer } from "../../../components/PageContainer";
 import { MAIN_PALETTE } from "../../../config/palette";
 import { Wrapper } from "../../../layout/styles";
 
@@ -27,11 +28,7 @@ const appearanceMainPage = keyframes`
 }
 `;
 
-export const Container = styled.main`
-  width: 100%;
-  padding-top: 10vh;
-  flex: 1 0 auto;
-`;
+export const Container = styled(PageContainer)``;
 
 // export const Sachshell = styled.div`
 //   width: 100%;

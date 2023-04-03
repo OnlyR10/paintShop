@@ -26,7 +26,10 @@ export const ContactsContainer = () => {
       </PhoneContainer>
 
       <ContactsColumn>
-        <ContactBox href="https://www.instagram.com/" target={"_blank"}>
+        <ContactBox
+          href="https://www.instagram.com/festek_bel/"
+          target={"_blank"}
+        >
           <IconInstagram />
           <Contact>Instagram</Contact>
         </ContactBox>

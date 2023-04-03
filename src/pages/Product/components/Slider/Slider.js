@@ -4,7 +4,6 @@ import {
   ArrowLeft,
   ArrowRight,
   Container,
-  PaintPicture,
   PictureContainer,
   SliderContainer,
   SliderWrapper,
@@ -81,9 +80,10 @@ export const Slider = ({ images }) => {
                   .map((indexImage) => images.at(indexImage))
                   .map((image, index) => {
                     return (
-                      <PictureContainer key={`${image}-${index}}`}>
-                        <PaintPicture src={image} />
-                      </PictureContainer>
+                      <PictureContainer
+                        key={`${image}-${index}}`}
+                        src={image}
+                      ></PictureContainer>
                     );
                   })}
               </SliderContainer>

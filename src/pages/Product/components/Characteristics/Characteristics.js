@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  Container,
-  Table,
-  TableBody,
-  TableData,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "./styles";
+import { TableData, TableHeader, TableRow } from "../styles";
+import { Container, Table, TableBody, TableHead } from "./styles";
 
 export const Characteristics = ({ paint }) => {
   const technicalData = paint.documentation.description.technicalData;

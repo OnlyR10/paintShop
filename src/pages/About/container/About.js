@@ -2,11 +2,13 @@ import React from "react";
 import {
   Table,
   TableBody,
-  TableData,
   TableHead,
+} from "../../Product/components/Delivery/styles";
+import {
+  TableData,
   TableHeader,
   TableRow,
-} from "../../Product/components/Delivery/styles";
+} from "../../Product/components/styles";
 import {
   AboutWrapper,
   Comma,
