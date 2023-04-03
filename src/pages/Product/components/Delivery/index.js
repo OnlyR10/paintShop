@@ -1,3 +1,4 @@
+import { TableData, TableHeader, TableRow, Text, Title } from "../styles";
 import {
   Container,
   InfoContainer,
@@ -5,12 +6,7 @@ import {
   Table,
   TableBody,
   TableContainer,
-  TableData,
   TableHead,
-  TableHeader,
-  TableRow,
-  Text,
-  Title,
 } from "./styles";
 
 export const Delivery = () => {

@@ -1,18 +1,20 @@
 import styled, { css } from "styled-components";
 import upload from "../../../assets/icons/upload.svg";
+import { PageContainer } from "../../../components/PageContainer";
+import { BREAKPOINTS } from "../../../config/breakpoints";
 import { MAIN_PALETTE, TEXT_PALETTE } from "../../../config/palette";
 import { Wrapper } from "../../../layout/styles";
 
-export const Container = styled.main`
-  width: 100%;
-  padding-top: calc(10vh + 6rem);
-  flex: 1 0 auto;
+export const Container = styled(PageContainer)`
   visibility: ${({ render }) => (render ? "visible" : "hidden")};
+
+  @media ${BREAKPOINTS.tablet} {
+    padding-top: calc(10vh + 2rem);
+  }
 `;
 
-export const SliderBlock = styled.div`
+export const ContentContainer = styled.div`
   width: 100%;
-  background-color: ${MAIN_PALETTE.productSecondElementBackground};
 `;
 
 export const ProductWrapper = styled(Wrapper)`
@@ -22,10 +24,15 @@ export const ProductWrapper = styled(Wrapper)`
   align-items: center;
   row-gap: 2rem;
   padding: 2rem 10rem;
-`;
 
-export const ContentContainer = styled.div`
-  width: 100%;
+  @media ${BREAKPOINTS.desktop} {
+    padding: 2rem 4rem;
+  }
+
+  @media ${BREAKPOINTS.smartphone} {
+    padding: 2rem;
+    text-align: center;
+  }
 `;
 
 export const ShortDescription = styled.div`

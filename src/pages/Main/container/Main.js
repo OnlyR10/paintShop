@@ -18,7 +18,7 @@ export const Main = () => {
   const [sachshell, setSachshell] = useState(true);
 
   return (
-    <Container>
+    <Container mainPage>
       {/* <Sachshell>
            <TextContainer>
              <Veil />
@@ -46,7 +46,7 @@ export const Main = () => {
             ручной работы. Мы инвестировали в лучшие ингредиенты и практиковали
             традиционные европейские методы для создания конечного продукта. Мы
             гарантируем высокое качество нашей продукции, произведенной по
-            европейским стандартам
+            европейским стандартам.
           </Introduction>
         </IntroductionWrapper>
 

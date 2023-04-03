@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, InfoContainer, Text, Title } from "./styles";
+import { Text, Title } from "../styles";
+import { Container, InfoContainer } from "./styles";
 
 export const Application = ({ paint }) => {
   const applicationTechnology = paint.documentation.applicationTechnology;

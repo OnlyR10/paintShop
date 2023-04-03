@@ -37,9 +37,7 @@ export const Product = () => {
 
   return (
     <Container render={render}>
-      {/* <SliderBlock> */}
       <Slider images={product} />
-      {/* </SliderBlock> */}
 
       <ContentContainer>
         <ProductWrapper>
