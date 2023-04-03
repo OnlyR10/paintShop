@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BREAKPOINTS } from "../../config/breakpoints";
 import { MAIN_PALETTE } from "../../config/palette";
 
 export const Container = styled.div`
@@ -6,7 +7,11 @@ export const Container = styled.div`
   padding-bottom: 2rem;
 `;
 
-export const Header = styled.div``;
+export const Header = styled.div`
+  @media ${BREAKPOINTS.tablet} {
+    padding-top: 2rem;
+  }
+`;
 
 export const Title = styled.h2`
   margin-top: 0;

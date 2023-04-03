@@ -18,7 +18,7 @@ export const Main = () => {
   const [sachshell, setSachshell] = useState(true);
 
   return (
-    <Container>
+    <Container mainPage>
       {/* <Sachshell>
            <TextContainer>
              <Veil />

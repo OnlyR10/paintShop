@@ -1,14 +1,16 @@
 import styled, { css } from "styled-components";
 import upload from "../../../assets/icons/upload.svg";
+import { PageContainer } from "../../../components/PageContainer";
 import { BREAKPOINTS } from "../../../config/breakpoints";
 import { MAIN_PALETTE, TEXT_PALETTE } from "../../../config/palette";
 import { Wrapper } from "../../../layout/styles";
 
-export const Container = styled.main`
-  width: 100%;
-  padding-top: calc(10vh + 6rem);
-  flex: 1 0 auto;
+export const Container = styled(PageContainer)`
   visibility: ${({ render }) => (render ? "visible" : "hidden")};
+
+  @media ${BREAKPOINTS.tablet} {
+    padding-top: calc(10vh + 2rem);
+  }
 `;
 
 export const ContentContainer = styled.div`
