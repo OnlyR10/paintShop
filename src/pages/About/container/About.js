@@ -1,24 +1,7 @@
 import React, { useContext } from "react";
+import { DeliveryTable } from "../../../components/DeliveryTable";
 import { Context } from "../../../config/context";
-import {
-  Table,
-  TableBody,
-  TableHead,
-} from "../../Product/components/Delivery/styles";
-import {
-  TableData,
-  TableHeader,
-  TableRow,
-} from "../../Product/components/styles";
-import {
-  AboutWrapper,
-  Comma,
-  Container,
-  Link,
-  TableContainer,
-  Text,
-  Title,
-} from "./styles";
+import { AboutWrapper, Comma, Container, Link, Text, Title } from "./styles";
 
 export const About = () => {
   const { smartphone, mobile } = useContext(Context);
@@ -69,25 +52,7 @@ export const About = () => {
           Для расчета стоимости доставки, обратитесь к нашим менеджерам.
         </Text>
 
-        <TableContainer>
-          <Table>
-            <TableHead>
-              <TableRow>
-                <TableHeader colSpan={2}>Доставка по Минску:</TableHeader>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              <TableRow>
-                <TableData>Сумма заказа менее 150 руб</TableData>
-                <TableData>Сумма заказа более 150 руб</TableData>
-              </TableRow>
-              <TableRow>
-                <TableData>10 рублей доставка</TableData>
-                <TableData>Бесплатно</TableData>
-              </TableRow>
-            </TableBody>
-          </Table>
-        </TableContainer>
+        <DeliveryTable about="true" />
       </AboutWrapper>
     </Container>
   );

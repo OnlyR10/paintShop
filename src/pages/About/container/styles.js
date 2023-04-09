@@ -3,7 +3,6 @@ import { PageContainer } from "../../../components/PageContainer";
 import { BREAKPOINTS } from "../../../config/breakpoints";
 import { TEXT_PALETTE } from "../../../config/palette";
 import { Wrapper } from "../../../layout/styles";
-import { TableContainer as Table } from "../../Product/components/Delivery/styles";
 
 export const Container = styled(PageContainer)`
   @media ${BREAKPOINTS.tablet} {
@@ -77,8 +76,4 @@ export const Text = styled.p`
   @media ${BREAKPOINTS.smartphone} {
     text-align: center;
   }
-`;
-
-export const TableContainer = styled(Table)`
-  padding: 1.5rem 0 2rem;
 `;

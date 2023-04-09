@@ -1,13 +1,6 @@
-import { TableData, TableHeader, TableRow, Text, Title } from "../styles";
-import {
-  Container,
-  InfoContainer,
-  Link,
-  Table,
-  TableBody,
-  TableContainer,
-  TableHead,
-} from "./styles";
+import { DeliveryTable } from "../../../../components/DeliveryTable";
+import { Text, Title } from "../styles";
+import { Container, InfoContainer, Link } from "./styles";
 
 export const Delivery = () => {
   return (
@@ -28,25 +21,7 @@ export const Delivery = () => {
         </Text>
       </InfoContainer>
 
-      <TableContainer>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableHeader colSpan={2}>Доставка по Минску:</TableHeader>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            <TableRow>
-              <TableData>Сумма заказа менее 150 руб</TableData>
-              <TableData>Сумма заказа более 150 руб</TableData>
-            </TableRow>
-            <TableRow>
-              <TableData>10 рублей доставка</TableData>
-              <TableData>Бесплатно</TableData>
-            </TableRow>
-          </TableBody>
-        </Table>
-      </TableContainer>
+      <DeliveryTable />
     </Container>
   );
 };
