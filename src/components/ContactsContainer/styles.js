@@ -46,10 +46,6 @@ export const ContactBox = styled.a`
   font-size: 2rem;
   color: ${TEXT_PALETTE.navigationLink};
   text-decoration: none;
-
-  @media ${BREAKPOINTS.mobile} {
-    font-size: 1.4rem;
-  }
 `;
 
 export const Icon = styled.div`

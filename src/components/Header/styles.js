@@ -24,6 +24,11 @@ export const Container = styled.header`
     grid-template-columns: 7rem 1fr 7rem;
     grid-template-areas: ". contacts burgerMenu";
   }
+
+  @media ${BREAKPOINTS.mobile} {
+    grid-template-columns: 6rem 1fr 6rem;
+    grid-template-areas: ". contacts burgerMenu";
+  }
 `;
 
 export const BurgerMenu = styled.div`
@@ -38,6 +43,10 @@ export const BurgerMenu = styled.div`
   &:hover > div {
     border-color: ${TEXT_PALETTE.active};
     transition: color 0.3s;
+  }
+
+  @media ${BREAKPOINTS.mobile} {
+    padding: 1.5rem;
   }
 `;
 
