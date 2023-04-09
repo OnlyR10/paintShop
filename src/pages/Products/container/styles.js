@@ -70,19 +70,19 @@ export const CategoriesList = styled(NavLink)`
   cursor: pointer;
   width: fit-content;
   :hover {
-    color: goldenrod;
+    color: ${TEXT_PALETTE.active};
     transition: color 0.3s;
   }
   :active {
-    color: goldenrod;
-    border-bottom: 0.2rem solid goldenrod;
+    color: ${TEXT_PALETTE.active};
+    border-bottom: 0.2rem solid ${TEXT_PALETTE.active};
   }
 
   &&.active {
     border-bottom: 0.2rem solid ${TEXT_PALETTE.main};
     transition: all 0.3s;
     &&:hover {
-      border-bottom: 0.2rem solid goldenrod;
+      border-bottom: 0.2rem solid ${TEXT_PALETTE.active};
     }
   }
 `;

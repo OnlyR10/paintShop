@@ -23,11 +23,11 @@ export const Container = styled(Link)`
     }
     && > div h2 {
       transition: color 0.3s;
-      color: goldenrod;
+      color: ${TEXT_PALETTE.active};
     }
     && > div p {
       transition: color 0.3s;
-      color: goldenrod;
+      color: ${TEXT_PALETTE.active};
     }
   }
 
@@ -36,11 +36,11 @@ export const Container = styled(Link)`
       scale: 1.1;
     }
     && > div h2 {
-      color: goldenrod;
-      border-bottom: 0.2rem solid goldenrod;
+      color: ${TEXT_PALETTE.active};
+      border-bottom: 0.2rem solid ${TEXT_PALETTE.active};
     }
     && > div p {
-      color: goldenrod;
+      color: ${TEXT_PALETTE.active};
     }
   }
 `;

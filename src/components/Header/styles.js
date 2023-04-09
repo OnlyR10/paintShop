@@ -44,18 +44,18 @@ export const NavigationLink = styled(NavLink)`
   text-decoration: none;
   border-bottom: 0.2rem solid transparent;
   :hover {
-    color: goldenrod;
+    color: ${TEXT_PALETTE.active};
     transition: color 0.3s;
   }
   :active {
-    color: goldenrod;
-    border-bottom: 0.2rem solid goldenrod;
+    color: ${TEXT_PALETTE.active};
+    border-bottom: 0.2rem solid ${TEXT_PALETTE.active};
   }
   &&.active {
     border-bottom: 0.2rem solid ${TEXT_PALETTE.navigationLink};
     transition: all 0.3s;
     &&:hover {
-      border-bottom: 0.2rem solid goldenrod;
+      border-bottom: 0.2rem solid ${TEXT_PALETTE.active};
     }
   }
 `;

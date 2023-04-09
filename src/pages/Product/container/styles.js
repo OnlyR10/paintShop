@@ -85,7 +85,7 @@ const buttonStyle = css`
   }
   :active {
     background-color: ${MAIN_PALETTE.edgingBackground};
-    color: goldenrod;
+    color: ${TEXT_PALETTE.active};
   }
 `;
 
