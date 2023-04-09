@@ -44,4 +44,8 @@ export const TableData = styled.td`
   @media ${BREAKPOINTS.tablet} {
     padding: 1rem;
   }
+
+  @media ${BREAKPOINTS.mobile} {
+    text-align: center;
+  }
 `;

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../../../config/context";
 import {
   Table,
   TableBody,
@@ -20,6 +21,8 @@ import {
 } from "./styles";
 
 export const About = () => {
+  const { smartphone, mobile } = useContext(Context);
+
   return (
     <Container>
       <AboutWrapper>
@@ -36,7 +39,7 @@ export const About = () => {
 
         <Title>Телефоны:</Title>
         <Link href="tel:+375291070568">+375 29 107 05 68</Link>
-        <Comma>,</Comma>
+        {smartphone ? null : <Comma>,</Comma>}
         <Link href="tel:+375297587670">+375 29 758 76 70</Link>
 
         <Title>Время работы:</Title>
@@ -48,18 +51,21 @@ export const About = () => {
         </Link>
 
         <Title>Юридическое лицо:</Title>
-        <Text>ООО «Экзальт»</Text>
         <Text>
-          р/с BY78AKBB30120000175180000000 в ОАО «АСБ Беларусбанк» г. Дзержинск,
-          ул. К. Маркса, д.17 БИК AKBBBY2X
+          ООО «Экзальт»
+          <br />
+          р/с {mobile ? <br /> : null}
+          BY78AKBB
+          <wbr />
+          30120000175180000000 {mobile ? <br /> : null} в ОАО «АСБ Беларусбанк»
+          г. Дзержинск, ул. К. Маркса, д.17 БИК AKBBBY2X
         </Text>
 
         <Title>Доставка по Беларуси:</Title>
         <Text>
           Осуществляем доставку по Минской области и РБ транспортом различной
           грузоподъемности.
-        </Text>
-        <Text>
+          <br />
           Для расчета стоимости доставки, обратитесь к нашим менеджерам.
         </Text>
 
