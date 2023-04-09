@@ -18,6 +18,10 @@ export const Title = styled.h2`
   font-family: "Inter-Bold";
   font-size: 3.6rem;
   text-align: center;
+
+  @media ${BREAKPOINTS.tablet} {
+    margin-bottom: 1rem;
+  }
 `;
 
 export const InfoContainer = styled.div``;
@@ -26,11 +30,20 @@ export const Notice = styled.p`
   font-family: "Inter-Bold";
   font-size: 2.5rem;
   margin: 0;
+
+  @media ${BREAKPOINTS.mobile} {
+    text-align: center;
+  }
 `;
 
 export const Info = styled.p`
   font-family: "Inter-Regular";
   font-size: 1.6rem;
+  text-align: justify;
+
+  @media ${BREAKPOINTS.mobile} {
+    text-align: center;
+  }
 `;
 
 export const Link = styled.a`
