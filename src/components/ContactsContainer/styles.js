@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import instagram from "../../assets/icons/instagram.svg";
 import onliner from "../../assets/icons/onliner.svg";
+import { BREAKPOINTS } from "../../config/breakpoints";
 import { TEXT_PALETTE } from "../../config/palette";
 
 export const Container = styled.div`
@@ -8,6 +9,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   gap: 0 4rem;
+  flex-shrink: 0;
 `;
 
 export const PhoneContainer = styled.div`
@@ -28,6 +30,11 @@ export const ContactsColumn = styled.div`
   justify-content: center;
   align-items: flex-start;
   gap: 1rem 0;
+  grid-area: contacts;
+
+  @media ${BREAKPOINTS.smartphone} {
+    justify-self: center;
+  }
 `;
 
 export const ContactBox = styled.a`
@@ -52,12 +59,12 @@ export const Icon = styled.div`
 export const Contact = styled.span`
   border-bottom: 0.2rem solid transparent;
   :hover {
-    color: goldenrod;
+    color: ${TEXT_PALETTE.active};
     transition: color 0.3s;
   }
   :active {
-    color: goldenrod;
-    border-bottom: 0.2rem solid goldenrod;
+    color: ${TEXT_PALETTE.active};
+    border-bottom: 0.2rem solid ${TEXT_PALETTE.active};
   }
 `;
 

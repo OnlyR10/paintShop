@@ -11,4 +11,12 @@ export const Container = styled(PageContainer)`
 
 export const PaletteWrapper = styled(Wrapper)`
   padding: 0 10rem;
+
+  @media ${BREAKPOINTS.tablet} {
+    padding: 0 5rem;
+  }
+
+  @media ${BREAKPOINTS.mobile} {
+    padding: 0 2rem;
+  }
 `;

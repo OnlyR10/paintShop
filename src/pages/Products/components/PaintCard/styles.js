@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { transfusionGradient } from "../../../../common/styles/transfusionGradient";
+import { BREAKPOINTS } from "../../../../config/breakpoints";
 import { TEXT_PALETTE } from "../../../../config/palette";
 
 export const Container = styled(Link)`
@@ -12,6 +13,10 @@ export const Container = styled(Link)`
   max-width: 40rem;
   text-decoration: none;
   color: ${TEXT_PALETTE.main};
+
+  @media ${BREAKPOINTS.tablet} {
+    row-gap: 0.3rem;
+  }
 
   :hover {
     && > div:first-child {

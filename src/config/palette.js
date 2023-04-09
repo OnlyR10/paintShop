@@ -9,4 +9,5 @@ export const TEXT_PALETTE = {
   main: "#000000",
   linkText: "#000000",
   navigationLink: "#FFFFFF",
+  active: "#daa520",
 };

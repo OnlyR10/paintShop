@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../../config/context";
 import {
   Contact,
   ContactBox,
@@ -11,10 +12,13 @@ import {
 } from "./styles";
 
 export const ContactsContainer = () => {
+  const { extra, desktop } = useContext(Context);
+
   return (
     <Container>
       <PhoneContainer>
-        <Label>Для заказа:</Label>
+        {extra ? null : <Label>Для заказа:</Label>}
+
         <ContactsColumn>
           <ContactBox href="tel:+375291070568">
             <Contact>+375 29 107 05 68</Contact>
@@ -25,19 +29,21 @@ export const ContactsContainer = () => {
         </ContactsColumn>
       </PhoneContainer>
 
-      <ContactsColumn>
-        <ContactBox
-          href="https://www.instagram.com/festek_bel/"
-          target={"_blank"}
-        >
-          <IconInstagram />
-          <Contact>Instagram</Contact>
-        </ContactBox>
-        <ContactBox href="https://www.onliner.by" target={"_blank"}>
-          <IconOnliner />
-          <Contact>Onliner</Contact>
-        </ContactBox>
-      </ContactsColumn>
+      {desktop ? null : (
+        <ContactsColumn>
+          <ContactBox
+            href="https://www.instagram.com/festek_bel/"
+            target={"_blank"}
+          >
+            <IconInstagram />
+            <Contact>Instagram</Contact>
+          </ContactBox>
+          <ContactBox href="https://www.onliner.by" target={"_blank"}>
+            <IconOnliner />
+            <Contact>Onliner</Contact>
+          </ContactBox>
+        </ContactsColumn>
+      )}
     </Container>
   );
 };
