@@ -15,6 +15,10 @@ export const ProductsWrapper = styled(Wrapper)`
   padding: 0 10rem 2rem;
 
   @media ${BREAKPOINTS.smartphone} {
+    padding: 0 4rem 2rem;
+  }
+
+  @media ${BREAKPOINTS.mobile} {
     padding: 0 2rem 2rem;
   }
 `;

@@ -10,4 +10,8 @@ export const PaintsCards = styled.div`
   @media ${BREAKPOINTS.laptop} {
     justify-content: center;
   }
+
+  @media ${BREAKPOINTS.tablet} {
+    gap: 2rem 4rem;
+  }
 `;

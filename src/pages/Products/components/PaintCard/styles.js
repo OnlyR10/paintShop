@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { transfusionGradient } from "../../../../common/styles/transfusionGradient";
+import { BREAKPOINTS } from "../../../../config/breakpoints";
 import { TEXT_PALETTE } from "../../../../config/palette";
 
 export const Container = styled(Link)`
@@ -13,6 +14,10 @@ export const Container = styled(Link)`
   text-decoration: none;
   color: ${TEXT_PALETTE.main};
 
+  @media ${BREAKPOINTS.tablet} {
+    row-gap: 0.3rem;
+  }
+
   :hover {
     && > div:first-child {
       transition: all 0.5s;
@@ -23,11 +28,11 @@ export const Container = styled(Link)`
     }
     && > div h2 {
       transition: color 0.3s;
-      color: ${TEXT_PALETTE.active};
+      color: goldenrod;
     }
     && > div p {
       transition: color 0.3s;
-      color: ${TEXT_PALETTE.active};
+      color: goldenrod;
     }
   }
 
@@ -36,11 +41,11 @@ export const Container = styled(Link)`
       scale: 1.1;
     }
     && > div h2 {
-      color: ${TEXT_PALETTE.active};
-      border-bottom: 0.2rem solid ${TEXT_PALETTE.active};
+      color: goldenrod;
+      border-bottom: 0.2rem solid goldenrod;
     }
     && > div p {
-      color: ${TEXT_PALETTE.active};
+      color: goldenrod;
     }
   }
 `;
