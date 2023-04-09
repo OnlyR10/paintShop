@@ -103,13 +103,13 @@ export const IntroductionWrapper = styled(Wrapper)`
   padding: 6rem 30rem 4rem;
 `;
 
-export const PictureContainer = styled.div`
-  max-width: 35rem;
-  min-width: 20rem;
+export const Poster = styled.img`
+  width: 100%;
 `;
 
 export const Logotype = styled.img`
-  width: 100%;
+  max-width: 35rem;
+  min-width: 20rem;
 `;
 
 export const Introduction = styled.h4`
