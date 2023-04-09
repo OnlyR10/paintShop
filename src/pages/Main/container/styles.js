@@ -116,7 +116,7 @@ export const IntroductionWrapper = styled(Wrapper)`
   }
 
   @media ${BREAKPOINTS.smartphone} {
-    padding: 2rem 3rem 1rem;
+    padding: 2rem 2rem 1rem;
   }
 `;
 
