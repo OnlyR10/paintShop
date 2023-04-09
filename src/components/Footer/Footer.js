@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../../config/context";
 import { ContactsContainer } from "../ContactsContainer/ContactsContainer";
 import { LogoContainer } from "../Header/styles";
 import { Container, FooterWrapper, Requisites } from "./styles";
 
 export const Footer = () => {
+  const { laptop, tablet } = useContext(Context);
+
   return (
-    <Container>
-      <FooterWrapper>
-        <Requisites>УНП 691644569</Requisites>
+    <>
+      {tablet ? null : (
+        <Container>
+          <FooterWrapper>
+            {laptop ? null : <Requisites>УНП 691644569</Requisites>}
 
-        <LogoContainer to="/" />
+            <LogoContainer to="/" />
 
-        <ContactsContainer />
-      </FooterWrapper>
-    </Container>
+            <ContactsContainer />
+          </FooterWrapper>
+        </Container>
+      )}
+    </>
   );
 };

@@ -30,6 +30,7 @@ export const ProductWrapper = styled(Wrapper)`
   }
 
   @media ${BREAKPOINTS.smartphone} {
+    row-gap: 1rem;
     padding: 2rem;
     text-align: center;
   }
@@ -38,6 +39,10 @@ export const ProductWrapper = styled(Wrapper)`
 export const ShortDescription = styled.div`
   padding: 0 2rem;
   text-align: center;
+
+  @media ${BREAKPOINTS.smartphone} {
+    padding: 0;
+  }
 `;
 
 export const PaintTitle = styled.h2`
@@ -59,6 +64,10 @@ export const InfoContainer = styled.div`
   border: 0.1rem solid ${MAIN_PALETTE.productSecondElementBackground};
   border-radius: 2rem;
   background-color: ${MAIN_PALETTE.productSecondElementBackground};
+
+  @media ${BREAKPOINTS.smartphone} {
+    padding: 1rem;
+  }
 `;
 
 export const ControlPanel = styled.div`
@@ -85,7 +94,7 @@ const buttonStyle = css`
   }
   :active {
     background-color: ${MAIN_PALETTE.edgingBackground};
-    color: goldenrod;
+    color: ${TEXT_PALETTE.active};
   }
 `;
 

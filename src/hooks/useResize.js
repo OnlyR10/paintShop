@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import {
-  mobileWidth,
-  tabletWidth,
   desktopWidth,
+  extraWidth,
+  laptopWidth,
+  mobileWidth,
   smartphoneWidth,
+  tabletWidth,
 } from "../config/breakpoints";
 
 export const useResize = () => {
@@ -23,7 +25,9 @@ export const useResize = () => {
 
   return {
     width,
+    extra: width <= extraWidth,
     desktop: width <= desktopWidth,
+    laptop: width <= laptopWidth,
     tablet: width <= tabletWidth,
     mobile: width <= mobileWidth,
     smartphone: width <= smartphoneWidth,

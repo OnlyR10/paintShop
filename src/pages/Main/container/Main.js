@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-import Logo from "../../../assets/images/logo.png";
+import React, { useContext } from "react";
+import LogoImage from "../../../assets/images/logo.png";
+import PosterImage from "../../../assets/images/poster.jpg";
+import { Context } from "../../../config/context";
 import { PaintTypeContainer } from "../components/PaintTypeContainer/PaintTypeContainer";
 import { VideoContainer } from "../components/VideoContainer/VideoContainer";
 import { sectionConfig } from "../constants/sectionConfig";
@@ -10,12 +12,14 @@ import {
   IntroductionWrapper,
   Logotype,
   PaintWrapper,
-  PictureContainer,
+  Poster,
   TextDefinition,
 } from "./styles";
 
 export const Main = () => {
-  const [sachshell, setSachshell] = useState(true);
+  const { laptop } = useContext(Context);
+
+  // const [sachshell, setSachshell] = useState(true);
 
   return (
     <Container mainPage>
@@ -31,12 +35,10 @@ export const Main = () => {
          </Sachshell> */}
 
       <ContentContainer>
-        <VideoContainer />
+        {laptop ? <Poster src={PosterImage} /> : <VideoContainer />}
 
         <IntroductionWrapper>
-          <PictureContainer>
-            <Logotype src={Logo} />
-          </PictureContainer>
+          <Logotype src={LogoImage} />
 
           <Introduction>
             <TextDefinition>Экзальт</TextDefinition> - это компания по

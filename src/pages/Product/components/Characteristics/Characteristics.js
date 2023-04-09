@@ -1,17 +1,24 @@
 import React from "react";
-import { TableData, TableHeader, TableRow } from "../styles";
-import { Container, Table, TableBody, TableHead } from "./styles";
+import {
+  Table,
+  TableBody,
+  TableContainer,
+  TableData,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "../../../../components/DeliveryTable/styles";
 
 export const Characteristics = ({ paint }) => {
   const technicalData = paint.documentation.description.technicalData;
 
   return (
-    <Container>
-      <Table>
+    <TableContainer>
+      <Table wordbreak="true">
         <TableHead>
           <TableRow>
             <TableHeader>Показатели качества</TableHeader>
-            <TableHeader>{`Значение по\u00A0ТУ`}</TableHeader>
+            <TableHeader minwidth="true">{`Значение по\u00A0ТУ`}</TableHeader>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -23,6 +30,6 @@ export const Characteristics = ({ paint }) => {
           ))}
         </TableBody>
       </Table>
-    </Container>
+    </TableContainer>
   );
 };
