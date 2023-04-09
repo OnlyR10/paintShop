@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { PageContainer } from "../../../components/PageContainer";
+import { BREAKPOINTS } from "../../../config/breakpoints";
 import { MAIN_PALETTE } from "../../../config/palette";
 import { Wrapper } from "../../../layout/styles";
 
@@ -101,6 +102,22 @@ export const IntroductionWrapper = styled(Wrapper)`
   align-items: center;
   row-gap: 2rem;
   padding: 6rem 30rem 4rem;
+
+  @media ${BREAKPOINTS.extra} {
+    padding: 6rem 15rem 4rem;
+  }
+
+  @media ${BREAKPOINTS.laptop} {
+    padding: 6rem 10rem 4rem;
+  }
+
+  @media ${BREAKPOINTS.tablet} {
+    padding: 2rem 5rem 1rem;
+  }
+
+  @media ${BREAKPOINTS.smartphone} {
+    padding: 2rem 3rem 1rem;
+  }
 `;
 
 export const Poster = styled.img`
@@ -110,6 +127,10 @@ export const Poster = styled.img`
 export const Logotype = styled.img`
   max-width: 35rem;
   min-width: 20rem;
+
+  @media ${BREAKPOINTS.mobile} {
+    max-width: 28rem;
+  }
 `;
 
 export const Introduction = styled.h4`
@@ -131,4 +152,16 @@ export const PaintWrapper = styled(Wrapper)`
   gap: 2rem 3rem;
   /* min-height: 20vh; */
   padding: 2rem 10rem;
+
+  @media ${BREAKPOINTS.extra} {
+    padding: 2rem 6rem;
+  }
+
+  @media ${BREAKPOINTS.extra} {
+    padding: 2rem 6rem;
+  }
+
+  @media ${BREAKPOINTS.tablet} {
+    padding: 2rem;
+  }
 `;

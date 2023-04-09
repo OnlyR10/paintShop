@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { BREAKPOINTS } from "../../../../config/breakpoints";
 import { MAIN_PALETTE, TEXT_PALETTE } from "../../../../config/palette";
 
 export const Container = styled(Link)`
@@ -9,11 +10,19 @@ export const Container = styled(Link)`
   /* justify-content: center; */
   row-gap: 2rem;
   width: 45rem;
-  height: 40rem;
   padding: 2rem 3rem;
   background-color: ${MAIN_PALETTE.productFirstElementBackground};
   text-decoration: none;
   color: ${TEXT_PALETTE.main};
+
+  @media ${BREAKPOINTS.smartphone} {
+    row-gap: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  @media ${BREAKPOINTS.mobile} {
+    row-gap: 0.5rem;
+  }
 
   :hover {
     && > div:first-child {
@@ -50,6 +59,11 @@ export const VideoScreensaver = styled.video`
   width: 40rem;
   height: 269px;
   object-fit: fill;
+
+  @media ${BREAKPOINTS.mobile} {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 export const VideoSource = styled.source``;
@@ -79,6 +93,10 @@ export const Header = styled.h2`
   color: ${TEXT_PALETTE.main};
   text-align: center;
   text-decoration: none;
+
+  @media ${BREAKPOINTS.mobile} {
+    margin: 0.5rem 0;
+  }
 `;
 
 export const Description = styled.p`
