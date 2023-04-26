@@ -10,6 +10,7 @@ import {
 } from "../ContactsContainer/styles";
 import {
   BurgerMenu,
+  Circle,
   Container,
   HeaderWrapper,
   Line,
@@ -56,6 +57,8 @@ export const Header = () => {
                   <Line />
                   <Line />
                   <Line />
+
+                  <Circle />
                 </BurgerMenu>
               );
             }}
