@@ -9,7 +9,7 @@ export const grunt = {
   name: "FESTEK_GRUNT",
   header: "Грунтовка глубокого проникновения «FESTEK-GRUNT»",
   link: "https://drive.google.com/file/d/1cJlNbwDmWJ2vlXG_epiHHvExCqSRHxfo/view?usp=share_link",
-  price: "180,00",
+  price: "30,00",
   productsPage: {
     title: "Универсальная грунтовка «FESTEK-GRUNT»",
     text: "Готовая к применению или концентрат укрепляет практически все виды поверхностей. Снижает расход краски. Для безупречного финишного покрытия",

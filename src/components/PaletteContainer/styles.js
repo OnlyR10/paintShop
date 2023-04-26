@@ -4,7 +4,7 @@ import { MAIN_PALETTE, TEXT_PALETTE } from "../../config/palette";
 
 export const Container = styled.div`
   width: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: ${({ product }) => (product ? 0 : "2rem")};
 `;
 
 export const Header = styled.div`
@@ -103,5 +103,11 @@ export const ColorBox = styled.div.attrs(({ backgroundcolor }) => ({
     border: 0.1rem solid ${MAIN_PALETTE.productFirstElementBackground};
     position: relative;
     z-index: 1;
+  }
+
+  @media ${BREAKPOINTS.tablet} {
+    :hover {
+      scale: 1.2;
+    }
   }
 `;

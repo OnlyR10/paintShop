@@ -5,7 +5,6 @@ import { Slider } from "../components/Slider/Slider";
 import { ContentConfig } from "../constants/ContentConfig";
 import {
   Container,
-  ContentContainer,
   ControlPanel,
   FileDownloadButton,
   InfoContainer,
@@ -42,71 +41,65 @@ export const Product = () => {
     <Container render={render}>
       <Slider images={product} />
 
-      <ContentContainer>
-        <ProductWrapper>
-          <ShortDescription>
-            <PaintTitle>{header}</PaintTitle>
-            <PaintPriceText>
-              От <PaintPrice>{price}</PaintPrice> руб.
-            </PaintPriceText>
-            <PaintDescription>{purpose}</PaintDescription>
-          </ShortDescription>
+      <ProductWrapper>
+        <ShortDescription>
+          <PaintTitle>{header}</PaintTitle>
+          <PaintPriceText>
+            От <PaintPrice>{price}</PaintPrice> руб.
+          </PaintPriceText>
+          <PaintDescription>{purpose}</PaintDescription>
+        </ShortDescription>
 
-          <InfoContainer>
-            <ControlPanel>
-              <LinkButton
-                className={activeContent === "Description" ? "active" : null}
-                onClick={() => setActiveContent("Description")}
-              >
-                Описание
-              </LinkButton>
+        <InfoContainer>
+          <ControlPanel>
+            <LinkButton
+              className={activeContent === "Description" ? "active" : null}
+              onClick={() => setActiveContent("Description")}
+            >
+              Описание
+            </LinkButton>
 
-              <LinkButton
-                className={activeContent === "Application" ? "active" : null}
-                onClick={() => setActiveContent("Application")}
-              >
-                Нанесение
-              </LinkButton>
+            <LinkButton
+              className={activeContent === "Application" ? "active" : null}
+              onClick={() => setActiveContent("Application")}
+            >
+              Нанесение
+            </LinkButton>
 
-              <LinkButton
-                className={
-                  activeContent === "Characteristics" ? "active" : null
-                }
-                onClick={() => setActiveContent("Characteristics")}
-              >
-                Характеристики
-              </LinkButton>
+            <LinkButton
+              className={activeContent === "Characteristics" ? "active" : null}
+              onClick={() => setActiveContent("Characteristics")}
+            >
+              Характеристики
+            </LinkButton>
 
-              <LinkButton
-                className={
-                  activeContent === "PaletteContainer" ? "active" : null
-                }
-                onClick={() => setActiveContent("PaletteContainer")}
-              >
-                Цветовая палитра
-              </LinkButton>
+            <LinkButton
+              className={activeContent === "PaletteContainer" ? "active" : null}
+              onClick={() => setActiveContent("PaletteContainer")}
+            >
+              Цветовая палитра
+            </LinkButton>
 
-              <LinkButton
-                className={activeContent === "Delivery" ? "active" : null}
-                onClick={() => setActiveContent("Delivery")}
-              >
-                Условия доставки и самовывоза
-              </LinkButton>
+            <LinkButton
+              className={activeContent === "Delivery" ? "active" : null}
+              onClick={() => setActiveContent("Delivery")}
+            >
+              Условия доставки и самовывоза
+            </LinkButton>
 
-              {/* <FileDownloadButton href={`/files/${name.slice(7)}.pdf`} target="_blank">
+            {/* <FileDownloadButton href={`/files/${name.slice(7)}.pdf`} target="_blank">
                 <UploadIcon />
                 <Text>Тех. документ PDF</Text>
               </FileDownloadButton> */}
 
-              <FileDownloadButton href={link} target="_blank">
-                Тех. документ PDF
-              </FileDownloadButton>
-            </ControlPanel>
+            <FileDownloadButton href={link} target="_blank">
+              Тех. документ PDF
+            </FileDownloadButton>
+          </ControlPanel>
 
-            <Content paint={currentPaint} />
-          </InfoContainer>
-        </ProductWrapper>
-      </ContentContainer>
+          <Content paint={currentPaint} product />
+        </InfoContainer>
+      </ProductWrapper>
     </Container>
   );
 };

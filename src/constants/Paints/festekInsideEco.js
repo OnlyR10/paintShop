@@ -9,7 +9,7 @@ export const insideEco = {
   name: "FESTEK-INSIDE ECO",
   header: "Краска интерьерная акриловая «FESTEK-INSIDE ECO»",
   link: "https://drive.google.com/file/d/1UcZQcalXzguubYoBWqm3y5ya-4KS0jCz/view?usp=share_link",
-  price: "180,00",
+  price: "165,00",
   productsPage: {
     title: "Интерьерная «FESTEK-INSIDE ECO»",
     text: "Матовая краска для окраски стен и потолков с умеренной эксплуатационной нагрузкой",

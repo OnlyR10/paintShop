@@ -9,7 +9,7 @@ export const facadeEco = {
   name: "FESTEK-FAСADE ECO",
   header: "Краска фасадная акриловая «FESTEK-FAСADE ECO»",
   link: "https://drive.google.com/file/d/1k2n262qiIt71hAulfBUbOJAduX4pKfjz/view?usp=share_link",
-  price: "180,00",
+  price: "90,00",
   productsPage: {
     title: "Фасадная «FESTEK-FAСADE ECO»",
     text: "Укрывистая, атмосферостойкая краска с сопротивлением влиянию УФ лучей",

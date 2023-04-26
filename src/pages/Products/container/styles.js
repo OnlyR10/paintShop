@@ -14,12 +14,8 @@ export const Container = styled(PageContainer)`
 export const ProductsWrapper = styled(Wrapper)`
   padding: 0 10rem 2rem;
 
-  @media ${BREAKPOINTS.smartphone} {
-    padding: 0 4rem 2rem;
-  }
-
-  @media ${BREAKPOINTS.mobile} {
-    padding: 0 2rem 2rem;
+  @media ${BREAKPOINTS.tablet} {
+    padding: 0 4rem 4rem;
   }
 `;
 
@@ -31,9 +27,9 @@ export const TitleContainer = styled.div`
 
 export const Title = styled.h2`
   margin: 0;
-  /* padding: 0 0 1rem; */
   font-family: "Inter-Bold";
   font-size: 2.6rem;
+  text-align: center;
 `;
 
 export const FilterContainer = styled.div`

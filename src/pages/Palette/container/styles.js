@@ -16,7 +16,7 @@ export const PaletteWrapper = styled(Wrapper)`
     padding: 0 5rem;
   }
 
-  @media ${BREAKPOINTS.mobile} {
-    padding: 0 2rem;
+  @media ${BREAKPOINTS.tablet} {
+    padding: 0 3rem 3rem;
   }
 `;
