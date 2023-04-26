@@ -45,11 +45,21 @@ export const Header = () => {
             </ContactBox>
           </ContactsColumn>
 
-          <BurgerMenu onClick={burgerHandler}>
-            <Line />
-            <Line />
-            <Line />
-          </BurgerMenu>
+          <Transition in={isBurger} timeout={500} nodeRef={nodeRef}>
+            {(state) => {
+              return (
+                <BurgerMenu
+                  className={state}
+                  ref={nodeRef}
+                  onClick={burgerHandler}
+                >
+                  <Line />
+                  <Line />
+                  <Line />
+                </BurgerMenu>
+              );
+            }}
+          </Transition>
 
           <Transition
             in={isBurger}

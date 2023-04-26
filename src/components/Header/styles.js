@@ -31,6 +31,26 @@ export const Container = styled.header`
   }
 `;
 
+const TurnLeft = keyframes`
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+         transform: rotate(-90deg);
+    }
+`;
+
+const TurnRight = keyframes`
+    0% {
+         transform: rotate(-90deg);
+    }
+
+    100% {
+         transform: rotate(0);
+    }
+`;
+
 export const BurgerMenu = styled.div`
   width: 3rem;
   padding: 2rem;
@@ -47,6 +67,19 @@ export const BurgerMenu = styled.div`
 
   @media ${BREAKPOINTS.mobile} {
     padding: 1.5rem;
+  }
+
+  &.entering {
+    animation: ${TurnLeft} 0.5s forwards;
+  }
+  &.entered {
+    transform: rotate(-90deg);
+  }
+  &.exiting {
+    animation: ${TurnRight} 0.5s forwards;
+  }
+  &.exited {
+    transform: rotate(0);
   }
 `;
 
