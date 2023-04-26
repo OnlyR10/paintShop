@@ -74,6 +74,13 @@ export const Header = () => {
                     <NavigationLink to="/about" onClick={burgerHandler}>
                       Контакты
                     </NavigationLink>
+                    <ContactBox
+                      href="https://www.instagram.com/festek_bel/"
+                      target={"_blank"}
+                      onClick={burgerHandler}
+                    >
+                      <Contact>Результаты работ</Contact>
+                    </ContactBox>
                   </NavigationContainer>
                 </MenuContainer>
               );
