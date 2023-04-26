@@ -8,6 +8,8 @@ export const facadePremium = {
   path: "festek_facade_premium",
   name: "FESTEK-FACADE PREMIUM",
   header: "Краска фасадная акриловая «FESTEK-FACADE PREMIUM»",
+  link: "https://drive.google.com/file/d/1hhVa5xgp9oUu63j9UI48oYsAVwFSkrJ0/view?usp=share_link",
+  price: "180,00",
   productsPage: {
     title: "Фасадная «FESTEK-FACADE PREMIUM»",
     text: "Высокоадгезионная краска с отличными покрывающими способностями для долговечного фасада. Стойкая к морозам и оттепелям",
@@ -51,7 +53,7 @@ export const facadePremium = {
           qualityIndicators: "Показатель концентрации ионов водорода, рН",
           value: "7,5 - 9,5",
         },
-       /*{
+        /*{
           qualityIndicators:
             "Укрывистость высушенного покрытия, г/м2, не более",
           value: "180",

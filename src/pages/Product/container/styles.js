@@ -52,6 +52,20 @@ export const PaintTitle = styled.h2`
   font-size: 3.6rem;
 `;
 
+export const PaintPriceText = styled.span`
+  display: inline-block;
+  padding: 1rem 0;
+  font-family: "Inter-Regular";
+  font-size: 2rem;
+`;
+
+export const PaintPrice = styled.p`
+  display: inline-block;
+  margin: 0;
+  font-family: "Inter-Bold";
+  font-size: 3.6rem;
+`;
+
 export const PaintDescription = styled.p`
   margin: 0;
   padding: 1rem 0;

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { paints } from "../../../constants/PaintsConfig";
-import { BASE_NAME } from "../../../constants/Roots";
 import { Slider } from "../components/Slider/Slider";
 import { ContentConfig } from "../constants/ContentConfig";
 import {
@@ -12,6 +11,8 @@ import {
   InfoContainer,
   LinkButton,
   PaintDescription,
+  PaintPrice,
+  PaintPriceText,
   PaintTitle,
   ProductWrapper,
   ShortDescription,
@@ -27,6 +28,8 @@ export const Product = () => {
   const {
     images: { product },
     header,
+    link,
+    price,
   } = currentPaint;
   const purpose = currentPaint.documentation.description.purpose.value;
 
@@ -43,6 +46,9 @@ export const Product = () => {
         <ProductWrapper>
           <ShortDescription>
             <PaintTitle>{header}</PaintTitle>
+            <PaintPriceText>
+              От <PaintPrice>{price}</PaintPrice> руб.
+            </PaintPriceText>
             <PaintDescription>{purpose}</PaintDescription>
           </ShortDescription>
 
@@ -92,10 +98,7 @@ export const Product = () => {
                 <Text>Тех. документ PDF</Text>
               </FileDownloadButton> */}
 
-              <FileDownloadButton
-                href={`${BASE_NAME}/files/${name.slice(7)}.pdf`}
-                target="_blank"
-              >
+              <FileDownloadButton href={link} target="_blank">
                 Тех. документ PDF
               </FileDownloadButton>
             </ControlPanel>

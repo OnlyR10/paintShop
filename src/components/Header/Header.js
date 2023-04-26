@@ -10,6 +10,7 @@ import {
 } from "../ContactsContainer/styles";
 import {
   BurgerMenu,
+  Circle,
   Container,
   HeaderWrapper,
   Line,
@@ -45,11 +46,23 @@ export const Header = () => {
             </ContactBox>
           </ContactsColumn>
 
-          <BurgerMenu onClick={burgerHandler}>
-            <Line />
-            <Line />
-            <Line />
-          </BurgerMenu>
+          <Transition in={isBurger} timeout={500} nodeRef={nodeRef}>
+            {(state) => {
+              return (
+                <BurgerMenu
+                  className={state}
+                  ref={nodeRef}
+                  onClick={burgerHandler}
+                >
+                  <Line />
+                  <Line />
+                  <Line />
+
+                  <Circle />
+                </BurgerMenu>
+              );
+            }}
+          </Transition>
 
           <Transition
             in={isBurger}
@@ -74,6 +87,13 @@ export const Header = () => {
                     <NavigationLink to="/about" onClick={burgerHandler}>
                       Контакты
                     </NavigationLink>
+                    <ContactBox
+                      href="https://www.instagram.com/festek_bel/"
+                      target={"_blank"}
+                      onClick={burgerHandler}
+                    >
+                      <Contact>Результаты работ</Contact>
+                    </ContactBox>
                   </NavigationContainer>
                 </MenuContainer>
               );
