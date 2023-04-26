@@ -9,6 +9,7 @@ export const facadeSilicate = {
   name: "FESTEK-FACADE SILICATE",
   header: "Краска силикатная фасадная акриловая «FESTEK-FACADE SILICATE»",
   link: "https://drive.google.com/file/d/1eqJtE98gsK5fW7vgtjIFByvwGLBUm8yG/view?usp=share_link",
+  price: "180,00",
   productsPage: {
     title: "Фасадная «FESTEK-FACADE SILICATE»",
     text: "Силикатная краска с повышенной паропроницаемостью. Эффективная защита фасада от негативных атмосферных явлений",

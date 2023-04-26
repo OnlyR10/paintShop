@@ -9,6 +9,7 @@ export const maxiGrunt = {
   name: "«FESTEK_MAXIGRUNT»",
   header: "Грунтовка адгезионная «FESTEK_MAXIGRUNT»",
   link: "https://drive.google.com/file/d/1qJ02fCYfITVdmTKzrzLPJbXvE0j5EKz-/view?usp=share_link",
+  price: "180,00",
   productsPage: {
     title: "Адгезионная грунтовка «FESTEK-MAXIGRUNT»",
     text: "Бетонконтакт с кварцевым наполнителем для увеличения сцепления поверхности",

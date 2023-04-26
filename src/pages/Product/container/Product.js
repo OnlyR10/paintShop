@@ -11,6 +11,8 @@ import {
   InfoContainer,
   LinkButton,
   PaintDescription,
+  PaintPrice,
+  PaintPriceText,
   PaintTitle,
   ProductWrapper,
   ShortDescription,
@@ -27,6 +29,7 @@ export const Product = () => {
     images: { product },
     header,
     link,
+    price,
   } = currentPaint;
   const purpose = currentPaint.documentation.description.purpose.value;
 
@@ -43,6 +46,9 @@ export const Product = () => {
         <ProductWrapper>
           <ShortDescription>
             <PaintTitle>{header}</PaintTitle>
+            <PaintPriceText>
+              От <PaintPrice>{price}</PaintPrice> руб.
+            </PaintPriceText>
             <PaintDescription>{purpose}</PaintDescription>
           </ShortDescription>
 

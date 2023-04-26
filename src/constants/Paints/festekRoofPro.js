@@ -9,6 +9,7 @@ export const roofPro = {
   name: "FESTEK-ROOF PRO",
   header: "Краска кровельная акриловая «FESTEK-ROOF PRO»",
   link: "https://drive.google.com/file/d/19j5OjXZ-K4BT8ce456aLjvkvuN6fi8pk/view?usp=share_link",
+  price: "180,00",
   productsPage: {
     title: "Кровельная «FESTEK-ROOF PRO»",
     text: "Глянцевая влагозащитная светостойкая краска для крыши и цоколя предотвращает образование плесени и грибка, улучшает сток воды",

@@ -6,6 +6,8 @@ import {
   Header,
   PaintPicture,
   PictureContainer,
+  Price,
+  Text,
 } from "./styles";
 
 export const PaintCard = ({ paint }) => {
@@ -13,6 +15,7 @@ export const PaintCard = ({ paint }) => {
     category,
     path,
     images: { products },
+    price,
     productsPage: { title, text },
   } = paint;
 
@@ -21,8 +24,14 @@ export const PaintCard = ({ paint }) => {
       <PictureContainer>
         <PaintPicture src={products} />
       </PictureContainer>
+
       <DescriptionContainer>
         <Header>{title}</Header>
+
+        <Text>
+          От <Price>{price}</Price> руб.
+        </Text>
+
         <Description>{text}</Description>
       </DescriptionContainer>
     </Container>

@@ -9,6 +9,7 @@ export const relief = {
   name: "FESTEK-RELIEF",
   header: "Краска фактурная акриловая «FESTEK-RELIEF»",
   link: "https://drive.google.com/file/d/1I9sxopHlyfz9ND80SXM9GIi0MnCiXEda/view?usp=share_link",
+  price: "180,00",
   productsPage: {
     title: "Декоративная акриловая штукатурка",
     text: "Готовая к применению штукатурка, «камешковой» фактурой, средним и крупным зерном",

@@ -30,6 +30,10 @@ export const Container = styled(Link)`
       transition: color 0.3s;
       color: goldenrod;
     }
+    && > div span {
+      transition: color 0.3s;
+      color: goldenrod;
+    }
     && > div p {
       transition: color 0.3s;
       color: goldenrod;
@@ -43,6 +47,9 @@ export const Container = styled(Link)`
     && > div h2 {
       color: goldenrod;
       border-bottom: 0.2rem solid goldenrod;
+    }
+    && > div span {
+      color: goldenrod;
     }
     && > div p {
       color: goldenrod;
@@ -68,6 +75,20 @@ export const Header = styled.h2`
   font-family: "Inter-Bold";
   font-size: 1.8rem;
   border-bottom: 0.2rem solid transparent;
+`;
+
+export const Text = styled.span`
+  display: inline-block;
+  margin: 0 0 0.5rem 0;
+  font-family: "Inter-Regular";
+  font-size: 1.6rem;
+`;
+
+export const Price = styled.p`
+  margin: 0;
+  display: inline-block;
+  font-family: "Inter-Bold";
+  font-size: 2rem;
 `;
 
 export const Description = styled.p`

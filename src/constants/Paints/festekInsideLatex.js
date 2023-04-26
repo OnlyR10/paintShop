@@ -9,6 +9,7 @@ export const insideLatex = {
   name: "FESTEK-INSIDE LATEX",
   header: "Краска интерьерная акриловая «FESTEK-INSIDE LATEX»",
   link: "https://drive.google.com/file/d/1xKgfwTzwUSDX13YQyMCV-5Erjx_dkjwV/view?usp=share_link",
+  price: "180,00",
   productsPage: {
     title: "Интерьерная «FESTEK-INSIDE LATEX»",
     text: "Глубокоматовая износостойкая для стен и потолков с высокими требованьями к истираемости",
