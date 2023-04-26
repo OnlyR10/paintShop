@@ -8,6 +8,7 @@ export const facadeSilicate = {
   path: "festek_facade_silicate",
   name: "FESTEK-FACADE SILICATE",
   header: "Краска силикатная фасадная акриловая «FESTEK-FACADE SILICATE»",
+  link: "https://drive.google.com/file/d/1eqJtE98gsK5fW7vgtjIFByvwGLBUm8yG/view?usp=share_link",
   productsPage: {
     title: "Фасадная «FESTEK-FACADE SILICATE»",
     text: "Силикатная краска с повышенной паропроницаемостью. Эффективная защита фасада от негативных атмосферных явлений",
@@ -100,7 +101,7 @@ export const facadeSilicate = {
             "Срок службы покрытия, лет, не менее в условиях эксплуатации У1, тип атмосферы II:",
           value: "8",
         },
-/*        {
+        /*        {
           qualityIndicators: "- тип атмосферы I",
           value: "10",
         },
@@ -124,7 +125,8 @@ export const facadeSilicate = {
       },
 
       coatingSystem: {
-        value: "Для получения качественного покрытия и снижения расхода краски поверхность обработать грунтовкой «Festek-Grunt» для глубокого проникновения, исходя из рекомендаций по применению.",
+        value:
+          "Для получения качественного покрытия и снижения расхода краски поверхность обработать грунтовкой «Festek-Grunt» для глубокого проникновения, исходя из рекомендаций по применению.",
         label: "Система покрытия",
       },
 

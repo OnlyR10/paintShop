@@ -8,6 +8,7 @@ export const facadeSilicone = {
   path: "festek_facade_silicone",
   name: "FESTEK-FACADE SILICONE",
   header: "Краска фасадная акриловая c силиконом «FESTEK-FACADE SILICONE»",
+  link: "https://drive.google.com/file/d/1-ZL_QqWe-OwXXfXvZKZFtt6uoi6WRTPn/view?usp=share_link",
   productsPage: {
     title: "Фасадная «FESTEK-FACADE SILICONE»",
     text: "Силиконовая краска с водоотталкивающими свойствами для самоочищения и высокой адгезией для чистого фасада",
@@ -56,8 +57,7 @@ export const facadeSilicone = {
             "Укрывистость высушенного покрытия, г/м2, не более",
           value: "170",
         },*/
-        { qualityIndicators: "Степень перетира, мкм, не более", 
-         value: "70" },
+        { qualityIndicators: "Степень перетира, мкм, не более", value: "70" },
         {
           qualityIndicators:
             "Время высыхания до степени 3 при температуре (20 ± 2) °С, ч, не более",

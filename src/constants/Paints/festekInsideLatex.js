@@ -8,6 +8,7 @@ export const insideLatex = {
   path: "festek_inside_latex",
   name: "FESTEK-INSIDE LATEX",
   header: "Краска интерьерная акриловая «FESTEK-INSIDE LATEX»",
+  link: "https://drive.google.com/file/d/1xKgfwTzwUSDX13YQyMCV-5Erjx_dkjwV/view?usp=share_link",
   productsPage: {
     title: "Интерьерная «FESTEK-INSIDE LATEX»",
     text: "Глубокоматовая износостойкая для стен и потолков с высокими требованьями к истираемости",
@@ -56,8 +57,7 @@ export const insideLatex = {
             "Укрывистость высушенного покрытия, г/м2, не более",
           value: "180",
         },*/
-        { qualityIndicators: "Степень перетира, мкм, не более", 
-        value: "70" },
+        { qualityIndicators: "Степень перетира, мкм, не более", value: "70" },
         {
           qualityIndicators:
             "Время высыхания до степени 3 при температуре (20 ± 2) °С, ч, не более",
@@ -104,7 +104,7 @@ export const insideLatex = {
           qualityIndicators: "Смываемость пленки, г/м2, не более",
           value: "3,0",
         },
-       /* {
+        /* {
           qualityIndicators:
             "Стойкость покрытия к воздействию климатических факторов, циклы, не менее",
           value: "30",

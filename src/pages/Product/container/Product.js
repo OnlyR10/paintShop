@@ -26,6 +26,7 @@ export const Product = () => {
   const {
     images: { product },
     header,
+    link,
   } = currentPaint;
   const purpose = currentPaint.documentation.description.purpose.value;
 
@@ -91,10 +92,7 @@ export const Product = () => {
                 <Text>Тех. документ PDF</Text>
               </FileDownloadButton> */}
 
-              <FileDownloadButton
-                href={`/files/${name.slice(7)}.pdf`}
-                target="_blank"
-              >
+              <FileDownloadButton href={link} target="_blank">
                 Тех. документ PDF
               </FileDownloadButton>
             </ControlPanel>
