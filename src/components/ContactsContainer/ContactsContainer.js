@@ -36,7 +36,7 @@ export const ContactsContainer = () => {
             target={"_blank"}
           >
             <IconInstagram />
-            <Contact>Instagram</Contact>
+            <Contact>Результаты работ</Contact>
           </ContactBox>
           <ContactBox href="https://www.onliner.by" target={"_blank"}>
             <IconOnliner />

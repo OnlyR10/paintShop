@@ -8,6 +8,8 @@ export const insideEco = {
   path: "festek_inside_eco",
   name: "FESTEK-INSIDE ECO",
   header: "Краска интерьерная акриловая «FESTEK-INSIDE ECO»",
+  link: "https://drive.google.com/file/d/1UcZQcalXzguubYoBWqm3y5ya-4KS0jCz/view?usp=share_link",
+  price: "180,00",
   productsPage: {
     title: "Интерьерная «FESTEK-INSIDE ECO»",
     text: "Матовая краска для окраски стен и потолков с умеренной эксплуатационной нагрузкой",
@@ -55,7 +57,7 @@ export const insideEco = {
           qualityIndicators: "Степень перетира, мкм, не более",
           value: "70",
         },
-       /* {
+        /* {
           qualityIndicators:
             "Укрывистость высушенного покрытия, г/м2, не более",
           value: "250",
@@ -97,7 +99,8 @@ export const insideEco = {
       },
 
       coatingSystem: {
-        value: "Для получения качественного покрытия и снижения расхода краски поверхность обработать грунтовкой «Festek-Grunt» для глубокого проникновения, исходя из рекомендаций по применению.",
+        value:
+          "Для получения качественного покрытия и снижения расхода краски поверхность обработать грунтовкой «Festek-Grunt» для глубокого проникновения, исходя из рекомендаций по применению.",
         label: "Система покрытия",
       },
 

@@ -1,4 +1,5 @@
 export const MAIN_PALETTE = {
+  main: "#000000",
   productFirstElementBackground: "#FFFFFF",
   productSecondElementBackground: "#F6F6F6",
   edgingBackground: "#cccdd0",

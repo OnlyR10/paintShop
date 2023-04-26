@@ -31,7 +31,28 @@ export const Container = styled.header`
   }
 `;
 
+const TurnLeft = keyframes`
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+         transform: rotate(-90deg);
+    }
+`;
+
+const TurnRight = keyframes`
+    0% {
+         transform: rotate(-90deg);
+    }
+
+    100% {
+         transform: rotate(0);
+    }
+`;
+
 export const BurgerMenu = styled.div`
+  position: relative;
   width: 3rem;
   padding: 2rem;
   grid-area: burgerMenu;
@@ -47,6 +68,19 @@ export const BurgerMenu = styled.div`
 
   @media ${BREAKPOINTS.mobile} {
     padding: 1.5rem;
+  }
+
+  &.entering {
+    animation: ${TurnLeft} 0.5s forwards;
+  }
+  &.entered {
+    transform: rotate(-90deg);
+  }
+  &.exiting {
+    animation: ${TurnRight} 0.5s forwards;
+  }
+  &.exited {
+    transform: rotate(0);
   }
 `;
 
@@ -106,6 +140,17 @@ export const Line = styled.div`
   border-width: 0.1em;
   border-style: solid;
   border-color: ${TEXT_PALETTE.navigationLink};
+`;
+
+export const Circle = styled.div`
+  position: absolute;
+  top: calc(50% - 3rem);
+  left: calc(50% - 3rem);
+  width: 6rem;
+  height: 6rem;
+  box-sizing: border-box;
+  border: 0.2rem solid ${TEXT_PALETTE.navigationLink};
+  border-radius: 50%;
 `;
 
 export const HeaderWrapper = styled(Wrapper)`

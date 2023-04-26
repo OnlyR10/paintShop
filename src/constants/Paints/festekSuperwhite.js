@@ -8,6 +8,8 @@ export const superWhite = {
   path: "festek_super_white",
   name: "FESTEK-SUPERWHITE",
   header: "Краска для потолков акриловая «FESTEK-SUPERWHITE»",
+  link: "https://drive.google.com/file/d/1kMvia4OzahpiDPUW0zLbsFXbjlucAe9P/view?usp=share_link",
+  price: "180,00",
   productsPage: {
     title: "Интерьерная «FESTEK-SUPERWHITE»",
     text: "Глубокоматовая потолочная краска с высокой степенью белизны",
@@ -93,7 +95,8 @@ export const superWhite = {
       },
 
       coatingSystem: {
-        value: "Для получения качественного покрытия и снижения расхода краски поверхность обработать грунтовкой «Festek-Grunt» для глубокого проникновения, исходя из рекомендаций по применению.",
+        value:
+          "Для получения качественного покрытия и снижения расхода краски поверхность обработать грунтовкой «Festek-Grunt» для глубокого проникновения, исходя из рекомендаций по применению.",
         label: "Система покрытия",
       },
 
