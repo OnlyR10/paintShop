@@ -17,8 +17,8 @@ export const AboutWrapper = styled(Wrapper)`
     padding: 0 5rem;
   }
 
-  @media ${BREAKPOINTS.smartphone} {
-    padding: 0 2rem;
+  @media ${BREAKPOINTS.tablet} {
+    padding: 0 3rem 2rem;
   }
 `;
 

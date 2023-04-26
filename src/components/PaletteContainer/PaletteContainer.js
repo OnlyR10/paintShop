@@ -16,9 +16,9 @@ import {
 
 export const PaletteContainer = ({ product }) => {
   return (
-    <Container>
+    <Container product={product}>
       <Header>
-        {!product && <Title>Палитра цветов</Title>}
+        <Title>Палитра цветов</Title>
         <InfoContainer>
           <Notice>Обращаем ваше внимание!</Notice>
           <Info>

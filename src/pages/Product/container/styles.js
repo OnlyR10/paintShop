@@ -31,7 +31,7 @@ export const ProductWrapper = styled(Wrapper)`
 
   @media ${BREAKPOINTS.smartphone} {
     row-gap: 1rem;
-    padding: 2rem;
+    padding: 2rem 3rem 4rem;
     text-align: center;
   }
 `;
