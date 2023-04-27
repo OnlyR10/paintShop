@@ -1,6 +1,6 @@
-import Center from "../../assets/images/product/insideEco/center.jpg";
-import Left from "../../assets/images/product/insideEco/left.jpg";
-import InsideEco from "../../assets/images/products/insideEco.jpg";
+import Center from "../../assets/images/product/insideEco/center.webp";
+import Left from "../../assets/images/product/insideEco/left.webp";
+import InsideEco from "../../assets/images/products/insideEco.webp";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const insideEco = {
@@ -9,7 +9,7 @@ export const insideEco = {
   name: "FESTEK-INSIDE ECO",
   header: "Краска интерьерная акриловая «FESTEK-INSIDE ECO»",
   link: "https://drive.google.com/file/d/1UcZQcalXzguubYoBWqm3y5ya-4KS0jCz/view?usp=share_link",
-  price: "165,00",
+  price: "65,00",
   productsPage: {
     title: "Интерьерная «FESTEK-INSIDE ECO»",
     text: "Матовая краска для окраски стен и потолков с умеренной эксплуатационной нагрузкой",

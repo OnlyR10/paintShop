@@ -1,6 +1,6 @@
-import Center from "../../assets/images/product/insideLatex/center.jpg";
-import Left from "../../assets/images/product/insideLatex/left.jpg";
-import InsideLatex from "../../assets/images/products/insideLatex.jpg";
+import Center from "../../assets/images/product/insideLatex/center.webp";
+import Left from "../../assets/images/product/insideLatex/left.webp";
+import InsideLatex from "../../assets/images/products/insideLatex.webp";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const insideLatex = {

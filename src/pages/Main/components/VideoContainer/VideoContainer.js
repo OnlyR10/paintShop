@@ -1,4 +1,4 @@
-import poster from "../../../../assets/images/poster.jpg";
+import poster from "../../../../assets/images/poster.webp";
 import videoM from "../../../../assets/video/Ecoline.mp4";
 import videoW from "../../../../assets/video/Ecoline.webm";
 import { Container, VideoScreensaver, VideoSource } from "./styles";

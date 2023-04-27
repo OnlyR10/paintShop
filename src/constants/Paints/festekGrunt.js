@@ -1,6 +1,6 @@
-import Center from "../../assets/images/product/grunt/center.jpg";
-import Left from "../../assets/images/product/grunt/left.jpg";
-import Grunt from "../../assets/images/products/grunt.jpg";
+import Center from "../../assets/images/product/grunt/center.webp";
+import Left from "../../assets/images/product/grunt/left.webp";
+import Grunt from "../../assets/images/products/grunt.webp";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const grunt = {

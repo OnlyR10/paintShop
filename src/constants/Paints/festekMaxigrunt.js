@@ -1,6 +1,6 @@
-import Center from "../../assets/images/product/maxiGrunt/center.jpg";
-import Left from "../../assets/images/product/maxiGrunt/left.jpg";
-import MaxiGrunt from "../../assets/images/products/maxiGrunt.jpg";
+import Center from "../../assets/images/product/maxiGrunt/center.webp";
+import Left from "../../assets/images/product/maxiGrunt/left.webp";
+import MaxiGrunt from "../../assets/images/products/maxiGrunt.webp";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const maxiGrunt = {

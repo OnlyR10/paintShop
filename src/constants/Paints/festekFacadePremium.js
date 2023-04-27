@@ -1,6 +1,6 @@
-import Center from "../../assets/images/product/facadePremium/center.jpg";
-import Left from "../../assets/images/product/facadePremium/left.jpg";
-import FacadePremium from "../../assets/images/products/facadePremium.jpg";
+import Center from "../../assets/images/product/facadePremium/center.webp";
+import Left from "../../assets/images/product/facadePremium/left.webp";
+import FacadePremium from "../../assets/images/products/facadePremium.webp";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const facadePremium = {

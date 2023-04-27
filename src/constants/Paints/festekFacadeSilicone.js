@@ -1,6 +1,6 @@
-import Center from "../../assets/images/product/facadeSilicone/center.jpg";
-import Left from "../../assets/images/product/facadeSilicone/left.jpg";
-import FacadeSilicone from "../../assets/images/products/facadeSilicone.jpg";
+import Center from "../../assets/images/product/facadeSilicone/center.webp";
+import Left from "../../assets/images/product/facadeSilicone/left.webp";
+import FacadeSilicone from "../../assets/images/products/facadeSilicone.webp";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const facadeSilicone = {

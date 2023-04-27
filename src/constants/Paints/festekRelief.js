@@ -1,6 +1,6 @@
-import Center from "../../assets/images/product/relief/center.jpg";
-import Left from "../../assets/images/product/relief/left.jpg";
-import Relief from "../../assets/images/products/relief.jpg";
+import Center from "../../assets/images/product/relief/center.webp";
+import Left from "../../assets/images/product/relief/left.webp";
+import Relief from "../../assets/images/products/relief.webp";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const relief = {

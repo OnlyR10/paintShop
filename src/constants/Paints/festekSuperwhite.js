@@ -1,6 +1,6 @@
-import Center from "../../assets/images/product/superWhite/center.jpg";
-import Left from "../../assets/images/product/superWhite/left.jpg";
-import SuperWhite from "../../assets/images/products/superWhite.jpg";
+import Center from "../../assets/images/product/superWhite/center.webp";
+import Left from "../../assets/images/product/superWhite/left.webp";
+import SuperWhite from "../../assets/images/products/superWhite.webp";
 import { categoriesOfPaints } from "../CategoryOfPaints";
 
 export const superWhite = {
