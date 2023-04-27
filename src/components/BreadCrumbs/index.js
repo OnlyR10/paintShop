@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import { useLocation } from "react-router-dom";
 import useBreadcrumbs from "use-react-router-breadcrumbs";
-import { ReactComponent as ArrowRight } from "../../assets/icons/arrowRight.svg";
 import { ROUTE_NAMES } from "../../Router/routerNames";
-import { BREADCRUMB } from "./config/BreadCrumbsConfig";
+import { ReactComponent as ArrowRight } from "../../assets/icons/arrowRight.svg";
+import { BREADCRUMB } from "./config/breadCrumbsConfig";
 import { BreadCrumb, BreadCrumbsWrapper, Container, Link } from "./styles";
 
 export const BreadCrumbs = () => {
