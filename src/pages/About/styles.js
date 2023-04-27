@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Wrapper } from "../../../Layout/styles";
-import { PageContainer } from "../../../components/PageContainer";
-import { BREAKPOINTS } from "../../../config/breakpoints";
-import { TEXT_PALETTE } from "../../../config/palette";
+import { Wrapper } from "../../Layout/styles";
+import { PageContainer } from "../../components/PageContainer";
+import { BREAKPOINTS } from "../../config/breakpoints";
+import { TEXT_PALETTE } from "../../config/palette";
 
 export const Container = styled(PageContainer)`
   @media ${BREAKPOINTS.tablet} {

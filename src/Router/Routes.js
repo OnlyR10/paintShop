@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { Layout } from "../Layout";
 import { NonExistingPage } from "../components/NonExistingPage";
-import { About } from "../pages/About/container";
+import { About } from "../pages/About";
 import { Main } from "../pages/Main/container";
 import { Palette } from "../pages/Palette";
 import { Product } from "../pages/Product/container";
