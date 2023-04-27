@@ -1,4 +1,5 @@
 import React from "react";
+import poster from "../../../../assets/images/roofing.webp";
 import { ROOT } from "../../../../constants/roots";
 import {
   Container,
@@ -19,7 +20,7 @@ export const PaintTypeContainer = ({ section }) => {
     <Container to={`${ROOT}/${category}`}>
       {videos ? (
         <VideoContainer>
-          <VideoScreensaver autoPlay muted loop /* poster={poster} */>
+          <VideoScreensaver autoPlay muted loop poster={poster}>
             <VideoSource src={videos.webm} type="video/webm" />
             <VideoSource src={videos.mp4} type="video/mp4" />
           </VideoScreensaver>
