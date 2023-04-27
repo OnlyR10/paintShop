@@ -1,11 +1,11 @@
-import Facade from "../../../assets/images/facade.jpg";
-import Interior from "../../../assets/images/interior.jpg";
-import Primer from "../../../assets/images/primer.jpg";
-import Roofing from "../../../assets/images/roofing.jpg";
-import Textured from "../../../assets/images/textured.jpg";
+import Facade from "../../../assets/images/facade.webp";
+import Interior from "../../../assets/images/interior.webp";
+import Primer from "../../../assets/images/primer.webp";
+import Roofing from "../../../assets/images/roofing.webp";
+import Textured from "../../../assets/images/textured.webp";
 import videoM from "../../../assets/video/Roofing.mp4";
 import videoW from "../../../assets/video/Roofing.webm";
-import { categoriesOfPaints } from "../../../constants/CategoryOfPaints";
+import { categoriesOfPaints } from "../../../constants/categoryOfPaints";
 
 export const sectionConfig = [
   {

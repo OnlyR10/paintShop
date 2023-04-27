@@ -1,7 +1,7 @@
-import Center from "../../assets/images/product/facadeSilicone/center.jpg";
-import Left from "../../assets/images/product/facadeSilicone/left.jpg";
-import FacadeSilicone from "../../assets/images/products/facadeSilicone.jpg";
-import { categoriesOfPaints } from "../CategoryOfPaints";
+import Center from "../../assets/images/product/facadeSilicone/center.webp";
+import Left from "../../assets/images/product/facadeSilicone/left.webp";
+import FacadeSilicone from "../../assets/images/products/facadeSilicone.webp";
+import { categoriesOfPaints } from "../categoryOfPaints";
 
 export const facadeSilicone = {
   category: [categoriesOfPaints.facade],

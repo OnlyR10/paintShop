@@ -1,8 +1,8 @@
 import styled, { keyframes } from "styled-components";
+import { Wrapper } from "../../../Layout/styles";
 import { PageContainer } from "../../../components/PageContainer";
 import { BREAKPOINTS } from "../../../config/breakpoints";
 import { MAIN_PALETTE } from "../../../config/palette";
-import { Wrapper } from "../../../layout/styles";
 
 const sachshellAnimation = keyframes`
 0% {

@@ -1,7 +1,7 @@
-import Center from "../../assets/images/product/roofPro/center.jpg";
-import Left from "../../assets/images/product/roofPro/left.jpg";
-import RoofPro from "../../assets/images/products/roofPro.jpg";
-import { categoriesOfPaints } from "../CategoryOfPaints";
+import Center from "../../assets/images/product/roofPro/center.webp";
+import Left from "../../assets/images/product/roofPro/left.webp";
+import RoofPro from "../../assets/images/products/roofPro.webp";
+import { categoriesOfPaints } from "../categoryOfPaints";
 
 export const roofPro = {
   category: [categoriesOfPaints.roofing],
