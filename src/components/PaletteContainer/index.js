@@ -1,5 +1,5 @@
 import React from "react";
-import { colorPalette } from "../../constants/ColorPalette";
+import { colorPalette } from "../../constants/colorPalette";
 import {
   ColorBox,
   ColorDescription,

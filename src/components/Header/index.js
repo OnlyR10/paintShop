@@ -1,8 +1,8 @@
 import React, { useContext, useRef, useState } from "react";
 import { Transition } from "react-transition-group";
 import { Context } from "../../config/context";
-import { BreadCrumbs } from "../BreadCrumbs/BreadCrumbs";
-import { ContactsContainer } from "../ContactsContainer/ContactsContainer";
+import { BreadCrumbs } from "../BreadCrumbs";
+import { ContactsContainer } from "../ContactsContainer";
 import {
   Contact,
   ContactBox,

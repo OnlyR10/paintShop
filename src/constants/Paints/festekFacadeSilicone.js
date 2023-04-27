@@ -1,7 +1,7 @@
 import Center from "../../assets/images/product/facadeSilicone/center.webp";
 import Left from "../../assets/images/product/facadeSilicone/left.webp";
 import FacadeSilicone from "../../assets/images/products/facadeSilicone.webp";
-import { categoriesOfPaints } from "../CategoryOfPaints";
+import { categoriesOfPaints } from "../categoryOfPaints";
 
 export const facadeSilicone = {
   category: [categoriesOfPaints.facade],

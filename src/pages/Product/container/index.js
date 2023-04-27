@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { paints } from "../../../constants/PaintsConfig";
-import { Slider } from "../components/Slider/Slider";
-import { ContentConfig } from "../constants/ContentConfig";
+import { paints } from "../../../constants/paintsConfig";
+import { Slider } from "../components/Slider";
+import { ContentConfig } from "../constants/contentConfig";
 import {
   Container,
   ControlPanel,

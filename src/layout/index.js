@@ -1,10 +1,10 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { Container } from "./styles";
-import { Header } from "../components/Header/Header.js";
-import { Footer } from "../components/Footer/Footer.js";
-import { useResize } from "../hooks/useResize";
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
 import { Context } from "../config/context";
+import { useResize } from "../hooks/useResize";
+import { Container } from "./styles";
 
 export const Layout = () => {
   const resize = useResize();

@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import LogoImage from "../../../assets/images/logo.png";
 import PosterImage from "../../../assets/images/poster.webp";
 import { Context } from "../../../config/context";
-import { PaintTypeContainer } from "../components/PaintTypeContainer/PaintTypeContainer";
-import { VideoContainer } from "../components/VideoContainer/VideoContainer";
+import { PaintTypeContainer } from "../components/PaintTypeContainer";
+import { VideoContainer } from "../components/VideoContainer";
 import { sectionConfig } from "../constants/sectionConfig";
 import {
   Container,

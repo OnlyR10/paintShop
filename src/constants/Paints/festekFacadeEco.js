@@ -1,7 +1,7 @@
 import Center from "../../assets/images/product/facadeEco/center.webp";
 import Left from "../../assets/images/product/facadeEco/left.webp";
 import FacadeEco from "../../assets/images/products/facadeEco.webp";
-import { categoriesOfPaints } from "../CategoryOfPaints";
+import { categoriesOfPaints } from "../categoryOfPaints";
 
 export const facadeEco = {
   category: [categoriesOfPaints.facade],

@@ -1,7 +1,7 @@
 import Center from "../../assets/images/product/facadePremium/center.webp";
 import Left from "../../assets/images/product/facadePremium/left.webp";
 import FacadePremium from "../../assets/images/products/facadePremium.webp";
-import { categoriesOfPaints } from "../CategoryOfPaints";
+import { categoriesOfPaints } from "../categoryOfPaints";
 
 export const facadePremium = {
   category: [categoriesOfPaints.facade],

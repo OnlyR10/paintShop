@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
-import { paints } from "../../../../constants/PaintsConfig";
-import { ALL_PRODUCTS } from "../../../../constants/Roots";
-import { PaintCard } from "../PaintCard/PaintCard";
+import { paints } from "../../../../constants/paintsConfig";
+import { ALL_PRODUCTS } from "../../../../constants/roots";
+import { PaintCard } from "../PaintCard";
 import { PaintsCards } from "./styles";
 
 export const Categories = () => {

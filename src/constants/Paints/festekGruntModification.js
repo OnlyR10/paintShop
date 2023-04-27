@@ -1,7 +1,7 @@
 import Center from "../../assets/images/product/grunt/center.webp";
 import Left from "../../assets/images/product/grunt/left.webp";
 import Grunt from "../../assets/images/products/grunt.webp";
-import { categoriesOfPaints } from "../CategoryOfPaints";
+import { categoriesOfPaints } from "../categoryOfPaints";
 
 export const gruntModification = {
   category: [categoriesOfPaints.primer],

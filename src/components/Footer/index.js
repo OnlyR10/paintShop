@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../../config/context";
-import { ContactsContainer } from "../ContactsContainer/ContactsContainer";
+import { ContactsContainer } from "../ContactsContainer";
 import { LogoContainer } from "../Header/styles";
 import { Container, FooterWrapper, Requisites } from "./styles";
 

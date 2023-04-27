@@ -1,5 +1,5 @@
 import React from "react";
-import { ROOT } from "../../../../constants/Roots";
+import { ROOT } from "../../../../constants/roots";
 import {
   Container,
   Description,

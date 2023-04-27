@@ -1,7 +1,7 @@
 import Center from "../../assets/images/product/insideEco/center.webp";
 import Left from "../../assets/images/product/insideEco/left.webp";
 import InsideEco from "../../assets/images/products/insideEco.webp";
-import { categoriesOfPaints } from "../CategoryOfPaints";
+import { categoriesOfPaints } from "../categoryOfPaints";
 
 export const insideEco = {
   category: [categoriesOfPaints.interior],

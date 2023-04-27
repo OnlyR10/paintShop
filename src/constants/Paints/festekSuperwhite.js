@@ -1,7 +1,7 @@
 import Center from "../../assets/images/product/superWhite/center.webp";
 import Left from "../../assets/images/product/superWhite/left.webp";
 import SuperWhite from "../../assets/images/products/superWhite.webp";
-import { categoriesOfPaints } from "../CategoryOfPaints";
+import { categoriesOfPaints } from "../categoryOfPaints";
 
 export const superWhite = {
   category: [categoriesOfPaints.interior],

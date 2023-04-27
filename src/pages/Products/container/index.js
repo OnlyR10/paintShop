@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { Outlet, useParams } from "react-router-dom";
-import { categoriesOfProducts } from "../../../constants/CategoryOfPaints";
+import { categoriesOfProducts } from "../../../constants/categoryOfPaints";
 import {
   CategoriesList,
   CategoriesLists,

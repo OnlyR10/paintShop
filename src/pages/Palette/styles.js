@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { PageContainer } from "../../../components/PageContainer";
-import { BREAKPOINTS } from "../../../config/breakpoints";
-import { Wrapper } from "../../../layout/styles";
+import { Wrapper } from "../../Layout/styles";
+import { PageContainer } from "../../components/PageContainer";
+import { BREAKPOINTS } from "../../config/breakpoints";
 
 export const Container = styled(PageContainer)`
   @media ${BREAKPOINTS.tablet} {
