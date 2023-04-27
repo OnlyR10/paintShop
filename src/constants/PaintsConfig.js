@@ -1,16 +1,16 @@
-import { categoriesOfPaints } from "./CategoryOfPaints";
-import { facadeEco } from "./Paints/festekFacadeEco";
-import { facadePremium } from "./Paints/festekFacadePremium";
-import { facadeSilicate } from "./Paints/festekFacadeSilicate";
-import { facadeSilicone } from "./Paints/festekFacadeSilicone";
-import { grunt } from "./Paints/festekGrunt";
-import { gruntModification } from "./Paints/festekGruntModification";
-import { insideEco } from "./Paints/festekInsideEco";
-import { insideLatex } from "./Paints/festekInsideLatex";
-import { maxiGrunt } from "./Paints/festekMaxigrunt";
-import { relief } from "./Paints/festekRelief";
-import { roofPro } from "./Paints/festekRoofPro";
-import { superWhite } from "./Paints/festekSuperwhite";
+import { categoriesOfPaints } from "./categoryOfPaints";
+import { facadeEco } from "./paints/festekFacadeEco";
+import { facadePremium } from "./paints/festekFacadePremium";
+import { facadeSilicate } from "./paints/festekFacadeSilicate";
+import { facadeSilicone } from "./paints/festekFacadeSilicone";
+import { grunt } from "./paints/festekGrunt";
+import { gruntModification } from "./paints/festekGruntModification";
+import { insideEco } from "./paints/festekInsideEco";
+import { insideLatex } from "./paints/festekInsideLatex";
+import { maxiGrunt } from "./paints/festekMaxigrunt";
+import { relief } from "./paints/festekRelief";
+import { roofPro } from "./paints/festekRoofPro";
+import { superWhite } from "./paints/festekSuperwhite";
 
 export const paints = {
   [categoriesOfPaints.facade]: [

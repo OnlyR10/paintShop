@@ -1,9 +1,9 @@
 import styled, { css } from "styled-components";
+import { Wrapper } from "../../../Layout/styles";
 import upload from "../../../assets/icons/upload.svg";
 import { PageContainer } from "../../../components/PageContainer";
 import { BREAKPOINTS } from "../../../config/breakpoints";
 import { MAIN_PALETTE, TEXT_PALETTE } from "../../../config/palette";
-import { Wrapper } from "../../../layout/styles";
 
 export const Container = styled(PageContainer)`
   visibility: ${({ render }) => (render ? "visible" : "hidden")};

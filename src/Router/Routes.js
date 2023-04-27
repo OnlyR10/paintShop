@@ -1,13 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { NonExistingPage } from "../components/NonExistingPage/NonExistingPage";
-import { Layout } from "../layout/Layout";
-import { About } from "../pages/About/container/About";
-import { Main } from "../pages/Main/container/Main";
-import { Palette } from "../pages/Palette/container/Palette";
-import { Product } from "../pages/Product/container/Product";
-import { Categories } from "../pages/Products/components/Categories/Categories";
-import { Products } from "../pages/Products/container/Products";
+import { Layout } from "../Layout";
+import { NonExistingPage } from "../components/NonExistingPage";
+import { About } from "../pages/About/container";
+import { Main } from "../pages/Main/container";
+import { Palette } from "../pages/Palette";
+import { Product } from "../pages/Product/container";
+import { Categories } from "../pages/Products/components/Categories";
+import { Products } from "../pages/Products/container";
 import { ROUTE_NAMES } from "./routerNames";
 
 export const Router = () => {

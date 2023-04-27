@@ -1,4 +1,4 @@
-import { paints } from "../../../constants/PaintsConfig";
+import { paints } from "../../../constants/paintsConfig";
 import { ROUTE_NAMES } from "../../../Router/routerNames";
 
 export const BREADCRUMB = [

@@ -1,9 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
 import styled, { css, keyframes } from "styled-components";
+import { Wrapper } from "../../Layout/styles";
 import logo from "../../assets/images/logo.png";
 import { BREAKPOINTS } from "../../config/breakpoints";
 import { MAIN_PALETTE, TEXT_PALETTE } from "../../config/palette";
-import { Wrapper } from "../../layout/styles";
 
 export const Container = styled.header`
   position: fixed;

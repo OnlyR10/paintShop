@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styled, { css } from "styled-components";
+import { Wrapper } from "../../Layout/styles";
 import { MAIN_PALETTE, TEXT_PALETTE } from "../../config/palette";
-import { Wrapper } from "../../layout/styles";
 
 export const Container = styled.div`
   height: 6rem;

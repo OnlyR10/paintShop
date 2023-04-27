@@ -1,7 +1,7 @@
-import Center from "../../assets/images/product/facadeEco/center.jpg";
-import Left from "../../assets/images/product/facadeEco/left.jpg";
-import FacadeEco from "../../assets/images/products/facadeEco.jpg";
-import { categoriesOfPaints } from "../CategoryOfPaints";
+import Center from "../../assets/images/product/facadeEco/center.webp";
+import Left from "../../assets/images/product/facadeEco/left.webp";
+import FacadeEco from "../../assets/images/products/facadeEco.webp";
+import { categoriesOfPaints } from "../categoryOfPaints";
 
 export const facadeEco = {
   category: [categoriesOfPaints.facade],
