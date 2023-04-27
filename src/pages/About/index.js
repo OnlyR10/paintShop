@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { DeliveryTable } from "../../../components/DeliveryTable";
-import { Context } from "../../../config/context";
+import { DeliveryTable } from "../../components/DeliveryTable";
+import { Context } from "../../config/context";
 import { AboutWrapper, Comma, Container, Link, Text, Title } from "./styles";
 
 export const About = () => {
