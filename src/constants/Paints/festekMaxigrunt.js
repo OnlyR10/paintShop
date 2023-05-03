@@ -8,7 +8,7 @@ export const maxiGrunt = {
   path: "festek_maxi_grunt",
   name: "«FESTEK_MAXIGRUNT»",
   header: "Грунтовка адгезионная «FESTEK_MAXIGRUNT»",
-  link: "https://drive.google.com/file/d/1qJ02fCYfITVdmTKzrzLPJbXvE0j5EKz-/view?usp=share_link",
+  link: "https://drive.google.com/file/d/15-lsi8GV_AWQ0F9HUDs4DbMrlrFceVsx/view?usp=sharing",
   price: "60,00",
   productsPage: {
     title: "Адгезионная грунтовка «FESTEK-MAXIGRUNT»",

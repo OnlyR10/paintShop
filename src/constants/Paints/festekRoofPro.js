@@ -8,7 +8,7 @@ export const roofPro = {
   path: "festek_roof_pro",
   name: "FESTEK-ROOF PRO",
   header: "Краска кровельная акриловая «FESTEK-ROOF PRO»",
-  link: "https://drive.google.com/file/d/19j5OjXZ-K4BT8ce456aLjvkvuN6fi8pk/view?usp=share_link",
+  link: "https://drive.google.com/file/d/1-7AvZuUXciO1ItPlD8ZSBiaFhV2BxHZe/view?usp=sharing",
   price: "180,00",
   productsPage: {
     title: "Кровельная «FESTEK-ROOF PRO»",

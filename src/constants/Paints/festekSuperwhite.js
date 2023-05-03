@@ -8,7 +8,7 @@ export const superWhite = {
   path: "festek_super_white",
   name: "FESTEK-SUPERWHITE",
   header: "Краска для потолков акриловая «FESTEK-SUPERWHITE»",
-  link: "https://drive.google.com/file/d/1kMvia4OzahpiDPUW0zLbsFXbjlucAe9P/view?usp=share_link",
+  link: "https://drive.google.com/file/d/1DJIxhD3XodX7yVQKux_rGBLl6Vo1PCki/view?usp=sharing",
   price: "150,00",
   productsPage: {
     title: "Интерьерная «FESTEK-SUPERWHITE»",

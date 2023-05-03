@@ -8,7 +8,7 @@ export const insideEco = {
   path: "festek_inside_eco",
   name: "FESTEK-INSIDE ECO",
   header: "Краска интерьерная акриловая «FESTEK-INSIDE ECO»",
-  link: "https://drive.google.com/file/d/1UcZQcalXzguubYoBWqm3y5ya-4KS0jCz/view?usp=share_link",
+  link: "https://drive.google.com/file/d/1sp5lSEsvce0S5-VL-xQ7IXCuSIRAko9T/view?usp=sharing",
   price: "65,00",
   productsPage: {
     title: "Интерьерная «FESTEK-INSIDE ECO»",

@@ -8,7 +8,7 @@ export const facadePremium = {
   path: "festek_facade_premium",
   name: "FESTEK-FACADE PREMIUM",
   header: "Краска фасадная акриловая «FESTEK-FACADE PREMIUM»",
-  link: "https://drive.google.com/file/d/1hhVa5xgp9oUu63j9UI48oYsAVwFSkrJ0/view?usp=share_link",
+  link: "https://drive.google.com/file/d/183YPhhXbCpf5l7tu9plN0hW9fSVRRDj2/view?usp=sharing",
   price: "120,00",
   productsPage: {
     title: "Фасадная «FESTEK-FACADE PREMIUM»",

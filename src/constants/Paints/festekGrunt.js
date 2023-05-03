@@ -8,7 +8,7 @@ export const grunt = {
   path: "festek_grunt",
   name: "FESTEK_GRUNT",
   header: "Грунтовка глубокого проникновения «FESTEK-GRUNT»",
-  link: "https://drive.google.com/file/d/1cJlNbwDmWJ2vlXG_epiHHvExCqSRHxfo/view?usp=share_link",
+  link: "https://drive.google.com/file/d/15T372uB6eR_pJ512LeHQX3AepQH18FHx/view?usp=sharing",
   price: "30,00",
   productsPage: {
     title: "Универсальная грунтовка «FESTEK-GRUNT»",
