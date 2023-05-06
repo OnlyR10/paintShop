@@ -15,3 +15,9 @@ export const PaintsCards = styled.div`
     gap: 2rem 4rem;
   }
 `;
+
+export const EmptyWall = styled.div`
+  margin: 0 auto;
+  font-family: "Inter-SemiBold";
+  font-size: 3rem;
+`;
