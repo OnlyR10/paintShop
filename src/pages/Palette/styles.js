@@ -5,7 +5,7 @@ import { BREAKPOINTS } from "../../config/breakpoints";
 
 export const Container = styled(PageContainer)`
   @media ${BREAKPOINTS.tablet} {
-    padding-top: calc(10vh);
+    padding-top: calc(8rem);
   }
 `;
 

@@ -9,7 +9,7 @@ export const Container = styled(PageContainer)`
   visibility: ${({ render }) => (render ? "visible" : "hidden")};
 
   @media ${BREAKPOINTS.tablet} {
-    padding-top: calc(10vh + 2rem);
+    padding-top: calc(8rem + 2rem);
   }
 `;
 
