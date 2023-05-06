@@ -15,7 +15,7 @@ export const PaintCard = ({ paint }) => {
     category,
     path,
     images: { products },
-    price,
+    purchase,
     productsPage: { title, text },
   } = paint;
 
@@ -28,9 +28,13 @@ export const PaintCard = ({ paint }) => {
       <DescriptionContainer>
         <Header>{title}</Header>
 
-        <Text>
-          От <Price>{price}</Price> руб.
-        </Text>
+        {purchase.map(({ price, amount }) => {
+          return (
+            <Text key={`products_price_${price}`}>
+              От <Price>{price}</Price> руб {amount}.
+            </Text>
+          );
+        })}
 
         <Description>{text}</Description>
       </DescriptionContainer>

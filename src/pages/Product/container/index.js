@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { createRef, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { paints } from "../../../constants/paintsConfig";
 import { Slider } from "../components/Slider";
@@ -9,7 +9,6 @@ import {
   FileDownloadButton,
   InfoContainer,
   LinkButton,
-  PaintDescription,
   PaintPrice,
   PaintPriceText,
   PaintTitle,
@@ -18,6 +17,8 @@ import {
 } from "./styles";
 
 export const Product = () => {
+  const contentRef = createRef(null);
+
   const { category, name } = useParams();
   const [activeContent, setActiveContent] = useState("Description");
   const [render, setRender] = useState(false);
@@ -28,9 +29,15 @@ export const Product = () => {
     images: { product },
     header,
     link,
-    price,
+    purchase,
   } = currentPaint;
-  const purpose = currentPaint.documentation.description.purpose.value;
+
+  const showActiveContent = (signContent) => {
+    setActiveContent(signContent);
+    // contentRef?.current.scrollIntoView({
+    //   behavior: "smooth",
+    // });
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -44,60 +51,59 @@ export const Product = () => {
       <ProductWrapper>
         <ShortDescription>
           <PaintTitle>{header}</PaintTitle>
-          <PaintPriceText>
-            От <PaintPrice>{price}</PaintPrice> руб.
-          </PaintPriceText>
-          <PaintDescription>{purpose}</PaintDescription>
+
+          {purchase.map(({ price, amount }) => {
+            return (
+              <PaintPriceText key={`product_price_${price}`}>
+                От <PaintPrice>{price}</PaintPrice> руб. за ведро {amount}.
+              </PaintPriceText>
+            );
+          })}
         </ShortDescription>
 
         <InfoContainer>
           <ControlPanel>
             <LinkButton
               className={activeContent === "Description" ? "active" : null}
-              onClick={() => setActiveContent("Description")}
+              onClick={() => showActiveContent("Description")}
             >
               Описание
             </LinkButton>
 
             <LinkButton
               className={activeContent === "Application" ? "active" : null}
-              onClick={() => setActiveContent("Application")}
+              onClick={() => showActiveContent("Application")}
             >
               Нанесение
             </LinkButton>
 
             <LinkButton
               className={activeContent === "Characteristics" ? "active" : null}
-              onClick={() => setActiveContent("Characteristics")}
+              onClick={() => showActiveContent("Characteristics")}
             >
               Характеристики
             </LinkButton>
 
             <LinkButton
               className={activeContent === "PaletteContainer" ? "active" : null}
-              onClick={() => setActiveContent("PaletteContainer")}
+              onClick={() => showActiveContent("PaletteContainer")}
             >
               Цветовая палитра
             </LinkButton>
 
             <LinkButton
               className={activeContent === "Delivery" ? "active" : null}
-              onClick={() => setActiveContent("Delivery")}
+              onClick={() => showActiveContent("Delivery")}
             >
               Условия доставки и самовывоза
             </LinkButton>
-
-            {/* <FileDownloadButton href={`/files/${name.slice(7)}.pdf`} target="_blank">
-                <UploadIcon />
-                <Text>Тех. документ PDF</Text>
-              </FileDownloadButton> */}
 
             <FileDownloadButton href={link} target="_blank">
               Тех. документ PDF
             </FileDownloadButton>
           </ControlPanel>
 
-          <Content paint={currentPaint} product />
+          <Content ref={contentRef} paint={currentPaint} product />
         </InfoContainer>
       </ProductWrapper>
     </Container>

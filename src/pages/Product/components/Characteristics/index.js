@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import {
   Table,
   TableBody,
@@ -9,11 +9,11 @@ import {
   TableRow,
 } from "../../../../components/DeliveryTable/styles";
 
-export const Characteristics = ({ paint }) => {
-  const technicalData = paint.documentation.description.technicalData;
+export const Characteristics = forwardRef(({ paint }, ref) => {
+  const technicalData = paint.documentation.technicalData;
 
   return (
-    <TableContainer>
+    <TableContainer ref={ref}>
       <Table wordbreak="true">
         <TableHead>
           <TableRow>
@@ -32,4 +32,4 @@ export const Characteristics = ({ paint }) => {
       </Table>
     </TableContainer>
   );
-};
+});

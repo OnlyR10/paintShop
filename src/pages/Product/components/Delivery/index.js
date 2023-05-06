@@ -1,10 +1,11 @@
+import { forwardRef } from "react";
 import { DeliveryTable } from "../../../../components/DeliveryTable";
 import { Text, Title } from "../styles";
 import { Container, InfoContainer, Link } from "./styles";
 
-export const Delivery = () => {
+export const Delivery = forwardRef((props, ref) => {
   return (
-    <Container>
+    <Container ref={ref}>
       <InfoContainer>
         <Title>Пункт самовывоза по адресу:</Title>
         <Link href="https://yandex.by/maps/-/CCUSaQhBOC" target="_blank">
@@ -24,4 +25,4 @@ export const Delivery = () => {
       <DeliveryTable />
     </Container>
   );
-};
+});

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { colorPalette } from "../../constants/colorPalette";
 import {
   ColorBox,
@@ -14,9 +14,9 @@ import {
   Title,
 } from "./styles";
 
-export const PaletteContainer = ({ product }) => {
+export const PaletteContainer = forwardRef(({ product }, ref) => {
   return (
-    <Container product={product}>
+    <Container ref={ref} product={product}>
       <Header>
         <Title>Палитра цветов</Title>
         <InfoContainer>
@@ -58,4 +58,4 @@ export const PaletteContainer = ({ product }) => {
       </ColorPaletteList>
     </Container>
   );
-};
+});
