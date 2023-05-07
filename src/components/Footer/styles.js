@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Wrapper } from "../../Layout/styles";
 import { MAIN_PALETTE, TEXT_PALETTE } from "../../config/palette";
+import { Wrapper } from "../../layout/styles";
 
 export const Container = styled.footer`
   width: 100%;

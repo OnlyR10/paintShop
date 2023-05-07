@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Layout } from "../Layout";
 import { NonExistingPage } from "../components/NonExistingPage";
+import { Layout } from "../layout";
 import { About } from "../pages/About";
 import { Main } from "../pages/Main/container";
 import { Palette } from "../pages/Palette";
