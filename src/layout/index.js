@@ -10,7 +10,21 @@ export const Layout = () => {
   const resize = useResize();
 
   useEffect(() => {
-    resize.smartphone ? window.jivo_destroy() : window.jivo_init();
+    const script = document.createElement("script");
+    const jivo = document.getElementById("jivo");
+
+    const loadScript = (url) => {
+      script.id = "jivo";
+      script.src = url;
+      document.body.append(script);
+    };
+
+    if (resize.smartphone && jivo) {
+      window.jivo_destroy();
+      jivo.remove();
+    } else if (!resize.smartphone && !jivo) {
+      loadScript("//code.jivo.ru/widget/Kxr1QZC8QM");
+    }
   }, [resize.smartphone]);
 
   return (
