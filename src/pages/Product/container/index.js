@@ -34,9 +34,8 @@ export const Product = () => {
 
   const showActiveContent = (signContent) => {
     setActiveContent(signContent);
-    // contentRef?.current.scrollIntoView({
-    //   behavior: "smooth",
-    // });
+    const contentPosition = contentRef?.current.getBoundingClientRect();
+    window.scrollTo({ top: contentPosition.top + window.pageYOffset - 100 });
   };
 
   useEffect(() => {
