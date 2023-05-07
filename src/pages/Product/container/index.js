@@ -43,6 +43,7 @@ export const Product = () => {
 
       window.scrollTo({
         top: contentPosition.top + window.pageYOffset - HEADER_PADDING,
+        behavior: "smooth",
       });
     }
   };
