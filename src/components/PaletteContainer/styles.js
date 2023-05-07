@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const Header = styled.div`
   @media ${BREAKPOINTS.tablet} {
-    padding-top: 2rem;
+    padding-top: ${({ product }) => (product ? 0 : "2rem")};
   }
 `;
 
@@ -22,14 +22,22 @@ export const Title = styled.h2`
   @media ${BREAKPOINTS.tablet} {
     margin-bottom: 1rem;
   }
+
+  @media ${BREAKPOINTS.smartphone} {
+    font-size: 3rem;
+  }
 `;
 
 export const InfoContainer = styled.div``;
 
 export const Notice = styled.p`
   font-family: "Inter-Bold";
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 0;
+
+  @media ${BREAKPOINTS.smartphone} {
+    font-size: 2.6rem;
+  }
 
   @media ${BREAKPOINTS.mobile} {
     text-align: center;
@@ -38,7 +46,7 @@ export const Notice = styled.p`
 
 export const Info = styled.p`
   font-family: "Inter-Regular";
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-align: justify;
 
   @media ${BREAKPOINTS.mobile} {

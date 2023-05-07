@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BREAKPOINTS } from "../../../../config/breakpoints";
 import { TEXT_PALETTE } from "../../../../config/palette";
 
 export const Container = styled.div`
@@ -25,5 +26,9 @@ export const Link = styled.a`
   :active {
     color: ${TEXT_PALETTE.active};
     border-bottom: 0.2rem solid ${TEXT_PALETTE.active};
+  }
+
+  @media ${BREAKPOINTS.smartphone} {
+    font-size: 1.8rem;
   }
 `;

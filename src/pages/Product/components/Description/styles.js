@@ -19,10 +19,18 @@ export const InfoContainer = styled.div`
 export const Term = styled.span`
   font-family: "Inter-Bold";
   font-size: 3rem;
+
+  @media ${BREAKPOINTS.smartphone} {
+    font-size: 2.6rem;
+  }
 `;
 
 export const UList = styled.ul`
   margin: 0;
+
+  @media ${BREAKPOINTS.smartphone} {
+    padding-left: 2rem;
+  }
 `;
 
 export const List = styled.li`
@@ -30,6 +38,10 @@ export const List = styled.li`
   font-size: 2rem;
   text-align: justify;
   margin: 0;
+
+  @media ${BREAKPOINTS.smartphone} {
+    font-size: 1.8rem;
+  }
 `;
 
 export const NavigationLink = styled(Link)`

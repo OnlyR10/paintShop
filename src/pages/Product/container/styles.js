@@ -31,8 +31,7 @@ export const ProductWrapper = styled(Wrapper)`
 
   @media ${BREAKPOINTS.smartphone} {
     row-gap: 1rem;
-    padding: 2rem 3rem 4rem;
-    text-align: center;
+    padding: 2rem 3rem;
   }
 `;
 
@@ -50,18 +49,30 @@ export const PaintTitle = styled.h2`
   padding: 1rem 0;
   font-family: "Inter-Bold";
   font-size: 3.6rem;
+
+  @media ${BREAKPOINTS.smartphone} {
+    font-size: 3rem;
+  }
 `;
 
 export const PaintPriceText = styled.p`
   margin: 0;
   font-family: "Inter-Regular";
   font-size: 2rem;
+
+  @media ${BREAKPOINTS.smartphone} {
+    font-size: 1.8rem;
+  }
 `;
 
 export const PaintPrice = styled.span`
   padding: 1rem 0;
   font-family: "Inter-Bold";
   font-size: 3.6rem;
+
+  @media ${BREAKPOINTS.smartphone} {
+    font-size: 3rem;
+  }
 `;
 
 export const InfoContainer = styled.div`
@@ -109,10 +120,15 @@ export const LinkButton = styled.button`
   &.active {
     background-color: ${MAIN_PALETTE.edgingBackground};
   }
+
+  @media ${BREAKPOINTS.smartphone} {
+    font-size: 1.8rem;
+  }
 `;
 
 export const FileDownloadButton = styled.a`
   ${buttonStyle}
+  text-align: center;
   text-decoration: none;
   color: ${TEXT_PALETTE.main};
 `;

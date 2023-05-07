@@ -14,17 +14,19 @@ export const DeliveryTable = ({ about }) => {
       <Table>
         <TableHead>
           <TableRow>
-            <TableHeader colSpan={2}>Доставка по Минску:</TableHeader>
+            <TableHeader colSpan={2} about={about}>
+              Доставка по Минску:
+            </TableHeader>
           </TableRow>
         </TableHead>
         <TableBody>
           <TableRow>
-            <TableData>Сумма заказа менее 150 руб</TableData>
-            <TableData>Сумма заказа более 150 руб</TableData>
+            <TableData about={about}>Сумма заказа менее 150 руб</TableData>
+            <TableData about={about}>Сумма заказа более 150 руб</TableData>
           </TableRow>
           <TableRow>
-            <TableData>10 рублей доставка</TableData>
-            <TableData>Бесплатно</TableData>
+            <TableData about={about}>10 рублей доставка</TableData>
+            <TableData about={about}>Бесплатно</TableData>
           </TableRow>
         </TableBody>
       </Table>

@@ -17,7 +17,7 @@ import {
 export const PaletteContainer = forwardRef(({ product }, ref) => {
   return (
     <Container ref={ref} product={product}>
-      <Header>
+      <Header product={product}>
         <Title>Палитра цветов</Title>
         <InfoContainer>
           <Notice>Обращаем ваше внимание!</Notice>
