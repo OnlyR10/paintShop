@@ -6,6 +6,10 @@ export const Title = styled.h2`
   padding-bottom: 1rem;
   font-family: "Inter-Bold";
   font-size: 3rem;
+
+  @media ${BREAKPOINTS.smartphone} {
+    font-size: 2.6rem;
+  }
 `;
 
 export const Text = styled.p`
@@ -15,6 +19,7 @@ export const Text = styled.p`
   margin: 0;
 
   @media ${BREAKPOINTS.smartphone} {
-    text-align: center;
+    font-size: 1.8rem;
+    text-align: left;
   }
 `;

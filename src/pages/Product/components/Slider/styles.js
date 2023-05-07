@@ -135,6 +135,7 @@ export const ArrowBox = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: pointer;
 `;
 
 export const ArrowLeft = styled(ArrowBox)`

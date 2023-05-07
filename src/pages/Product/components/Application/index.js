@@ -1,12 +1,12 @@
-import React from "react";
+import { forwardRef } from "react";
 import { Text, Title } from "../styles";
 import { Container, InfoContainer } from "./styles";
 
-export const Application = ({ paint }) => {
+export const Application = forwardRef(({ paint }, ref) => {
   const applicationTechnology = paint.documentation.applicationTechnology;
 
   return (
-    <Container>
+    <Container ref={ref}>
       {Object.values(applicationTechnology).map(({ value, label }, index) => {
         return (
           <InfoContainer key={label} firstelem={index === 0}>
@@ -17,4 +17,4 @@ export const Application = ({ paint }) => {
       })}
     </Container>
   );
-};
+});

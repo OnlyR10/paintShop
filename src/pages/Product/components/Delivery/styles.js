@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BREAKPOINTS } from "../../../../config/breakpoints";
 import { TEXT_PALETTE } from "../../../../config/palette";
 
 export const Container = styled.div`
@@ -11,13 +12,11 @@ export const InfoContainer = styled.div`
 `;
 
 export const Link = styled.a`
-  display: block;
-  margin: 0;
+  display: inline-block;
   padding-bottom: 1rem;
   border-bottom: 0.2rem solid transparent;
   font-family: "Inter-Regular";
   font-size: 2rem;
-  line-height: 3rem;
   color: ${TEXT_PALETTE.linkText};
   text-decoration: none;
   :hover {
@@ -27,5 +26,9 @@ export const Link = styled.a`
   :active {
     color: ${TEXT_PALETTE.active};
     border-bottom: 0.2rem solid ${TEXT_PALETTE.active};
+  }
+
+  @media ${BREAKPOINTS.smartphone} {
+    font-size: 1.8rem;
   }
 `;

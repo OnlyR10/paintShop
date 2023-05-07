@@ -8,7 +8,7 @@ import { MAIN_PALETTE, TEXT_PALETTE } from "../../config/palette";
 export const Container = styled.header`
   position: fixed;
   width: 100%;
-  height: 10vh;
+  height: 8rem;
   background-color: ${MAIN_PALETTE.logoBackground};
   z-index: 2;
 
@@ -86,7 +86,7 @@ export const BurgerMenu = styled.div`
 
 export const Veil = styled.div`
   position: absolute;
-  top: 10vh;
+  top: 8rem;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -116,7 +116,7 @@ const MoveRight = keyframes`
 
 export const MenuContainer = styled.div`
   position: fixed;
-  top: 10vh;
+  top: 8rem;
   right: 0;
   width: 30.3rem;
   height: 100vh;

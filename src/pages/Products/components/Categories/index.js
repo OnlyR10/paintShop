@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { paints } from "../../../../constants/paintsConfig";
 import { ALL_PRODUCTS } from "../../../../constants/roots";
 import { PaintCard } from "../PaintCard";
-import { PaintsCards } from "./styles";
+import { EmptyWall, PaintsCards } from "./styles";
 
 export const Categories = () => {
   const { category } = useParams();
@@ -27,10 +27,16 @@ export const Categories = () => {
   }, [category]);
 
   return (
-    <PaintsCards>
-      {disputedPaints.map((paint) => (
-        <PaintCard key={paint.name} paint={paint}></PaintCard>
-      ))}
-    </PaintsCards>
+    <>
+      {disputedPaints.length ? (
+        <PaintsCards>
+          {disputedPaints.map((paint) => (
+            <PaintCard key={paint.name} paint={paint}></PaintCard>
+          ))}
+        </PaintsCards>
+      ) : (
+        <EmptyWall>Товара нет в наличии</EmptyWall>
+      )}
+    </>
   );
 };

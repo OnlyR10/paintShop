@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { BREAKPOINTS } from "../../config/breakpoints";
 import { MAIN_PALETTE } from "../../config/palette";
 
@@ -29,6 +29,11 @@ export const TableHeader = styled.th`
 
   @media ${BREAKPOINTS.smartphone} {
     padding: 2rem 1rem;
+    ${({ about }) =>
+      !about &&
+      css`
+        font-size: 2rem;
+      `}
   }
 
   @media ${BREAKPOINTS.mobile} {
@@ -48,6 +53,15 @@ export const TableData = styled.td`
 
   @media ${BREAKPOINTS.tablet} {
     padding: 1rem;
+  }
+
+  @media ${BREAKPOINTS.smartphone} {
+    padding: 2rem 1rem;
+    ${({ about }) =>
+      !about &&
+      css`
+        font-size: 1.8rem;
+      `}
   }
 
   @media ${BREAKPOINTS.mobile} {
