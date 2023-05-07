@@ -1,6 +1,7 @@
 import React, { createRef, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { paints } from "../../../constants/paintsConfig";
+import { useResize } from "../../../hooks/useResize";
 import { Slider } from "../components/Slider";
 import { ContentConfig } from "../constants/contentConfig";
 import {
@@ -18,6 +19,7 @@ import {
 
 export const Product = () => {
   const contentRef = createRef(null);
+  const resize = useResize();
 
   const { category, name } = useParams();
   const [activeContent, setActiveContent] = useState("Description");
@@ -34,8 +36,15 @@ export const Product = () => {
 
   const showActiveContent = (signContent) => {
     setActiveContent(signContent);
-    const contentPosition = contentRef?.current.getBoundingClientRect();
-    window.scrollTo({ top: contentPosition.top + window.pageYOffset - 100 });
+
+    if (resize.tablet) {
+      const HEADER_PADDING = 100;
+      const contentPosition = contentRef?.current.getBoundingClientRect();
+
+      window.scrollTo({
+        top: contentPosition.top + window.pageYOffset - HEADER_PADDING,
+      });
+    }
   };
 
   useEffect(() => {
