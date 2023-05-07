@@ -38,7 +38,7 @@ export const Product = () => {
     setActiveContent(signContent);
 
     if (resize.tablet) {
-      const HEADER_PADDING = 160;
+      const HEADER_PADDING = 100;
       const contentPosition = contentRef?.current.getBoundingClientRect();
 
       window.scrollTo({
