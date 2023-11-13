@@ -1,7 +1,7 @@
-import React, { createRef, useEffect, useState } from "react";
+import React, { createRef, useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Context } from "../../../config/context";
 import { paints } from "../../../constants/paintsConfig";
-import { useResize } from "../../../hooks/useResize";
 import { Slider } from "../components/Slider";
 import { ContentConfig } from "../constants/contentConfig";
 import {
@@ -18,10 +18,10 @@ import {
 } from "./styles";
 
 export const Product = () => {
-  const contentRef = createRef(null);
-  const resize = useResize();
-
+  const { tablet } = useContext(Context);
   const { category, name } = useParams();
+  const contentRef = createRef(null);
+
   const [activeContent, setActiveContent] = useState("Description");
   const [render, setRender] = useState(false);
 
@@ -37,7 +37,7 @@ export const Product = () => {
   const showActiveContent = (signContent) => {
     setActiveContent(signContent);
 
-    if (resize.tablet) {
+    if (tablet) {
       const HEADER_PADDING = 100;
       const contentPosition = contentRef?.current.getBoundingClientRect();
 
