@@ -11,12 +11,12 @@ import help from "../../../assets/icons/help.svg";
 import palette from "../../../assets/icons/palette.svg";
 import { Context } from "../../../config/context";
 import { paints } from "../../../constants/paintsConfig";
-import { FallbackContainer } from "../../../layout/styles";
 import { Slider } from "../components/Slider";
 import { ContentConfig } from "../constants/contentConfig";
 import {
   Container,
   ControlPanel,
+  FallbackContent,
   FileDownloadButton,
   InfoContainer,
   LinkButton,
@@ -99,33 +99,33 @@ const Product = () => {
                 <PaintPicture src={description} />
               </LinkContainer>
             ) : (
-            <LinkButton
-              className={activeContent === "Description" ? "active" : null}
-              onClick={() => showActiveContent("Description")}
+              <LinkButton
+                className={activeContent === "Description" ? "active" : null}
+                onClick={() => showActiveContent("Description")}
                 image={description}
-            >
-              Описание
-            </LinkButton>
+              >
+                Описание
+              </LinkButton>
             )}
 
             {smartphone ? null : (
-            <LinkButton
-              className={activeContent === "Application" ? "active" : null}
-              onClick={() => showActiveContent("Application")}
-            >
-              Нанесение
-            </LinkButton>
+              <LinkButton
+                className={activeContent === "Application" ? "active" : null}
+                onClick={() => showActiveContent("Application")}
+              >
+                Нанесение
+              </LinkButton>
             )}
 
             {smartphone ? null : (
-            <LinkButton
+              <LinkButton
                 className={
                   activeContent === "Characteristics" ? "active" : null
                 }
-              onClick={() => showActiveContent("Characteristics")}
-            >
-              Характеристики
-            </LinkButton>
+                onClick={() => showActiveContent("Characteristics")}
+              >
+                Характеристики
+              </LinkButton>
             )}
 
             {smartphone ? (
@@ -138,14 +138,14 @@ const Product = () => {
                 <PaintPicture src={palette} />
               </LinkContainer>
             ) : (
-            <LinkButton
+              <LinkButton
                 className={
                   activeContent === "PaletteContainer" ? "active" : null
                 }
-              onClick={() => showActiveContent("PaletteContainer")}
-            >
-              Цветовая палитра
-            </LinkButton>
+                onClick={() => showActiveContent("PaletteContainer")}
+              >
+                Цветовая палитра
+              </LinkButton>
             )}
 
             {smartphone ? (
@@ -156,24 +156,22 @@ const Product = () => {
                 <PaintPicture src={help} />
               </LinkContainer>
             ) : (
-            <LinkButton
-              className={activeContent === "Delivery" ? "active" : null}
-              onClick={() => showActiveContent("Delivery")}
-            >
-              Условия доставки и самовывоза
-            </LinkButton>
+              <LinkButton
+                className={activeContent === "Delivery" ? "active" : null}
+                onClick={() => showActiveContent("Delivery")}
+              >
+                Условия доставки и самовывоза
+              </LinkButton>
             )}
 
             {smartphone ? null : (
-            <FileDownloadButton href={link} target="_blank">
-              Тех. документ PDF
-            </FileDownloadButton>
+              <FileDownloadButton href={link} target="_blank">
+                Тех. документ PDF
+              </FileDownloadButton>
             )}
           </ControlPanel>
 
-          <Suspense
-            fallback={<FallbackContainer>Loading...</FallbackContainer>}
-          >
+          <Suspense fallback={<FallbackContent>Loading...</FallbackContent>}>
             <Content ref={contentRef} paint={currentPaint} product />
           </Suspense>
         </InfoContainer>

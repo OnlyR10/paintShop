@@ -3,7 +3,7 @@ import upload from "../../../assets/icons/upload.svg";
 import { PageContainer } from "../../../components/PageContainer";
 import { BREAKPOINTS } from "../../../config/breakpoints";
 import { MAIN_PALETTE, TEXT_PALETTE } from "../../../config/palette";
-import { Wrapper } from "../../../layout/styles";
+import { FallbackContainer, Wrapper } from "../../../layout/styles";
 
 export const Container = styled(PageContainer)`
   visibility: ${({ render }) => (render ? "visible" : "hidden")};
@@ -87,6 +87,7 @@ export const InfoContainer = styled.div`
   background-color: ${MAIN_PALETTE.productSecondElementBackground};
 
   @media ${BREAKPOINTS.smartphone} {
+    width: 100%;
     padding: 1rem;
   }
 `;
@@ -176,4 +177,8 @@ export const Text = styled.p`
   font-family: "Inter-Regular";
   font-size: 1.6rem;
   color: ${TEXT_PALETTE.linkText};
+`;
+
+export const FallbackContent = styled(FallbackContainer)`
+  padding-top: 0;
 `;
