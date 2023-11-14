@@ -47,7 +47,6 @@ export const Notice = styled.p`
 export const Info = styled.p`
   font-family: "Inter-Regular";
   font-size: 1.8rem;
-  text-align: justify;
 
   @media ${BREAKPOINTS.mobile} {
     text-align: center;

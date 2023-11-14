@@ -40,7 +40,6 @@ export const Link = styled.a`
   font-size: 2rem;
   line-height: 3rem;
   color: ${TEXT_PALETTE.linkText};
-  text-align: justify;
   text-decoration: none;
 
   @media ${BREAKPOINTS.smartphone} {

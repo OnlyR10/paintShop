@@ -15,7 +15,6 @@ export const Title = styled.h2`
 export const Text = styled.p`
   font-family: "Inter-Regular";
   font-size: 2rem;
-  text-align: justify;
   margin: 0;
 
   @media ${BREAKPOINTS.smartphone} {

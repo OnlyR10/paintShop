@@ -36,7 +36,6 @@ export const UList = styled.ul`
 export const List = styled.li`
   font-family: "Inter-Regular";
   font-size: 2rem;
-  text-align: justify;
   margin: 0;
 
   @media ${BREAKPOINTS.smartphone} {
