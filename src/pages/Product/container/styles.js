@@ -99,16 +99,23 @@ export const ControlPanel = styled.div`
   row-gap: 1rem;
   column-gap: 5rem;
   margin-bottom: 2rem;
+
+  @media ${BREAKPOINTS.smartphone} {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  @media ${BREAKPOINTS.mobile} {
+    flex-wrap: nowrap;
+  }
 `;
 
-const buttonStyle = css`
-  min-width: 10rem;
+const linkStyle = css`
   padding: 1rem 2rem;
   border: 1px solid ${MAIN_PALETTE.edgingBackground};
   border-radius: 2rem;
   background-color: ${MAIN_PALETTE.productFirstElementBackground};
-  font-family: "Inter-Regular";
-  font-size: 2rem;
+
   :hover {
     background-color: ${MAIN_PALETTE.edgingBackground};
     transition: background-color 0.3s;
@@ -116,6 +123,23 @@ const buttonStyle = css`
   :active {
     background-color: ${MAIN_PALETTE.edgingBackground};
     color: ${TEXT_PALETTE.active};
+  }
+`;
+
+const buttonStyle = css`
+  min-width: 10rem;
+  font-family: "Inter-Regular";
+  font-size: 2rem;
+  ${linkStyle}
+`;
+
+export const LinkContainer = styled.div`
+  width: 3rem;
+  height: 3rem;
+  ${linkStyle}
+
+  &.active {
+    background-color: ${MAIN_PALETTE.edgingBackground};
   }
 `;
 

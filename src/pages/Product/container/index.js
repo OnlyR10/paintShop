@@ -6,6 +6,9 @@ import React, {
   useState,
 } from "react";
 import { useParams } from "react-router-dom";
+import description from "../../../assets/icons/description.svg";
+import help from "../../../assets/icons/help.svg";
+import palette from "../../../assets/icons/palette.svg";
 import { Context } from "../../../config/context";
 import { paints } from "../../../constants/paintsConfig";
 import { FallbackContainer } from "../../../layout/styles";
@@ -17,6 +20,7 @@ import {
   FileDownloadButton,
   InfoContainer,
   LinkButton,
+  LinkContainer,
   PaintPicture,
   PaintPrice,
   PaintPriceText,
@@ -27,7 +31,7 @@ import {
 } from "./styles";
 
 const Product = () => {
-  const { tablet } = useContext(Context);
+  const { tablet, smartphone } = useContext(Context);
   const { category, name } = useParams();
   const contentRef = createRef(null);
 
@@ -87,44 +91,84 @@ const Product = () => {
 
         <InfoContainer>
           <ControlPanel>
+            {smartphone ? (
+              <LinkContainer
+                className={activeContent === "Description" ? "active" : null}
+                onClick={() => showActiveContent("Description")}
+              >
+                <PaintPicture src={description} />
+              </LinkContainer>
+            ) : (
             <LinkButton
               className={activeContent === "Description" ? "active" : null}
               onClick={() => showActiveContent("Description")}
+                image={description}
             >
               Описание
             </LinkButton>
+            )}
 
+            {smartphone ? null : (
             <LinkButton
               className={activeContent === "Application" ? "active" : null}
               onClick={() => showActiveContent("Application")}
             >
               Нанесение
             </LinkButton>
+            )}
 
+            {smartphone ? null : (
             <LinkButton
-              className={activeContent === "Characteristics" ? "active" : null}
+                className={
+                  activeContent === "Characteristics" ? "active" : null
+                }
               onClick={() => showActiveContent("Characteristics")}
             >
               Характеристики
             </LinkButton>
+            )}
 
+            {smartphone ? (
+              <LinkContainer
+                className={
+                  activeContent === "PaletteContainer" ? "active" : null
+                }
+                onClick={() => showActiveContent("PaletteContainer")}
+              >
+                <PaintPicture src={palette} />
+              </LinkContainer>
+            ) : (
             <LinkButton
-              className={activeContent === "PaletteContainer" ? "active" : null}
+                className={
+                  activeContent === "PaletteContainer" ? "active" : null
+                }
               onClick={() => showActiveContent("PaletteContainer")}
             >
               Цветовая палитра
             </LinkButton>
+            )}
 
+            {smartphone ? (
+              <LinkContainer
+                className={activeContent === "Delivery" ? "active" : null}
+                onClick={() => showActiveContent("Delivery")}
+              >
+                <PaintPicture src={help} />
+              </LinkContainer>
+            ) : (
             <LinkButton
               className={activeContent === "Delivery" ? "active" : null}
               onClick={() => showActiveContent("Delivery")}
             >
               Условия доставки и самовывоза
             </LinkButton>
+            )}
 
+            {smartphone ? null : (
             <FileDownloadButton href={link} target="_blank">
               Тех. документ PDF
             </FileDownloadButton>
+            )}
           </ControlPanel>
 
           <Suspense
