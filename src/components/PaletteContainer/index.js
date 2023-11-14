@@ -14,7 +14,7 @@ import {
   Title,
 } from "./styles";
 
-export const PaletteContainer = forwardRef(({ product }, ref) => {
+const PaletteContainer = forwardRef(({ product }, ref) => {
   return (
     <Container ref={ref} product={product}>
       <Header product={product}>
@@ -59,3 +59,5 @@ export const PaletteContainer = forwardRef(({ product }, ref) => {
     </Container>
   );
 });
+
+export default PaletteContainer;

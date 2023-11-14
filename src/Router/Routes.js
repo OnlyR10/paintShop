@@ -1,14 +1,17 @@
-import React from "react";
+import React, { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-import { NonExistingPage } from "../components/NonExistingPage";
 import { Layout } from "../layout";
-import { About } from "../pages/About";
-import { Main } from "../pages/Main/container";
-import { Palette } from "../pages/Palette";
-import { Product } from "../pages/Product/container";
-import { Categories } from "../pages/Products/components/Categories";
-import { Products } from "../pages/Products/container";
 import { ROUTE_NAMES } from "./routerNames";
+
+const NonExistingPage = lazy(() => import("../components/NonExistingPage"));
+const About = lazy(() => import("../pages/About"));
+const Main = lazy(() => import("../pages/Main/container"));
+const Palette = lazy(() => import("../pages/Palette"));
+const Product = lazy(() => import("../pages/Product/container"));
+const Categories = lazy(() =>
+  import("../pages/Products/components/Categories")
+);
+const Products = lazy(() => import("../pages/Products/container"));
 
 export const Router = () => {
   return (

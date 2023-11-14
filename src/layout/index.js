@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Context } from "../config/context";
 import { useResize } from "../hooks/useResize";
-import { Container } from "./styles";
+import { Container, FallbackContainer } from "./styles";
 
 export const Layout = () => {
   const resize = useResize();
@@ -31,7 +31,11 @@ export const Layout = () => {
     <Context.Provider value={resize}>
       <Container>
         <Header />
-        <Outlet />
+
+        <Suspense fallback={<FallbackContainer>Loading...</FallbackContainer>}>
+          <Outlet />
+        </Suspense>
+
         <Footer />
       </Container>
     </Context.Provider>

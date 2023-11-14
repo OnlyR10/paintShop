@@ -3,7 +3,7 @@ import { DeliveryTable } from "../../../../components/DeliveryTable";
 import { Text, Title } from "../styles";
 import { Container, InfoContainer, Link } from "./styles";
 
-export const Delivery = forwardRef((props, ref) => {
+const Delivery = forwardRef((props, ref) => {
   return (
     <Container ref={ref}>
       <InfoContainer>
@@ -26,3 +26,5 @@ export const Delivery = forwardRef((props, ref) => {
     </Container>
   );
 });
+
+export default Delivery;

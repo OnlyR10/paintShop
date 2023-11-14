@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 import { Text, Title } from "../styles";
 import { Container, InfoContainer } from "./styles";
 
-export const Application = forwardRef(({ paint }, ref) => {
+const Application = forwardRef(({ paint }, ref) => {
   const applicationTechnology = paint.documentation.applicationTechnology;
 
   return (
@@ -18,3 +18,5 @@ export const Application = forwardRef(({ paint }, ref) => {
     </Container>
   );
 });
+
+export default Application;

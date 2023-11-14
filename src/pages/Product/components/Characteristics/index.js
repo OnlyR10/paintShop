@@ -9,7 +9,7 @@ import {
   TableRow,
 } from "../../../../components/DeliveryTable/styles";
 
-export const Characteristics = forwardRef(({ paint }, ref) => {
+const Characteristics = forwardRef(({ paint }, ref) => {
   const technicalData = paint.documentation.technicalData;
 
   return (
@@ -33,3 +33,5 @@ export const Characteristics = forwardRef(({ paint }, ref) => {
     </TableContainer>
   );
 });
+
+export default Characteristics;

@@ -1,7 +1,14 @@
-import React, { createRef, useContext, useEffect, useState } from "react";
+import React, {
+  Suspense,
+  createRef,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 import { useParams } from "react-router-dom";
 import { Context } from "../../../config/context";
 import { paints } from "../../../constants/paintsConfig";
+import { FallbackContainer } from "../../../layout/styles";
 import { Slider } from "../components/Slider";
 import { ContentConfig } from "../constants/contentConfig";
 import {
@@ -17,7 +24,7 @@ import {
   ShortDescription,
 } from "./styles";
 
-export const Product = () => {
+const Product = () => {
   const { tablet } = useContext(Context);
   const { category, name } = useParams();
   const contentRef = createRef(null);
@@ -112,9 +119,15 @@ export const Product = () => {
             </FileDownloadButton>
           </ControlPanel>
 
-          <Content ref={contentRef} paint={currentPaint} product />
+          <Suspense
+            fallback={<FallbackContainer>Loading...</FallbackContainer>}
+          >
+            <Content ref={contentRef} paint={currentPaint} product />
+          </Suspense>
         </InfoContainer>
       </ProductWrapper>
     </Container>
   );
 };
+
+export default Product;

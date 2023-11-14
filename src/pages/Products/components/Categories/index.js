@@ -5,7 +5,7 @@ import { ALL_PRODUCTS } from "../../../../constants/roots";
 import { PaintCard } from "../PaintCard";
 import { EmptyWall, PaintsCards } from "./styles";
 
-export const Categories = () => {
+const Categories = () => {
   const { category } = useParams();
 
   const [disputedPaints, setDisputedPaints] = useState([]);
@@ -40,3 +40,5 @@ export const Categories = () => {
     </>
   );
 };
+
+export default Categories;

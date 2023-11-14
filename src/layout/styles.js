@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { PageContainer } from "../components/PageContainer";
 
 export const Container = styled.div`
   display: flex;
@@ -12,4 +13,9 @@ export const Wrapper = styled.div`
   /* width: 192rem; */
   max-width: 160rem;
   margin: 0 auto;
+`;
+
+export const FallbackContainer = styled(PageContainer)`
+  text-align: center;
+  font-size: 8rem;
 `;

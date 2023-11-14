@@ -16,7 +16,7 @@ import {
   TextDefinition,
 } from "./styles";
 
-export const Main = () => {
+const Main = () => {
   const { laptop } = useContext(Context);
 
   // const [sachshell, setSachshell] = useState(true);
@@ -63,3 +63,5 @@ export const Main = () => {
     </Container>
   );
 };
+
+export default Main;
