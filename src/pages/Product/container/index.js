@@ -17,9 +17,11 @@ import {
   FileDownloadButton,
   InfoContainer,
   LinkButton,
+  PaintPicture,
   PaintPrice,
   PaintPriceText,
   PaintTitle,
+  PictureContainer,
   ProductWrapper,
   ShortDescription,
 } from "./styles";
@@ -35,7 +37,7 @@ const Product = () => {
   const Content = ContentConfig[activeContent];
   const currentPaint = paints[category].find((paint) => paint.path === name);
   const {
-    images: { product },
+    images: { product, products },
     header,
     link,
     purchase,
@@ -62,7 +64,13 @@ const Product = () => {
 
   return (
     <Container render={render}>
-      <Slider images={product} />
+      {tablet ? (
+        <PictureContainer>
+          <PaintPicture src={products} />
+        </PictureContainer>
+      ) : (
+        <Slider images={product} />
+      )}
 
       <ProductWrapper>
         <ShortDescription>

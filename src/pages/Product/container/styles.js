@@ -13,7 +13,12 @@ export const Container = styled(PageContainer)`
   }
 `;
 
-export const ContentContainer = styled.div`
+export const PictureContainer = styled.div`
+  width: 25rem;
+  margin: 0 auto;
+`;
+
+export const PaintPicture = styled.img`
   width: 100%;
 `;
 
