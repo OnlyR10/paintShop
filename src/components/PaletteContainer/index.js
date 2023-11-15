@@ -18,7 +18,8 @@ const PaletteContainer = forwardRef(({ product }, ref) => {
   return (
     <Container ref={ref} product={product}>
       <Header product={product}>
-        <Title>Палитра цветов</Title>
+        {product ? null : <Title>Палитра цветов</Title>}
+
         <InfoContainer>
           <Notice>Обращаем ваше внимание!</Notice>
           <Info>
@@ -43,6 +44,7 @@ const PaletteContainer = forwardRef(({ product }, ref) => {
           </Info>
         </InfoContainer>
       </Header>
+
       <ColorPaletteList>
         {colorPalette.map(
           ({ background, colorName, colorDescription }, index) => (

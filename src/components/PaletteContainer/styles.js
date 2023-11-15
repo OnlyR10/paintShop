@@ -36,7 +36,7 @@ export const Notice = styled.p`
   margin: 0;
 
   @media ${BREAKPOINTS.smartphone} {
-    font-size: 2.6rem;
+    font-size: 1.8rem;
   }
 
   @media ${BREAKPOINTS.mobile} {
@@ -45,8 +45,13 @@ export const Notice = styled.p`
 `;
 
 export const Info = styled.p`
+  margin: 1.5rem 0;
   font-family: "Inter-Regular";
   font-size: 1.8rem;
+
+  @media ${BREAKPOINTS.smartphone} {
+    font-size: 1.4rem;
+  }
 
   @media ${BREAKPOINTS.mobile} {
     text-align: center;

@@ -9,7 +9,47 @@ export const Container = styled(PageContainer)`
   visibility: ${({ render }) => (render ? "visible" : "hidden")};
 
   @media ${BREAKPOINTS.tablet} {
-    padding-top: calc(8rem + 2rem);
+    padding-top: 8rem;
+  }
+`;
+
+export const ShortDescription = styled.div`
+  padding: 0 2rem;
+  text-align: center;
+
+  @media ${BREAKPOINTS.smartphone} {
+    padding: 0;
+  }
+`;
+
+export const PaintTitle = styled.h2`
+  margin: 0;
+  padding: 1rem 0;
+  font-family: "Inter-Bold";
+  font-size: 3.6rem;
+  text-wrap: balance;
+
+  @media ${BREAKPOINTS.smartphone} {
+    font-size: 2.8rem;
+  }
+`;
+
+export const ManufacturerText = styled.p`
+  margin: 0;
+  font-family: "Inter-Regular";
+  font-size: 2rem;
+
+  @media ${BREAKPOINTS.smartphone} {
+    font-size: 1.4rem;
+  }
+`;
+
+export const BoldText = styled.span`
+  font-family: "Inter-Bold";
+  font-size: 3rem;
+
+  @media ${BREAKPOINTS.smartphone} {
+    font-size: 1.8rem;
   }
 `;
 
@@ -40,43 +80,15 @@ export const ProductWrapper = styled(Wrapper)`
   }
 `;
 
-export const ShortDescription = styled.div`
-  padding: 0 2rem;
-  text-align: center;
-
-  @media ${BREAKPOINTS.smartphone} {
-    padding: 0;
-  }
-`;
-
-export const PaintTitle = styled.h2`
-  margin: 0;
-  padding: 1rem 0;
-  font-family: "Inter-Bold";
-  font-size: 3.6rem;
-
-  @media ${BREAKPOINTS.smartphone} {
-    font-size: 3rem;
-  }
-`;
-
 export const PaintPriceText = styled.p`
   margin: 0;
   font-family: "Inter-Regular";
   font-size: 2rem;
 
   @media ${BREAKPOINTS.smartphone} {
-    font-size: 1.8rem;
-  }
-`;
-
-export const PaintPrice = styled.span`
-  padding: 1rem 0;
-  font-family: "Inter-Bold";
-  font-size: 3.6rem;
-
-  @media ${BREAKPOINTS.smartphone} {
-    font-size: 3rem;
+    font-size: 1.4rem;
+    text-align: center;
+    text-wrap: balance;
   }
 `;
 
@@ -135,8 +147,8 @@ const buttonStyle = css`
 `;
 
 export const LinkContainer = styled.div`
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   ${linkStyle}
 
   &.active {
@@ -149,10 +161,6 @@ export const LinkButton = styled.button`
   ${buttonStyle}
   &.active {
     background-color: ${MAIN_PALETTE.edgingBackground};
-  }
-
-  @media ${BREAKPOINTS.smartphone} {
-    font-size: 1.8rem;
   }
 `;
 
@@ -170,13 +178,6 @@ export const UploadIcon = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(${upload});
-`;
-
-export const Text = styled.p`
-  margin: 1rem 0;
-  font-family: "Inter-Regular";
-  font-size: 1.6rem;
-  color: ${TEXT_PALETTE.linkText};
 `;
 
 export const FallbackContent = styled(FallbackContainer)`

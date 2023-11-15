@@ -6,7 +6,7 @@ import { Container, InfoContainer, Link } from "./styles";
 const Delivery = forwardRef((props, ref) => {
   return (
     <Container ref={ref}>
-      <InfoContainer>
+      <InfoContainer firstelem>
         <Title>Пункт самовывоза по адресу:</Title>
         <Link href="https://yandex.by/maps/-/CCUSaQhBOC" target="_blank">
           Пос. Ратомка, ул. Октябрьская, д. 4

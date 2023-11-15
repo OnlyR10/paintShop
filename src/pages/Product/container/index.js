@@ -14,6 +14,7 @@ import { paints } from "../../../constants/paintsConfig";
 import { Slider } from "../components/Slider";
 import { ContentConfig } from "../constants/contentConfig";
 import {
+  BoldText,
   Container,
   ControlPanel,
   FallbackContent,
@@ -21,8 +22,8 @@ import {
   InfoContainer,
   LinkButton,
   LinkContainer,
+  ManufacturerText,
   PaintPicture,
-  PaintPrice,
   PaintPriceText,
   PaintTitle,
   PictureContainer,
@@ -68,6 +69,24 @@ const Product = () => {
 
   return (
     <Container render={render}>
+      <ShortDescription>
+        <PaintTitle>{header}</PaintTitle>
+      </ShortDescription>
+
+      <ProductWrapper>
+        <InfoContainer>
+          <ManufacturerText>
+            <BoldText>Изготовитель: </BoldText>ООО "Экзальт", ул. Центральная,
+            д. 49, Дзержинский район, Боровской с/с, д. Бакиново 222720, Минская
+            обл., Республика Беларусь
+          </ManufacturerText>
+
+          <ManufacturerText style={{ paddingTop: "1.5rem" }}>
+            <BoldText>Страна производства: </BoldText>Беларусь
+          </ManufacturerText>
+        </InfoContainer>
+      </ProductWrapper>
+
       {tablet ? (
         <PictureContainer>
           <PaintPicture src={products} />
@@ -77,17 +96,13 @@ const Product = () => {
       )}
 
       <ProductWrapper>
-        <ShortDescription>
-          <PaintTitle>{header}</PaintTitle>
-
-          {purchase.map(({ price, amount }) => {
-            return (
-              <PaintPriceText key={`product_price_${price}`}>
-                От <PaintPrice>{price}</PaintPrice> руб. за ведро {amount}.
-              </PaintPriceText>
-            );
-          })}
-        </ShortDescription>
+        {purchase.map(({ price, amount }) => {
+          return (
+            <PaintPriceText key={`product_price_${price}`}>
+              От <BoldText>{price}</BoldText> руб. за ведро {amount}.
+            </PaintPriceText>
+          );
+        })}
 
         <InfoContainer>
           <ControlPanel>

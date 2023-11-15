@@ -8,7 +8,7 @@ export const Title = styled.h2`
   font-size: 3rem;
 
   @media ${BREAKPOINTS.smartphone} {
-    font-size: 2.6rem;
+    font-size: 1.8rem;
   }
 `;
 
@@ -18,7 +18,7 @@ export const Text = styled.p`
   margin: 0;
 
   @media ${BREAKPOINTS.smartphone} {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     text-align: left;
   }
 `;
