@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Wrapper } from "../../Layout/styles";
 import { PageContainer } from "../../components/PageContainer";
 import { BREAKPOINTS } from "../../config/breakpoints";
 import { TEXT_PALETTE } from "../../config/palette";
+import { Wrapper } from "../../layout/styles";
 
 export const Container = styled(PageContainer)`
   @media ${BREAKPOINTS.tablet} {
@@ -40,7 +40,6 @@ export const Link = styled.a`
   font-size: 2rem;
   line-height: 3rem;
   color: ${TEXT_PALETTE.linkText};
-  text-align: justify;
   text-decoration: none;
 
   @media ${BREAKPOINTS.smartphone} {

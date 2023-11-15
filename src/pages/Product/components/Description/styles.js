@@ -21,7 +21,7 @@ export const Term = styled.span`
   font-size: 3rem;
 
   @media ${BREAKPOINTS.smartphone} {
-    font-size: 2.6rem;
+    font-size: 1.8rem;
   }
 `;
 
@@ -36,11 +36,10 @@ export const UList = styled.ul`
 export const List = styled.li`
   font-family: "Inter-Regular";
   font-size: 2rem;
-  text-align: justify;
   margin: 0;
 
   @media ${BREAKPOINTS.smartphone} {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 `;
 

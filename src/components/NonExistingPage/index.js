@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Content, NavigationLink, Text, Title } from "./styles";
 
-export const NonExistingPage = () => {
+const NonExistingPage = () => {
   return (
     <Container>
       <Content>
@@ -13,3 +13,5 @@ export const NonExistingPage = () => {
     </Container>
   );
 };
+
+export default NonExistingPage;
