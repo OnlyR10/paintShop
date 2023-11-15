@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/paintShop/static/css/main.167b7be6.css",
-    "main.js": "/paintShop/static/js/main.3eb95909.js",
+    "main.js": "/paintShop/static/js/main.8bea41d4.js",
     "static/js/907.47989898.chunk.js": "/paintShop/static/js/907.47989898.chunk.js",
     "static/js/354.69af1360.chunk.js": "/paintShop/static/js/354.69af1360.chunk.js",
     "static/js/952.fc25dc6b.chunk.js": "/paintShop/static/js/952.fc25dc6b.chunk.js",
@@ -54,7 +54,7 @@
     "static/media/LeftArrow.svg": "/paintShop/static/media/LeftArrow.fe3f6b0aaae24d885238feb3b62f9cd0.svg",
     "static/media/RightArrow.svg": "/paintShop/static/media/RightArrow.903cac23ef58aae4dc80552d0b3e4929.svg",
     "main.167b7be6.css.map": "/paintShop/static/css/main.167b7be6.css.map",
-    "main.3eb95909.js.map": "/paintShop/static/js/main.3eb95909.js.map",
+    "main.8bea41d4.js.map": "/paintShop/static/js/main.8bea41d4.js.map",
     "907.47989898.chunk.js.map": "/paintShop/static/js/907.47989898.chunk.js.map",
     "354.69af1360.chunk.js.map": "/paintShop/static/js/354.69af1360.chunk.js.map",
     "952.fc25dc6b.chunk.js.map": "/paintShop/static/js/952.fc25dc6b.chunk.js.map",
@@ -70,6 +70,6 @@
   },
   "entrypoints": [
     "static/css/main.167b7be6.css",
-    "static/js/main.3eb95909.js"
+    "static/js/main.8bea41d4.js"
   ]
 }
