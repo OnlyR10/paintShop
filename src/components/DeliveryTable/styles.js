@@ -5,7 +5,7 @@ import { MAIN_PALETTE } from "../../config/palette";
 export const TableContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding: ${({ about }) => (about ? "1.5rem 0 2rem" : 0)};
+  padding: ${({ about }) => (about ? "1.5rem 0 2rem" : "1.5rem 0 0")};
 `;
 
 export const Table = styled.table`
@@ -32,7 +32,7 @@ export const TableHeader = styled.th`
     ${({ about }) =>
       !about &&
       css`
-        font-size: 2rem;
+        font-size: 1.8rem;
       `}
   }
 
@@ -60,7 +60,7 @@ export const TableData = styled.td`
     ${({ about }) =>
       !about &&
       css`
-        font-size: 1.8rem;
+        font-size: 1.4rem;
       `}
   }
 

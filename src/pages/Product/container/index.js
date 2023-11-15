@@ -1,34 +1,48 @@
-import React, { createRef, useEffect, useState } from "react";
+import React, {
+  Suspense,
+  createRef,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 import { useParams } from "react-router-dom";
+import description from "../../../assets/icons/description.svg";
+import help from "../../../assets/icons/help.svg";
+import palette from "../../../assets/icons/palette.svg";
+import { Context } from "../../../config/context";
 import { paints } from "../../../constants/paintsConfig";
-import { useResize } from "../../../hooks/useResize";
 import { Slider } from "../components/Slider";
 import { ContentConfig } from "../constants/contentConfig";
 import {
+  BoldText,
   Container,
   ControlPanel,
+  FallbackContent,
   FileDownloadButton,
   InfoContainer,
   LinkButton,
-  PaintPrice,
+  LinkContainer,
+  ManufacturerText,
+  PaintPicture,
   PaintPriceText,
   PaintTitle,
+  PictureContainer,
   ProductWrapper,
   ShortDescription,
 } from "./styles";
 
-export const Product = () => {
-  const contentRef = createRef(null);
-  const resize = useResize();
-
+const Product = () => {
+  const { tablet, smartphone } = useContext(Context);
   const { category, name } = useParams();
+  const contentRef = createRef(null);
+
   const [activeContent, setActiveContent] = useState("Description");
   const [render, setRender] = useState(false);
 
   const Content = ContentConfig[activeContent];
   const currentPaint = paints[category].find((paint) => paint.path === name);
   const {
-    images: { product },
+    images: { product, products },
     header,
     link,
     purchase,
@@ -37,12 +51,13 @@ export const Product = () => {
   const showActiveContent = (signContent) => {
     setActiveContent(signContent);
 
-    if (resize.tablet) {
+    if (tablet) {
       const HEADER_PADDING = 100;
       const contentPosition = contentRef?.current.getBoundingClientRect();
 
       window.scrollTo({
         top: contentPosition.top + window.pageYOffset - HEADER_PADDING,
+        behavior: "smooth",
       });
     }
   };
@@ -54,66 +69,130 @@ export const Product = () => {
 
   return (
     <Container render={render}>
-      <Slider images={product} />
+      <ShortDescription>
+        <PaintTitle>{header}</PaintTitle>
+      </ShortDescription>
 
       <ProductWrapper>
-        <ShortDescription>
-          <PaintTitle>{header}</PaintTitle>
+        <InfoContainer>
+          <ManufacturerText>
+            <BoldText>Изготовитель: </BoldText>ООО "Экзальт", ул. Центральная,
+            д. 49, Дзержинский район, Боровской с/с, д. Бакиново 222720, Минская
+            обл., Республика Беларусь
+          </ManufacturerText>
 
-          {purchase.map(({ price, amount }) => {
-            return (
-              <PaintPriceText key={`product_price_${price}`}>
-                От <PaintPrice>{price}</PaintPrice> руб. за ведро {amount}.
-              </PaintPriceText>
-            );
-          })}
-        </ShortDescription>
+          <ManufacturerText style={{ paddingTop: "1.5rem" }}>
+            <BoldText>Страна производства: </BoldText>Беларусь
+          </ManufacturerText>
+        </InfoContainer>
+      </ProductWrapper>
+
+      {tablet ? (
+        <PictureContainer>
+          <PaintPicture src={products} />
+        </PictureContainer>
+      ) : (
+        <Slider images={product} />
+      )}
+
+      <ProductWrapper>
+        {purchase.map(({ price, amount }) => {
+          return (
+            <PaintPriceText key={`product_price_${price}`}>
+              От <BoldText>{price}</BoldText> руб. за ведро {amount}.
+            </PaintPriceText>
+          );
+        })}
 
         <InfoContainer>
           <ControlPanel>
-            <LinkButton
-              className={activeContent === "Description" ? "active" : null}
-              onClick={() => showActiveContent("Description")}
-            >
-              Описание
-            </LinkButton>
+            {smartphone ? (
+              <LinkContainer
+                className={activeContent === "Description" ? "active" : null}
+                onClick={() => showActiveContent("Description")}
+              >
+                <PaintPicture src={description} />
+              </LinkContainer>
+            ) : (
+              <LinkButton
+                className={activeContent === "Description" ? "active" : null}
+                onClick={() => showActiveContent("Description")}
+                image={description}
+              >
+                Описание
+              </LinkButton>
+            )}
 
-            <LinkButton
-              className={activeContent === "Application" ? "active" : null}
-              onClick={() => showActiveContent("Application")}
-            >
-              Нанесение
-            </LinkButton>
+            {smartphone ? null : (
+              <LinkButton
+                className={activeContent === "Application" ? "active" : null}
+                onClick={() => showActiveContent("Application")}
+              >
+                Нанесение
+              </LinkButton>
+            )}
 
-            <LinkButton
-              className={activeContent === "Characteristics" ? "active" : null}
-              onClick={() => showActiveContent("Characteristics")}
-            >
-              Характеристики
-            </LinkButton>
+            {smartphone ? null : (
+              <LinkButton
+                className={
+                  activeContent === "Characteristics" ? "active" : null
+                }
+                onClick={() => showActiveContent("Characteristics")}
+              >
+                Характеристики
+              </LinkButton>
+            )}
 
-            <LinkButton
-              className={activeContent === "PaletteContainer" ? "active" : null}
-              onClick={() => showActiveContent("PaletteContainer")}
-            >
-              Цветовая палитра
-            </LinkButton>
+            {smartphone ? (
+              <LinkContainer
+                className={
+                  activeContent === "PaletteContainer" ? "active" : null
+                }
+                onClick={() => showActiveContent("PaletteContainer")}
+              >
+                <PaintPicture src={palette} />
+              </LinkContainer>
+            ) : (
+              <LinkButton
+                className={
+                  activeContent === "PaletteContainer" ? "active" : null
+                }
+                onClick={() => showActiveContent("PaletteContainer")}
+              >
+                Цветовая палитра
+              </LinkButton>
+            )}
 
-            <LinkButton
-              className={activeContent === "Delivery" ? "active" : null}
-              onClick={() => showActiveContent("Delivery")}
-            >
-              Условия доставки и самовывоза
-            </LinkButton>
+            {smartphone ? (
+              <LinkContainer
+                className={activeContent === "Delivery" ? "active" : null}
+                onClick={() => showActiveContent("Delivery")}
+              >
+                <PaintPicture src={help} />
+              </LinkContainer>
+            ) : (
+              <LinkButton
+                className={activeContent === "Delivery" ? "active" : null}
+                onClick={() => showActiveContent("Delivery")}
+              >
+                Условия доставки и самовывоза
+              </LinkButton>
+            )}
 
-            <FileDownloadButton href={link} target="_blank">
-              Тех. документ PDF
-            </FileDownloadButton>
+            {smartphone ? null : (
+              <FileDownloadButton href={link} target="_blank">
+                Тех. документ PDF
+              </FileDownloadButton>
+            )}
           </ControlPanel>
 
-          <Content ref={contentRef} paint={currentPaint} product />
+          <Suspense fallback={<FallbackContent>Loading...</FallbackContent>}>
+            <Content ref={contentRef} paint={currentPaint} product />
+          </Suspense>
         </InfoContainer>
       </ProductWrapper>
     </Container>
   );
 };
+
+export default Product;

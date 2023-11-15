@@ -1,8 +1,8 @@
 import React from "react";
-import { PaletteContainer } from "../../components/PaletteContainer";
+import PaletteContainer from "../../components/PaletteContainer";
 import { Container, PaletteWrapper } from "./styles";
 
-export const Palette = () => {
+const Palette = () => {
   return (
     <Container>
       <PaletteWrapper>
@@ -11,3 +11,5 @@ export const Palette = () => {
     </Container>
   );
 };
+
+export default Palette;

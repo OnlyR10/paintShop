@@ -1,8 +1,12 @@
-import { PaletteContainer } from "../../../components/PaletteContainer";
-import { Application } from "../components/Application";
-import { Characteristics } from "../components/Characteristics";
-import { Delivery } from "../components/Delivery";
-import { Description } from "../components/Description";
+import { lazy } from "react";
+
+const PaletteContainer = lazy(() =>
+  import("../../../components/PaletteContainer")
+);
+const Application = lazy(() => import("../components/Application"));
+const Characteristics = lazy(() => import("../components/Characteristics"));
+const Delivery = lazy(() => import("../components/Delivery"));
+const Description = lazy(() => import("../components/Description"));
 
 export const ContentConfig = {
   Description,

@@ -9,7 +9,7 @@ import {
   UList,
 } from "./styles";
 
-export const Description = forwardRef(({ paint }, ref) => {
+const Description = forwardRef(({ paint }, ref) => {
   const { concept, properties, colorSolutions, ...description } =
     paint.documentation.description;
 
@@ -66,3 +66,5 @@ export const Description = forwardRef(({ paint }, ref) => {
     </Container>
   );
 });
+
+export default Description;

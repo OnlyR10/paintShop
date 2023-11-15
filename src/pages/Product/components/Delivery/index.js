@@ -3,10 +3,10 @@ import { DeliveryTable } from "../../../../components/DeliveryTable";
 import { Text, Title } from "../styles";
 import { Container, InfoContainer, Link } from "./styles";
 
-export const Delivery = forwardRef((props, ref) => {
+const Delivery = forwardRef((props, ref) => {
   return (
     <Container ref={ref}>
-      <InfoContainer>
+      <InfoContainer firstelem>
         <Title>Пункт самовывоза по адресу:</Title>
         <Link href="https://yandex.by/maps/-/CCUSaQhBOC" target="_blank">
           Пос. Ратомка, ул. Октябрьская, д. 4
@@ -26,3 +26,5 @@ export const Delivery = forwardRef((props, ref) => {
     </Container>
   );
 });
+
+export default Delivery;

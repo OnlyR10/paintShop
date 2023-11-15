@@ -29,6 +29,6 @@ export const Link = styled.a`
   }
 
   @media ${BREAKPOINTS.smartphone} {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 `;

@@ -3,7 +3,7 @@ import { DeliveryTable } from "../../components/DeliveryTable";
 import { Context } from "../../config/context";
 import { AboutWrapper, Comma, Container, Link, Text, Title } from "./styles";
 
-export const About = () => {
+const About = () => {
   const { smartphone, mobile } = useContext(Context);
 
   return (
@@ -57,3 +57,5 @@ export const About = () => {
     </Container>
   );
 };
+
+export default About;

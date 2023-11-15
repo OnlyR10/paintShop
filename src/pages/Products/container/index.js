@@ -11,7 +11,7 @@ import {
   TitleContainer,
 } from "./styles";
 
-export const Products = () => {
+const Products = () => {
   const { category } = useParams();
 
   const fullyCategoriesOfPaints = useMemo(() => {
@@ -44,3 +44,5 @@ export const Products = () => {
     </Container>
   );
 };
+
+export default Products;
