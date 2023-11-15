@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     height: 100%;
-    & > :nth-child(2) {
+    & > :nth-child(1) {
       height: 100%;
     }
   }
