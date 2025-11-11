@@ -1,10 +1,4 @@
-import React, {
-  Suspense,
-  createRef,
-  useContext,
-  useEffect,
-  useState,
-} from "react";
+import { Suspense, createRef, useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import description from "../../../assets/icons/description.svg";
 import help from "../../../assets/icons/help.svg";
@@ -12,7 +6,7 @@ import palette from "../../../assets/icons/palette.svg";
 import { Context } from "../../../config/context";
 import { paints } from "../../../constants/paintsConfig";
 import { Slider } from "../components/Slider";
-import { ContentConfig } from "../constants/contentConfig";
+import { contentConfig } from "../constants/contentConfig";
 import {
   BoldText,
   Container,
@@ -39,7 +33,7 @@ const Product = () => {
   const [activeContent, setActiveContent] = useState("Description");
   const [render, setRender] = useState(false);
 
-  const Content = ContentConfig[activeContent];
+  const Content = contentConfig[activeContent];
   const currentPaint = paints[category].find((paint) => paint.path === name);
   const {
     images: { product, products },
@@ -186,7 +180,7 @@ const Product = () => {
             )}
           </ControlPanel>
 
-          <Suspense fallback={<FallbackContent>Loading...</FallbackContent>}>
+          <Suspense fallback={<FallbackContent>Загрузка...</FallbackContent>}>
             <Content ref={contentRef} paint={currentPaint} product />
           </Suspense>
         </InfoContainer>

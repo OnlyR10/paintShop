@@ -9,6 +9,7 @@ import { insideEco } from "./paints/festekInsideEco";
 import { insideLatex } from "./paints/festekInsideLatex";
 import { maxiGrunt } from "./paints/festekMaxigrunt";
 // import { relief } from "./paints/festekRelief";
+import { plasterSil } from "./paints/festekPlasterSil";
 import { roofPro } from "./paints/festekRoofPro";
 import { superWhite } from "./paints/festekSuperwhite";
 
@@ -23,7 +24,8 @@ export const paints = {
   [categoriesOfPaints.interior]: [insideEco, insideLatex, superWhite],
 
   [categoriesOfPaints.textured]: [
-    /* relief */
+    plasterSil,
+    // relief,
   ],
 
   [categoriesOfPaints.roofing]: [roofPro],
