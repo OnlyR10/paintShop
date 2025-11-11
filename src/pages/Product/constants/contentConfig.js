@@ -8,7 +8,7 @@ const Characteristics = lazy(() => import("../components/Characteristics"));
 const Delivery = lazy(() => import("../components/Delivery"));
 const Description = lazy(() => import("../components/Description"));
 
-export const ContentConfig = {
+export const contentConfig = {
   Description,
   Application,
   Characteristics,
