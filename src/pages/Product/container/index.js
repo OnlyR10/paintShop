@@ -180,7 +180,7 @@ const Product = () => {
             )}
           </ControlPanel>
 
-          <Suspense fallback={<FallbackContent>Loading...</FallbackContent>}>
+          <Suspense fallback={<FallbackContent>Загрузка...</FallbackContent>}>
             <Content ref={contentRef} paint={currentPaint} product />
           </Suspense>
         </InfoContainer>
