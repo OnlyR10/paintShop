@@ -5,6 +5,7 @@ import help from "../../../assets/icons/help.svg";
 import palette from "../../../assets/icons/palette.svg";
 import { Context } from "../../../config/context";
 import { paints } from "../../../constants/paintsConfig";
+import { LinkToViber, LinkToViber2 } from "../components/LinkToViber";
 import { Slider } from "../components/Slider";
 import { contentConfig } from "../constants/contentConfig";
 import {
@@ -98,6 +99,8 @@ const Product = () => {
           );
         })}
 
+        <LinkToViber />
+
         <InfoContainer>
           <ControlPanel>
             {smartphone ? (
@@ -183,6 +186,8 @@ const Product = () => {
           <Suspense fallback={<FallbackContent>Загрузка...</FallbackContent>}>
             <Content ref={contentRef} paint={currentPaint} product />
           </Suspense>
+
+          <LinkToViber2 />
         </InfoContainer>
       </ProductWrapper>
     </Container>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import instagram from "../../assets/icons/instagram.svg";
-import onliner from "../../assets/icons/onliner.svg";
+import viber from "../../assets/icons/viber.svg";
 import { BREAKPOINTS } from "../../config/breakpoints";
 import { TEXT_PALETTE } from "../../config/palette";
 
@@ -72,6 +72,6 @@ export const IconInstagram = styled(Icon)`
   background-image: url(${instagram});
 `;
 
-export const IconOnliner = styled(Icon)`
-  background-image: url(${onliner});
+export const IconViber = styled(Icon)`
+  background-image: url(${viber});
 `;

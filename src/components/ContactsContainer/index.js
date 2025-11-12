@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Context } from "../../config/context";
 import {
   Contact,
@@ -6,7 +6,7 @@ import {
   ContactsColumn,
   Container,
   IconInstagram,
-  IconOnliner,
+  IconViber,
   Label,
   PhoneContainer,
 } from "./styles";
@@ -38,9 +38,10 @@ export const ContactsContainer = () => {
             <IconInstagram />
             <Contact>Результаты работ</Contact>
           </ContactBox>
-          <ContactBox href="https://www.onliner.by" target={"_blank"}>
-            <IconOnliner />
-            <Contact>Onliner</Contact>
+
+          <ContactBox href="viber://chat?number=375291070568">
+            <IconViber />
+            <Contact>Viber</Contact>
           </ContactBox>
         </ContactsColumn>
       )}
