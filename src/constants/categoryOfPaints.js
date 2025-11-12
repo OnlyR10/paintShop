@@ -3,7 +3,7 @@ export const categoriesOfProducts = {
   interior: "Краска интерьерная",
   facade: "Краска фасадная",
   roofing: "Краска для кровли и цоколей",
-  textured: "Краска фактурная",
+  textured: "Декоративные составы",
   primer: "Грунтовки",
 };
 
