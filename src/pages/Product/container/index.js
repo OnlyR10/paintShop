@@ -5,7 +5,13 @@ import help from "../../../assets/icons/help.svg";
 import palette from "../../../assets/icons/palette.svg";
 import { Context } from "../../../config/context";
 import { paints } from "../../../constants/paintsConfig";
-import { LinkToViber, LinkToViber2 } from "../components/LinkToViber";
+import {
+  LinkToViber,
+  LinkToViber2,
+  LinkToViber4,
+  ViberContactButton2,
+  ViberContactButton3,
+} from "../components/LinkToViber";
 import { Slider } from "../components/Slider";
 import { contentConfig } from "../constants/contentConfig";
 import {
@@ -100,6 +106,10 @@ const Product = () => {
         })}
 
         <LinkToViber />
+        <LinkToViber2 />
+        <ViberContactButton2 />
+        <ViberContactButton3 />
+        <LinkToViber4 />
 
         <InfoContainer>
           <ControlPanel>
