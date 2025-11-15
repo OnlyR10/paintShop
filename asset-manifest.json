@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/paintShop/static/css/main.167b7be6.css",
-    "main.js": "/paintShop/static/js/main.cc9d24cb.js",
+    "main.js": "/paintShop/static/js/main.e441802b.js",
     "static/js/539.0fcaa0c1.chunk.js": "/paintShop/static/js/539.0fcaa0c1.chunk.js",
     "static/js/977.c18359e9.chunk.js": "/paintShop/static/js/977.c18359e9.chunk.js",
     "static/js/379.6aca29f3.chunk.js": "/paintShop/static/js/379.6aca29f3.chunk.js",
     "static/js/3.bace0819.chunk.js": "/paintShop/static/js/3.bace0819.chunk.js",
-    "static/js/832.a491f673.chunk.js": "/paintShop/static/js/832.a491f673.chunk.js",
+    "static/js/471.9347c8ef.chunk.js": "/paintShop/static/js/471.9347c8ef.chunk.js",
     "static/js/394.c9e65bc0.chunk.js": "/paintShop/static/js/394.c9e65bc0.chunk.js",
     "static/js/677.fd7205fb.chunk.js": "/paintShop/static/js/677.fd7205fb.chunk.js",
     "static/js/833.8e710f9b.chunk.js": "/paintShop/static/js/833.8e710f9b.chunk.js",
@@ -54,12 +54,12 @@
     "static/media/LeftArrow.svg": "/paintShop/static/media/LeftArrow.fe3f6b0aaae24d885238feb3b62f9cd0.svg",
     "static/media/RightArrow.svg": "/paintShop/static/media/RightArrow.903cac23ef58aae4dc80552d0b3e4929.svg",
     "main.167b7be6.css.map": "/paintShop/static/css/main.167b7be6.css.map",
-    "main.cc9d24cb.js.map": "/paintShop/static/js/main.cc9d24cb.js.map",
+    "main.e441802b.js.map": "/paintShop/static/js/main.e441802b.js.map",
     "539.0fcaa0c1.chunk.js.map": "/paintShop/static/js/539.0fcaa0c1.chunk.js.map",
     "977.c18359e9.chunk.js.map": "/paintShop/static/js/977.c18359e9.chunk.js.map",
     "379.6aca29f3.chunk.js.map": "/paintShop/static/js/379.6aca29f3.chunk.js.map",
     "3.bace0819.chunk.js.map": "/paintShop/static/js/3.bace0819.chunk.js.map",
-    "832.a491f673.chunk.js.map": "/paintShop/static/js/832.a491f673.chunk.js.map",
+    "471.9347c8ef.chunk.js.map": "/paintShop/static/js/471.9347c8ef.chunk.js.map",
     "394.c9e65bc0.chunk.js.map": "/paintShop/static/js/394.c9e65bc0.chunk.js.map",
     "677.fd7205fb.chunk.js.map": "/paintShop/static/js/677.fd7205fb.chunk.js.map",
     "833.8e710f9b.chunk.js.map": "/paintShop/static/js/833.8e710f9b.chunk.js.map",
@@ -70,6 +70,6 @@
   },
   "entrypoints": [
     "static/css/main.167b7be6.css",
-    "static/js/main.cc9d24cb.js"
+    "static/js/main.e441802b.js"
   ]
 }
